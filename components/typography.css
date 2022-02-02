@@ -1,0 +1,131 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
+
+/* heading */
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.5;
+    margin: 0.625rem 0;
+}
+
+p {
+    line-height: 1.5;
+    margin: 0.625rem 0;
+}
+
+h1,
+.h1 {
+    font-size: 2rem;
+}
+
+h2,
+.h2 {
+    font-size: 1.75rem;
+}
+
+h3,
+.h3 {
+    font-size: 1.5rem;
+}
+
+h4,
+.h4 {
+    font-size: 1.25rem;
+}
+
+h5,
+.h5 {
+    font-size: 1rem;
+}
+
+h6,
+.h6 {
+    font-size: 1.875rem;
+}
+
+/* text size*/
+
+.text-sm {
+    font-size: 0.875rem;
+}
+
+p,
+.text-rg {
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+.text-md {
+    font-size: 1.5rem;
+}
+
+.text-lg {
+    font-size: 1.875rem;
+}
+
+/* font weights */
+
+.text-extra-light {
+    font-weight: 300;
+}
+
+.text-light {
+    font-weight: 400;
+}
+
+.text-regular {
+    font-weight: 500;
+}
+
+.text-bold {
+    font-weight: 600;
+}
+
+.text-bolder {
+    font-weight: 700;
+}
+
+.text-extra-bold {
+    font-weight: 800;
+}
+
+/* text utility */
+
+.text-secondary {
+    color: var(--font-color-light);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-lowercase {
+    text-transform: lowercase;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+}
