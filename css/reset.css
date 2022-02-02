@@ -1,0 +1,45 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--font-color-dark);
+    font-family: var(--font-family);
+    overflow-x: hidden;
+    line-height: 1.2;
+}
+
+a {
+    text-decoration: none;
+    color: var(--font-color-dark);
+}
+
+ul {
+    list-style-type: none;
+}
+
+button {
+    background-color: transparent;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-family);
+    font-size: 100%;
+    font-weight: normal;
+}
