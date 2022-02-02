@@ -15,6 +15,7 @@
     background-color: var(--cta-color);
     color: var(--background-color);
     border-radius: 5px;
+    border: 2px solid var(--cta-color);
 }
 
 .btn-primary:hover {
