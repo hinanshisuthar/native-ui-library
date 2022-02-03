@@ -5,31 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
-    <link rel="icon" type="favicon" sizes="32x32" href="assets/favicon.png">
+    <link rel="icon" type="favicon" sizes="32x32" href="/assets/favicon-32x32.png">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <!-- copy and paste it in your head section -->
-    <link rel="stylesheet" href="native-ui.css">
+    <!-- <link rel="stylesheet" href="native-ui.css"> -->
     <title>Native UI</title>
-    <link rel="stylesheet" href="components/style.css">
+    <link rel="stylesheet" href="/components/style.css">
 </head>
 
 <body>
     <nav class="navigation">
         <div class="nav">
             <div class="logo-container">
-                <img src="assets/logo.svg" alt="logo" class="logo">
+                <img src="/assets/logo.svg" alt="logo" class="logo" width="195px" height="auto">
             </div>
             <div class="nav-center">
-                <a href="index.html"><h4 class="pointer-cursor none">Home</h4></a>
-                <a href="#get-started"><h4 class="pointer-cursor none">Get Started</h4></a>
-                <a href="#"><h4 class="documentation pointer-cursor none">Documentation</h4></a>
+                <h4 class="pointer-cursor none"><a href="index.html">Home</a></h4>
+                <h4 class="pointer-cursor none"><a href="#get-started">Get Started</a></h4>
+                <h4 class="documentation pointer-cursor none"><a href="docs/docs.html">Documentation</a></h4>
             </div>
-            <div class="flex-row-se">
-                <a href="https://github.com/hinanshisuthar/native-ui-library" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                <a href="https://twitter.com/hinanshi04" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.linkedin.com/in/hinanshi-suthar-7128201b0/"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fa fa-moon"></i></a>
+            <div class="social-links">
+                <a href="https://github.com/hinanshisuthar/native-ui" target="_blank" rel="noopener noreferrer"><i class="fab fa-github pointer-cursor"></i></a>
+                <a href="https://twitter.com/hinanshi04" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter pointer-cursor"></i></a>
+                <a href="https://www.linkedin.com/in/hinanshi-suthar-7128201b0/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin pointer-cursor"></i></a>
+                <a href=""><i class="fa fa-moon pointer-cursor"></i></a>
             </div>
             <div class="hamburger">
                 <i class="fa fa-bars" onclick="menu()"></i>
@@ -42,19 +42,19 @@
         </div>
     </nav>
 
-    <main class="main p-1 pr-2">
+    <main class="main">
         <div class="left hero-image">
-            <img src="assets/hero-img.svg" alt=""
+            <img src="/assets/hero-img.svg" alt=""
                 class="hero">
         </div>
-        <div class="right flex-col-center-end">
+        <div class="right hero-text">
             <h1>Build fast, responsive frontend with Native</h1>
             <h3>Design your dream project by copying and pasting the component clases at one click. It is user-friendly
                 and customizable. Spend less time in
                 designing and concentrate more on logic without hustling on UI.</h3>
-            <div class="flex-row-se">
-                <button class="btn btn-secondary m-sb">Get Started</button>
-                <button class="btn btn-primary m-sb">Documentation</button>
+            <div class="hero-buttons">
+                <button class="button primary-btn pointer-cursor">Get Started</button>
+                <button class="button secondary-btn pointer-cursor">Documentation</button>
             </div>
         </div>
     </main>
@@ -69,7 +69,7 @@
             <h3>Go ahead with the documentaion once you are ready with your stylesheet.</h3>
             <div class="version-1">
                 <h3>Version 1</h3>
-                <ul class="ml-2">
+                <ul>
                     <li>Light Theme</li>
                 </ul>
             </div>
@@ -84,14 +84,14 @@
         </div>
     </section>
 
-    <footer class="footer">
+    <footer>
         <div class="footer-text">
             <h4>Made with <i class="fa fa-heart"></i> by Hinanshi Suthar</h4>
         </div>
-        <div class="flex-row-se">
-            <a href="https://github.com/hinanshisuthar/native-ui-library" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-            <a href="https://twitter.com/hinanshi04" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.linkedin.com/in/hinanshi-suthar-7128201b0/"><i class="fab fa-linkedin"></i></a>
+        <div class="social-links">
+            <a href="https://github.com/hinanshisuthar/native-ui" target="_blank" rel="noopener noreferrer"><i class="fab fa-github pointer-cursor"></i></a>
+            <a href="https://twitter.com/hinanshi04" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter pointer-cursor"></i></a>
+            <a href="https://www.linkedin.com/in/hinanshi-suthar-7128201b0/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin pointer-cursor"></i></a>
         </div>
         <small>© 2022 Native</small>
     </footer>
