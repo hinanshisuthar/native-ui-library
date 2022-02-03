@@ -1,27 +1,43 @@
-@import url(/components/spacing.css);
-@import url(/components/typography.css);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    word-wrap: break-word;
+}
+
+:root {
+    --background-linen: #fff8e7;
+    --accent-color: #8b82fa;
+    --cta-color: #f34e4e;
+    /* --font-color: #04151F;
+    --font-color-2: #011936; */
+    --font-color: #160C28;
+}
 
 body {
     display: flex;
     flex-direction: column;
     background-color: var(--background-linen);
-    color: var(--font-color);
+    /* color: var(--font-color); */
 }
 
 nav {
-    box-shadow: var(--box-shadow);
+    box-shadow: rgba(0, 0, 0, 0.123) 0px 25px 20px -20px;
 }
 
 .nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 4.8px 2rem;
+    padding: 0.3rem 1rem;
 }
 
 .nav-center {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-grow: 1;
     gap: 2rem;
@@ -29,39 +45,49 @@ nav {
 
 .logo-container {
     padding: 10px;
-    width: 15%;
-}
-
-.logo {
-    max-width: 100%;
-    height: auto;
+    flex-basis: 40%;
 }
 
 .social-links {
     display: flex;
     justify-content: space-evenly;
     gap: 1.3rem;
-    font-size: var(--size-10);
+    font-size: 1.3rem;
 }
 
 .main {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    padding: 1rem;
+    /* height: 30rem; */
+    padding-right: 3rem;
     flex-wrap: wrap;
-    z-index: var(--z-m1);
+    /* z-index: -1; */
+
 }
 
 .hero-image {
     display: block;
+    /* justify-content: center;
+    align-items: center; */
 }
 
 .hero {
     width: 85%;
+    mix-blend-mode: multiply;
     min-width: 50%;
     height: auto;
 }
 
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: right;
+    gap: 1rem;
+}
 
 .left {
     flex-basis: 50%;
@@ -76,13 +102,39 @@ nav {
 .installation-section h3,
 ul {
     color: var(--font-color);
-    font-weight: var(--text-regular);
+    font-weight: 500;
 }
 
 .hero-text h1,
 .section-content h1 {
     color: var(--font-color);
     font-size: clamp(1.5rem, 4vw, 3rem);
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+button {
+    padding: 1.5rem 1.5rem;
+    border: none;
+    font-size: 1.1rem;
+    border-right: 1.9px solid var(--cta-color);
+    background-color: transparent;
+    color: var(--cta-color);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.secondary-btn {
+    border: 1px solid var(--cta-color);
+    background-color: var(--cta-color);
+    color: var(--background-linen);
+    border-radius: 0.3rem;
+    font-weight: 600;
 }
 
 .section {
@@ -105,6 +157,27 @@ ul {
     justify-content: space-evenly;
     align-items: flex-start;
     gap: 1rem;
+    /* padding: 3rem 0rem; */
+}
+
+ul {
+    margin-left: 2rem;
+}
+
+a {
+    text-decoration: navy;
+    color: var(--font-color);
+}
+
+footer {
+    background-color: var(--accent-color);
+    color: var(--font-color-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 10rem;
+    font-size: 1.1rem;
 }
 
 .footer-text .fa {
@@ -113,8 +186,19 @@ ul {
 
 /* hover */
 
+.pointer-cursor {
+    cursor: pointer;
+}
+
+i {
+    padding: 5px;
+    border: 1px solid transparent;
+    color: var(--font-color);
+}
+
 i:hover {
-    color: var(--hover-color-links);
+    color: #fbc416;
+    border-radius: 50%;
 }
 
 .nav-center h4 {
@@ -126,11 +210,11 @@ i:hover {
 }
 
 .nav-center h4:hover {
-    border-bottom: 2px solid var(--hover-color-links);
+    border-bottom: 2px solid #fbc416;
 }
 
-.btn-secondary:hover {
-    background-color: var(--hover-color-btn-prim);
+.secondary-btn:hover {
+    background-color: #f54242;
 }
 
 /* hamburger */
@@ -153,6 +237,7 @@ i:hover {
         justify-content: center;
         align-items: center;
         padding-left: 1rem;
+
     }
 
     .hero {
@@ -236,7 +321,6 @@ i:hover {
     .hero-text {
         padding-left: 2rem;
     }
-
     .logo {
         min-width: 70%;
     }
