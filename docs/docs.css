@@ -1,0 +1,270 @@
+@import url(/components/spacing.css);
+@import url(/components/typography.css);
+@import url(/css/utilities.css);
+@import url(/css/reset.css);
+@import url(/css/base.css);
+
+.navigation {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: var(--background-color);
+    z-index: var(--z-2);
+}
+
+.nav,
+.downMenu {
+    box-shadow: var(--box-shadow);
+}
+
+.nav-center {
+    flex-grow: 1;
+}
+
+.logo-container {
+    padding: 10px;
+    flex-basis: 80%;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.nav .flex-row-se {
+    font-size: 1.3rem;
+}
+
+.menu,
+.nav-center,
+.social-links {
+    display: none;
+}
+
+.myMenu {
+    display: flex;
+    flex-basis: 20%;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    align-items: center;
+    padding: 8px 1.5rem;
+}
+
+.hamburger {
+    flex-basis: 10%;
+}
+
+.myMenuDown {
+    background-color: var(--cta-color);
+    position: fixed;
+    top: 4rem;
+    left: 0;
+    right: 0;
+}
+
+.myMenuDown h4 {
+    font-size: 1.2rem;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--background-color);
+    overflow-x: hidden;
+    transition: 0.4s;
+}
+
+.overlay-down {
+    top: 18%;
+    height: 0;
+    width: 100%;
+}
+
+.overlay-content {
+    position: relative;
+    top: 10%;
+    left: 5%;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.overlay-content-down {
+    top: 1%;
+    left: 1%;
+    padding-left: 1.5rem;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    display: block;
+}
+
+.overlay-content-down a {
+    padding: 8px;
+    border-radius: 5px;
+    width: max-content;
+}
+
+.overlay a:focus {
+    background-color: var(--accent-color);
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    font-size: 2.5rem;
+}
+
+.fa-angle-double-up {
+    display: none;
+}
+
+aside {
+    display: none;
+    z-index: 0;
+}
+
+header {
+    position: fixed;
+    top: 1rem;
+}
+
+.main-content {
+    padding: 3rem 2rem;
+}
+
+i{
+    cursor: pointer;
+}
+
+/* media queries */
+
+@media screen and (max-width: 275px) {
+    .myMenu {
+        position: fixed;
+        top: 3.5rem;
+        left: 0;
+        right: 0;
+    }
+
+    .myMenu {
+        padding: 0rem;
+    }
+}
+
+@media screen and (max-width: 190px) {
+    .myMenu {
+        position: fixed;
+        top: 3rem;
+        left: 0;
+        right: 0;
+}
+}
+
+@media screen and (min-width: 1000px) {
+
+    .nav-center,
+    .social-links {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .logo-container {
+        flex-basis: 40%;
+    }
+
+    .top,
+    .hamburger {
+        display: none;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 18% 70% 12%;
+    }
+
+    aside {
+        display: flex;
+        flex-direction: column;
+        height: 87vh;
+        position: sticky;
+        top: 12%;
+        left: 0;
+    }
+
+    .aside-title h3 {
+        background-color: var(--cta-color);
+        font-size: 1.1rem;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    aside .overlay-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        overflow-x: hidden;
+        overflow-y: auto;
+        top: 0;
+        left: 0;
+        padding-left: 0;
+    }
+
+    aside .overlay-content div {
+        padding: 0.7rem 2rem 0.7rem 1rem;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        font-size: 1.1rem;
+        cursor: pointer;
+    }
+
+    aside .overlay-content div:hover {
+        background-color: var(--hover-color-links-light);
+    }
+
+    aside .overlay-content div:active {
+        background-color: var(--accent-color);
+    }
+
+    .nav-center h5 {
+        border-bottom: 2px solid transparent;
+    }
+
+    .documentation {
+        border-bottom: 2px solid var(--cta-color);
+    }
+
+    .nav-center h5:hover {
+        border-bottom: 2px solid var(--hover-color-links);
+    }
+
+    .social-links i:hover {
+        color: var(--hover-color-links)
+    }
+    main .flex-col-sb {
+        height: 20vh;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        border-left: 1px solid var(--font-color-grey);
+        color: var(--font-color-grey);
+    }
+    .page-links:active {
+        font-weight: 600;
+    }
+    main nav {
+        position: fixed;
+        top: 4.5rem;
+        right: 0;
+    }
+}
