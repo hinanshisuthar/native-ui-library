@@ -1,0 +1,243 @@
+@import url(/components/spacing.css);
+@import url(/components/typography.css);
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-linen);
+    color: var(--font-color);
+}
+
+nav {
+    box-shadow: var(--box-shadow);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4.8px 2rem;
+}
+
+.nav-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    gap: 2rem;
+}
+
+.logo-container {
+    padding: 10px;
+    width: 15%;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1.3rem;
+    font-size: var(--size-10);
+}
+
+.main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: var(--z-m1);
+}
+
+.hero-image {
+    display: block;
+}
+
+.hero {
+    width: 85%;
+    min-width: 50%;
+    height: auto;
+}
+
+
+.left {
+    flex-basis: 50%;
+}
+
+.right {
+    flex-basis: 45%;
+    width: 100%;
+}
+
+.hero-text h3,
+.installation-section h3,
+ul {
+    color: var(--font-color);
+    font-weight: var(--text-regular);
+}
+
+.hero-text h1,
+.section-content h1 {
+    color: var(--font-color);
+    font-size: clamp(1.5rem, 4vw, 3rem);
+}
+
+.section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem;
+    padding: 3rem 3rem;
+    gap: 2.5rem;
+}
+
+.iframe {
+    flex-basis: 40%;
+}
+
+.installation-section {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.footer-text .fa {
+    color: var(--cta-color);
+}
+
+/* hover */
+
+i:hover {
+    color: var(--hover-color-links);
+}
+
+.nav-center h4 {
+    border-bottom: 2px solid transparent;
+}
+
+.nav-center .documentation {
+    border-bottom: 2px solid var(--cta-color);
+}
+
+.nav-center h4:hover {
+    border-bottom: 2px solid var(--hover-color-links);
+}
+
+.btn-secondary:hover {
+    background-color: var(--hover-color-btn-prim);
+}
+
+/* hamburger */
+
+.hamburger {
+    display: none;
+}
+
+.menu {
+    display: none;
+}
+
+/* media querries */
+
+@media screen and (max-width: 940px) {
+
+    main,
+    section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 1rem;
+    }
+
+    .hero {
+        width: 90%;
+    }
+
+    .installation-section {
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1rem;
+        padding: 3rem 0rem;
+    }
+
+    .hero-text {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        /* gap: 1rem; */
+    }
+
+    iframe {
+        width: 500px;
+        height: 200px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    /* nav {
+        display: flex;
+        justify-content: space-around;
+    } */
+}
+
+@media screen and (max-width: 650px) {
+
+    .none,
+    .nav .social-links {
+        display: none;
+    }
+
+    /* .fa-bars:hover {
+        cursor: pointer;
+        color: #fbc416;
+    } */
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu {
+        display: none;
+        background-color: var(--accent-color);
+        padding: 1rem;
+        z-index: 1;
+    }
+
+    .menu h4 {
+        padding: 1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .hero-buttons>* {
+        padding: 1rem 1rem;
+        border-right: transparent;
+        border-bottom: 1px solid var(--cta-color);
+    }
+
+    .hero-text {
+        padding-left: 2rem;
+    }
+
+    .logo {
+        min-width: 70%;
+    }
+}
