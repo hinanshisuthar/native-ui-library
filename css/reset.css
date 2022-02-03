@@ -14,8 +14,6 @@ body {
     background-color: var(--background-color);
     color: var(--font-color-dark);
     font-family: var(--font-family);
-    overflow-x: hidden;
-    line-height: 1.2;
 }
 
 a {
