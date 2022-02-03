@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="icon" type="favicon" sizes="32x32" href="/assets/favicon.png">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="docs.css">
+    <!-- <link rel="stylesheet" href="/native-ui.css"> -->
+    <title>Documentation</title>
+    
+</head>
+
+<body>
+    <nav class="navigation">
+        <div class="flex-row-se nav">
+            <div class="logo-container">
+                <a href="/index.html"><img src="/assets/logo.svg" alt="logo" class="logo" width="200" height="100"></a>
+            </div>
+            <div class="center nav-center">
+                <h5 class="text-bold mx-2"><a href="/index.html">Home</a></h5>
+                <h5 class="text-bold mx-2"><a href="#get-started">Get Started</a></h5>
+                <h5 class="text-bold mx-2"><a href="docs.html">Documentation</a></h5>
+            </div>
+            <div class="flex-row-se social-links">
+                <a href="https://github.com/hinanshisuthar/native-ui" target="_blank" rel="noopener noreferrer"><i
+                        class="fab fa-github m-sm"></i></a>
+                <a href="https://twitter.com/hinanshi04" target="_blank" rel="noopener noreferrer"><i
+                        class="fab fa-twitter m-sm"></i></a>
+                <a href="https://www.linkedin.com/in/hinanshi-suthar-7128201b0/" target="_blank"
+                    rel="noopener noreferrer"><i class="fab fa-linkedin m-sm"></i></a>
+                <a href=""><i class="fa fa-moon m-sm"></i></a>
+
+            </div>
+            <div class="hamburger center">
+                <i class="fa fa-bars" onclick="openNav()"></i>
+            </div>
+        </div>
+
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <h5><a href="#">Home</a></h5>
+                <h5><a href="#">Get Started</a></h5>
+                <h5><a href="#">Documentation</a></h5>
+            </div>
+        </div>
+    </nav>
+
+    <header class="top">
+        <div class="myMenu myMenuDown">
+            <h4>Components</h4>
+            <i class="fas fa-angle-double-down text-md" onclick="openNav2()"></i>
+            <i class="fas fa-angle-double-up text-md" onclick="closeNav2()"></i>
+        </div>
+        <div id="myNav" class="overlay overlay-down">
+            <div class="overlay-content overlay-content-down">
+                <h5 class="m-sm"><a href="#alert">Alert</a></h5>
+                <h5 class="m-sm"><a href="#avatar">Avatar</a></h5>
+                <h5 class="m-sm"><a href="#badge">Badge</a></h5>
+                <h5 class="m-sm"><a href="#button">Button</a></h5>
+                <h5 class="m-sm"><a href="#cards">Cards</a></h5>
+                <h5 class="m-sm"><a href="#form">Form</a></h5>
+                <h5 class="m-sm"><a href="#image">Image</a></h5>
+                <h5 class="m-sm"><a href="#lists">Lists</a></h5>
+                <h5 class="m-sm"><a href="#modal">Modal</a></h5>
+                <h5 class="m-sm"><a href="#navigation">Navigation</a></h5>
+                <h5 class="m-sm"><a href="#rating">Rating</a></h5>
+                <h5 class="m-sm"><a href="#slider">Slider</a></h5>
+                <h5 class="m-sm"><a href="#grid">Grid</a></h5>
+                <h5 class="m-sm"><a href="#typography">Typography</a></h5>
+                <h5 class="m-sm"><a href="#toast">Toast</a></h5>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <aside class="aside">
+            <div class="aside-title">
+                <h3 class="px-md py-sm">Components</h3>
+            </div>
+            <div class="overlay-content overlay-content-down">
+                <div><a href="#alert" class="py-0 px-1 m-sm">Alert</a></div>
+                <div><a href="#avatar" class="py-0 px-1 m-sm">Avatar</a></div>
+                <div><a href="#badge" class="py-0 px-1 m-sm">Badge</a></div>
+                <div><a href="#button" class="py-0 px-1 m-sm">Button</a></div>
+                <div><a href="#cards" class="py-0 px-1 m-sm">Cards</a></div>
+                <div><a href="#form" class="py-0 px-1 m-sm">Form</a></div>
+                <div><a href="#image" class="py-0 px-1 m-sm">Image</a></div>
+                <div><a href="#lists" class="py-0 px-1 m-sm">Lists</a></div>
+                <div><a href="#modal" class="py-0 px-1 m-sm">Modal</a></div>
+                <div><a href="#navigation" class="py-0 px-1 m-sm">Navigation</a></div>
+                <div><a href="#rating" class="py-0 px-1 m-sm">Rating</a></div>
+                <div><a href="#slider" class="py-0 px-1 m-sm">Slider</a></div>
+                <div><a href="#grid" class="py-0 px-1 m-sm">Grid</a></div>
+                <div><a href="#typography" class="py-0 px-1 m-sm">Typography</a></div>
+                <div><a href="#toast" class="py-0 px-1 m-sm">Toast</a></div>
+            </div>
+        </aside>
+        <div class="main-content p-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae tenetur quos ipsam repellat. Commodi autem
+            optio quasi, asperiores deleniti provident iure doloremque debitis ratione praesentium quo totam, ex nostrum
+            aut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, cumque corporis delectus ducimus,
+            eveniet corrupti exercitationem eius asperiores consectetur autem quibusdam omnis vero architecto quaerat
+            provident numquam accusamus magnam ea? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam ut
+            aliquid est laudantium ratione consequuntur officia distinctio fuga corporis mollitia, animi quam ea? Unde
+            deserunt ex consectetur, beatae blanditiis sapiente?Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Beatae tenetur quos ipsam repellat. Commodi autem
+            optio quasi, asperiores deleniti provident iure doloremque debitis ratione praesentium quo totam, ex nostrum
+            aut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, cumque corporis delectus ducimus,
+            eveniet corrupti exercitationem eius asperiores consectetur autem quibusdam omnis vero architecto quaerat
+            provident numquam accusamus magnam ea? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam ut
+            aliquid est laudantium ratione consequuntur officia distinctio fuga corporis mollitia, animi quam ea? Unde
+            deserunt ex consectetur, beatae blanditiis sapiente?Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Beatae tenetur quos ipsam repellat. Commodi autem
+            optio quasi, asperiores deleniti provident iure doloremque debitis ratione praesentium quo totam, ex nostrum
+            aut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, cumque corporis delectus ducimus,
+            eveniet corrupti exercitationem eius asperiores consectetur autem quibusdam omnis vero architecto quaerat
+            provident numquam accusamus magnam ea? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam ut
+            aliquid est laudantium ratione consequuntur officia distinctio fuga corporis mollitia, animi quam ea? Unde
+            deserunt ex consectetur, beatae blanditiis sapiente?Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Beatae tenetur quos ipsam repellat. Commodi autem
+            optio quasi, asperiores deleniti provident iure doloremque debitis ratione praesentium quo totam, ex nostrum
+            aut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, cumque corporis delectus ducimus,
+            eveniet corrupti exercitationem eius asperiores consectetur autem quibusdam omnis vero architecto quaerat
+            provident numquam accusamus magnam ea? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam ut
+            aliquid est laudantium ratione consequuntur officia distinctio fuga corporis mollitia, animi quam ea? Unde
+            deserunt ex consectetur, beatae blanditiis sapiente?Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Beatae tenetur quos ipsam repellat. Commodi autem
+            optio quasi, asperiores deleniti provident iure doloremque debitis ratione praesentium quo totam, ex nostrum
+            aut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, cumque corporis delectus ducimus,
+            eveniet corrupti exercitationem eius asperiores consectetur autem quibusdam omnis vero architecto quaerat
+            provident numquam accusamus magnam ea? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam ut
+            aliquid est laudantium ratione consequuntur officia distinctio fuga corporis mollitia, animi quam ea? Unde
+            deserunt ex consectetur, beatae blanditiis sapiente?Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Beatae tenetur quos ipsam repellat. Commodi autem
+            optio quasi, asperiores deleniti provident iure doloremque debitis ratione praesentium quo totam, ex nostrum
+            aut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, cumque corporis delectus ducimus,
+            eveniet corrupti exercitationem eius asperiores consectetur autem quibusdam omnis vero architecto quaerat
+            provident numquam accusamus magnam ea? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam ut
+            aliquid est laudantium ratione consequuntur officia distinctio fuga corporis mollitia, animi quam ea? Unde
+            deserunt ex consectetur, beatae blanditiis sapiente?
+        </div>
+        <nav class="flex-col-sb m-sm p-sm">
+            <a href="#" class="page-links">
+                <small>Name Of Component</small>
+            </a>
+            <a href="#" class="page-links">
+                <small>Example</small>
+            </a>
+            <a href="#" class="page-links">
+                <small>Code Snippet</small>
+            </a>
+        </nav>
+    </main>
+</body>
+
+<script src="/docs/collapseMenu.js"></script>
+
+</html>
