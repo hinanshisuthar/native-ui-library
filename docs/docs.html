@@ -8,7 +8,7 @@
     <link rel="icon" type="favicon" sizes="32x32" href="/assets/favicon.png">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <link rel="stylesheet" href="docs.css">
+    <link rel="stylesheet" href="/docs/docs.css">
     <!-- <link rel="stylesheet" href="/native-ui.css"> -->
     <title>Documentation</title>
 
@@ -170,16 +170,95 @@
                         <h3>JavaScript</h3>
                         <p>Copy and paste the following code into your js file.</p>
                         <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28243%2C78%2C78%2C1%29&t=theme%3A4e9xgxcylu4&wt=none&l=auto&width=1080&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=10px&ph=11px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=const%2520alertCloseBox%2520%253D%2520document.querySelector%28%2522%2523alert-close%2522%29%253B%250Aconst%2520alertCloseBtn%2520%253D%2520document.querySelector%28%2522%2523alert-close-btn%2522%29%253B%250A%250AalertCloseBtn.addEventListener%28%2522click%2522%252C%28%29%253D%253E%257B%250A%2520%2520%2520%2520alertCloseBox.style.display%2520%253D%2520%2522none%2522%253B%250A%257D%29%250A"
-                        style="width: 100%; height: 190px; border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
-                      </iframe>
+                            src="https://carbon.now.sh/embed?bg=rgba%28243%2C78%2C78%2C1%29&t=theme%3A4e9xgxcylu4&wt=none&l=auto&width=1080&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=10px&ph=11px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=const%2520alertCloseBox%2520%253D%2520document.querySelector%28%2522%2523alert-close%2522%29%253B%250Aconst%2520alertCloseBtn%2520%253D%2520document.querySelector%28%2522%2523alert-close-btn%2522%29%253B%250A%250AalertCloseBtn.addEventListener%28%2522click%2522%252C%28%29%253D%253E%257B%250A%2520%2520%2520%2520alertCloseBox.style.display%2520%253D%2520%2522none%2522%253B%250A%257D%29%250A"
+                            style="width: 100%; height: 190px; border:0; transform: scale(1); overflow:hidden;"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
                     </div>
                 </section>
             </article>
+
+            <div class="my-2">
+                <hr>
+            </div>
+
+            <article id="avatar" class="flex-col-sb-start">
+                <h1 class="text-extra-lg">Avatar</h1>
+                <p>The Avatar component is used to represent a user, and displays the profile picture, initials or
+                    fallback icon.</p>
+                <section class="example">
+                    <h3>Examples of Avatar with Image</h3>
+                    <p>The Avatar component comes in 5 sizes. For proper
+                        styling, use any of the following.</p>
+                    <p>To use this avatar just use class name avatar and also add class according to avatar type:
+                        avatar-lg, avatar-md, avatar-sm, avatar-xs
+                        (e.g.class="avatar avatar-md").
+                        You can copy html part from below code snippet.</p>
+                    <section class="eg-container flex-row-se p-md avatar-con">
+                        <div class="avatar avatar-xs flex-items">
+                            <img src="/assets/avatar.jpg" alt="avatar-img" class="img-responsive img-circular">
+                        </div>
+                        <div class="avatar avatar-sm flex-items">
+                            <img src="/assets/avatar.jpg" alt="avatar-img" class="img-responsive img-circular">
+                        </div>
+                        <div class="avatar avatar-rg flex-items">
+                            <img src="/assets/avatar.jpg" alt="avatar-img" class="img-responsive img-circular">
+                        </div>
+                        <div class="avatar avatar-md flex-items">
+                            <img src="/assets/avatar.jpg" alt="avatar-img" class="img-responsive img-circular">
+                        </div>
+                        <div class="avatar avatar-lg flex-items">
+                            <img src="/assets/avatar.jpg" alt="avatar-img" class="img-responsive img-circular">
+                        </div>
+                    </section>
+
+                    <div class="m-md"></div>
+                    <iframe
+  src="https://carbon.now.sh/embed?bg=rgba%28207%2C207%2C207%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=10px&ph=5px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar%2520avatar-xs%2522%253E%250A%2509%253Cimg%2520src%253D%2522%252Fassets%252Favatar.jpg%2522%2520alt%253D%2522avatar-img%2522%2520class%253D%2522img-responsive%2520img-circular%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2509%253Cimg%2520src%253D%2522%252Fassets%252Favatar.jpg%2522%2520alt%253D%2522avatar-img%2522%2520class%253D%2522img-responsive%2520img-circular%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-rg%2522%253E%250A%2509%253Cimg%2520src%253D%2522%252Fassets%252Favatar.jpg%2522%2520alt%253D%2522avatar-img%2522%2520class%253D%2522img-responsive%2520img-circular%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-md%2522%253E%250A%2509%253Cimg%2520src%253D%2522%252Fassets%252Favatar.jpg%2522%2520alt%253D%2522avatar-img%2522%2520class%253D%2522img-responsive%2520img-circular%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-lg%2522%253E%250A%2509%253Cimg%2520src%253D%2522%252Fassets%252Favatar.jpg%2522%2520alt%253D%2522avatar-img%2522%2520class%253D%2522img-responsive%2520img-circular%2522%253E%250A%253C%252Fdiv%253E%250A%2520%2520%2520%2520"
+  style="width: 100%; height: 397px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+                </section>
+
+                <div class="m-md"></div>
+
+                <section class="example">
+                    <h3>Examples of Avatar with text.</h3>
+                    <p>Avatars can also have text instead of picture.</p>
+                    <p>To use this avatar just add class (avatar-text) according to previous avatar type.
+                        You can copy html part from below code snippet.</p>
+                    <section class="eg-container flex-row-se p-md avatar-con">
+                        <div class="avatar avatar-xs flex-items avatar-text">
+                            <p>H</p>
+                        </div>
+                        <div class="avatar avatar-sm flex-items avatar-text">
+                            <p>H</p>
+                        </div>
+                        <div class="avatar avatar-rg flex-items avatar-text">
+                            <p>H</p>
+                        </div>
+                        <div class="avatar avatar-md flex-items avatar-text">
+                            <p>H</p>
+                        </div>
+                        <div class="avatar avatar-lg flex-items avatar-text">
+                            <p>H</p>
+                        </div>
+                    </section>
+
+                    <div class="m-md"></div>
+                    <iframe
+  src="https://carbon.now.sh/embed?bg=rgba%28207%2C207%2C207%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=10px&ph=5px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar%2520avatar-xs%2520avatar-text%2522%253EH%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-sm%2520avatar-text%2522%253EH%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-rg%2520avatar-text%2522%253EH%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-md%2520avatar-text%2522%253EH%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-lg%2520avatar-text%2522%253EH%253C%252Fdiv%253E%250A"
+  style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+                    <div class="m-md"></div>
+
+                </section>
+            </article>
+
         </div>
         <nav class="main-nav flex-col-sb m-sm p-sm">
-            <a href="#" class="page-links m-sm">
+            <a href="#alert" class="page-links m-sm">
                 <small>Alert</small>
             </a>
             <a href="#" class="page-links m-sm">
@@ -194,5 +273,5 @@
 
 <script src="/docs/collapseMenu.js"></script>
 <script src="/components/js/components.js"></script>
-</html>
 
+</html>
