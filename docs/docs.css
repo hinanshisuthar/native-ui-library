@@ -4,6 +4,7 @@
 @import url(/css/reset.css);
 @import url(/css/base.css);
 @import url(/components/components.css);
+@import url(/components/alert.css);
 
 .navigation {
     position: sticky;
