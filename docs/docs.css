@@ -3,6 +3,7 @@
 @import url(/css/utilities.css);
 @import url(/css/reset.css);
 @import url(/css/base.css);
+@import url(/components/components.css);
 
 .navigation {
     position: sticky;
@@ -145,6 +146,10 @@ i{
     cursor: pointer;
 }
 
+.main-nav {
+    display: none;
+}
+
 /* media queries */
 
 @media screen and (max-width: 275px) {
@@ -252,19 +257,18 @@ i{
     .social-links i:hover {
         color: var(--hover-color-links)
     }
-    main .flex-col-sb {
-        height: 20vh;
+    main .main-nav {
+        display: flex;
+        height: max-content;
         align-items: flex-start;
         justify-content: space-evenly;
         border-left: 1px solid var(--font-color-grey);
         color: var(--font-color-grey);
+        position: fixed;
+        top: 4.8rem;
+        right: 0;
     }
     .page-links:active {
         font-weight: 600;
-    }
-    main nav {
-        position: fixed;
-        top: 4.5rem;
-        right: 0;
     }
 }
