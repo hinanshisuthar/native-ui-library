@@ -1,0 +1,45 @@
+@import url(/css/base.css);
+.alert {
+    padding: var(--size-8);
+    width: 100%;
+    margin: var(--size-6);
+    border-radius: var(--size-3);
+}
+
+.alert-primary {
+    background-color: #086f9859;
+    color: #070797;
+}
+
+.alert-secondary {
+    background-color: #d6d5d5;
+    color: #3a3939;
+}
+
+.alert-success {
+    background-color: #5ff5519d;
+    color: #1a520f;
+}
+
+.alert-danger {
+    background-color: #ff000059;
+    color: #970707;
+}
+
+.alert-warning {
+    background-color: #fbff0050;
+    color: #ff9102;
+}
+
+#alert-close {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#alert-close button {
+    margin-left: auto;
+    font-size: var(--size-10);
+    color: #970707;
+}
+
