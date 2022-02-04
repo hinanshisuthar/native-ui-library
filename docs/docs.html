@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="docs.css">
     <!-- <link rel="stylesheet" href="/native-ui.css"> -->
     <title>Documentation</title>
-    
+
 </head>
 
 <body>
@@ -101,63 +101,85 @@
             </div>
         </aside>
         <div class="main-content p-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae tenetur quos ipsam repellat. Commodi autem
-            optio quasi, asperiores deleniti provident iure doloremque debitis ratione praesentium quo totam, ex nostrum
-            aut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, cumque corporis delectus ducimus,
-            eveniet corrupti exercitationem eius asperiores consectetur autem quibusdam omnis vero architecto quaerat
-            provident numquam accusamus magnam ea? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam ut
-            aliquid est laudantium ratione consequuntur officia distinctio fuga corporis mollitia, animi quam ea? Unde
-            deserunt ex consectetur, beatae blanditiis sapiente?Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Beatae tenetur quos ipsam repellat. Commodi autem
-            optio quasi, asperiores deleniti provident iure doloremque debitis ratione praesentium quo totam, ex nostrum
-            aut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, cumque corporis delectus ducimus,
-            eveniet corrupti exercitationem eius asperiores consectetur autem quibusdam omnis vero architecto quaerat
-            provident numquam accusamus magnam ea? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam ut
-            aliquid est laudantium ratione consequuntur officia distinctio fuga corporis mollitia, animi quam ea? Unde
-            deserunt ex consectetur, beatae blanditiis sapiente?Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Beatae tenetur quos ipsam repellat. Commodi autem
-            optio quasi, asperiores deleniti provident iure doloremque debitis ratione praesentium quo totam, ex nostrum
-            aut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, cumque corporis delectus ducimus,
-            eveniet corrupti exercitationem eius asperiores consectetur autem quibusdam omnis vero architecto quaerat
-            provident numquam accusamus magnam ea? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam ut
-            aliquid est laudantium ratione consequuntur officia distinctio fuga corporis mollitia, animi quam ea? Unde
-            deserunt ex consectetur, beatae blanditiis sapiente?Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Beatae tenetur quos ipsam repellat. Commodi autem
-            optio quasi, asperiores deleniti provident iure doloremque debitis ratione praesentium quo totam, ex nostrum
-            aut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, cumque corporis delectus ducimus,
-            eveniet corrupti exercitationem eius asperiores consectetur autem quibusdam omnis vero architecto quaerat
-            provident numquam accusamus magnam ea? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam ut
-            aliquid est laudantium ratione consequuntur officia distinctio fuga corporis mollitia, animi quam ea? Unde
-            deserunt ex consectetur, beatae blanditiis sapiente?Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Beatae tenetur quos ipsam repellat. Commodi autem
-            optio quasi, asperiores deleniti provident iure doloremque debitis ratione praesentium quo totam, ex nostrum
-            aut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, cumque corporis delectus ducimus,
-            eveniet corrupti exercitationem eius asperiores consectetur autem quibusdam omnis vero architecto quaerat
-            provident numquam accusamus magnam ea? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam ut
-            aliquid est laudantium ratione consequuntur officia distinctio fuga corporis mollitia, animi quam ea? Unde
-            deserunt ex consectetur, beatae blanditiis sapiente?Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Beatae tenetur quos ipsam repellat. Commodi autem
-            optio quasi, asperiores deleniti provident iure doloremque debitis ratione praesentium quo totam, ex nostrum
-            aut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, cumque corporis delectus ducimus,
-            eveniet corrupti exercitationem eius asperiores consectetur autem quibusdam omnis vero architecto quaerat
-            provident numquam accusamus magnam ea? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam ut
-            aliquid est laudantium ratione consequuntur officia distinctio fuga corporis mollitia, animi quam ea? Unde
-            deserunt ex consectetur, beatae blanditiis sapiente?
+            <article id="alert" class="flex-col-sb-start">
+                <h1 class="text-extra-lg">Alert</h1>
+                <h2 class="text-md">Alerts are used to provide contexual feedback messages. It displays in a virtual box
+                    that pops up on the screen.</h2>
+                <section class="example">
+                    <h3>Examples of Alert Bars</h3>
+                    <p>Alerts are available for any length of text, as well as an optional dismiss button. For proper
+                        styling, use any of the following.</p>
+                    <p>To use this alert just use class name alert-box and also add class according to alert type-
+                        alert-primary, alert-secondary, alert-danger, alert-success, alert-warning.
+                        (e.g.class="alert-box alert-primary").
+                        You can copy html part from below code snippet.</p>
+                    <section class="eg-container flex-col-sb p-md">
+                        <div class="alert alert-primary">
+                            A primary alert example.
+                        </div>
+                        <div class="alert alert-secondary">
+                            A secondary alert example.
+                        </div>
+                        <div class="alert alert-success">
+                            A success alert example.
+                        </div>
+                        <div class="alert alert-danger">
+                            A danger alert example.
+                        </div>
+                        <div class="alert alert-warning">
+                            A warning alert example.
+                        </div>
+                    </section>
+
+                    <div class="m-md"></div>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28243%2C78%2C78%2C1%29&t=theme%3A4e9xgxcylu4&wt=none&l=auto&width=1080&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=10px&ph=11px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520alert-primary%2522%253EA%2520primary%2520alert%2520example%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-secondary%2522%253EA%2520secondary%2520alert%2520example%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-success%2522%253EA%2520success%2520alert%2520example%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-danger%2522%253EA%2520danger%2520alert%2520example%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-warning%2522%253EA%2520warning%2520alert%2520example%253C%252Fdiv%253E%250A"
+                        style="width: 100%; height: 189px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </section>
+
+                <section class="example">
+                    <h3>Examples of Alert Bars with dismiss.</h3>
+                    <p>Alerts can also wait for the user to dismiss it.</p>
+                    <p>To use this alert just use class name alert-box and also add class according to alert type :
+                        alert-primary, and id as alert-close
+                        You can copy html part from below code snippet.</p>
+                    <section class="eg-container flex-col-sb p-md">
+                        <div class="alert alert-danger" id="alert-close">
+                            <span>
+                                <i class="fal fa-skull-crossbones"></i>
+                            </span>
+                            A danger alert example
+                            <button type="button" class="btn-close" id="alert-close-btn"><i
+                                    class="fal fa-times"></i></button>
+                        </div>
+
+                    </section>
+
+                    <div class="m-md"></div>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28243%2C78%2C78%2C1%29&t=theme%3A4e9xgxcylu4&wt=none&l=auto&width=1080&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=10px&ph=11px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520alert-danger%2522%2520id%253D%2522alert-close%2522%253E%250A%253Cspan%253E%253Ci%2520class%253D%2522fal%2520fa-skull-crossbones%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250AA%2520danger%2520alert%2520example%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn-close%2522%2520id%253D%2522alert-close-btn%2522%253E%253Ci%2520class%253D%2522fal%2520fa-times%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%253C%252Fdiv%253E"
+                        style="width: 869px; height: 170px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </section>
+            </article>
         </div>
         <nav class="main-nav flex-col-sb m-sm p-sm">
             <a href="#" class="page-links m-sm">
-                <small>Name Of Component</small>
+                <small>Alert</small>
             </a>
             <a href="#" class="page-links m-sm">
-                <small>Example</small>
+                <small>Example - Text</small>
             </a>
             <a href="#" class="page-links m-sm">
-                <small>Code Snippet</small>
+                <small>Example - Dismiss</small>
             </a>
         </nav>
     </main>
 </body>
 
 <script src="/docs/collapseMenu.js"></script>
-
+<script src="/components/js/alert.js"></script>
 </html>
