@@ -5,6 +5,11 @@
 @import url(/css/base.css);
 @import url(/components/components.css);
 @import url(/components/alert.css);
+@import url(/components/avatar.css);
+
+p {
+    margin: 1rem 0;
+}
 
 .navigation {
     position: sticky;
@@ -152,7 +157,16 @@ i{
 }
 
 iframe {
-    z-index: var(--z-m2);
+    z-index: -1;
+}
+
+#avatar .flex-items {
+    margin: 1rem 1rem 1rem 0;
+}
+
+.avatar-con {
+    justify-content: center;
+    align-items: center;
 }
 
 /* media queries */
