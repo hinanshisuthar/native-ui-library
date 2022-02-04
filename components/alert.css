@@ -1,34 +1,46 @@
-@import url(/css/base.css);
+:root {
+    --bg-primary: #086f9859;
+    --color-primary: #070797;
+    --bg-secondary: #d6d5d5;
+    --color-secondary: #3a3939;
+    --bg-danger: #ff000059;
+    --color-danger: #970707;
+    --bg-warning: #fbff0050;
+    --color-warning: #ff9102;
+    --bg-success: #5ff5519d;
+    --color-success: #1a520f;
+}
+
 .alert {
-    padding: var(--size-8);
+    padding: 0.875rem;
     width: 100%;
-    margin: var(--size-6);
-    border-radius: var(--size-3);
+    margin: 0.625rem;
+    border-radius: 4px;
 }
 
 .alert-primary {
-    background-color: #086f9859;
-    color: #070797;
+    background-color: var(--bg-primary);
+    color: var(--color-primary);
 }
 
 .alert-secondary {
-    background-color: #d6d5d5;
-    color: #3a3939;
+    background-color: var(--bg-secondary);
+    color: var(--color-secondary);
 }
 
 .alert-success {
-    background-color: #5ff5519d;
-    color: #1a520f;
+    background-color: var(--bg-success);
+    color: var(--color-success);
 }
 
 .alert-danger {
-    background-color: #ff000059;
-    color: #970707;
+    background-color: var(--bg-danger);
+    color: var(--color-danger);
 }
 
 .alert-warning {
-    background-color: #fbff0050;
-    color: #ff9102;
+    background-color: var(--bg-warning);
+    color: var(--color-warning);
 }
 
 #alert-close {
@@ -39,7 +51,7 @@
 
 #alert-close button {
     margin-left: auto;
-    font-size: var(--size-10);
-    color: #970707;
+    font-size: 1.25rem;
+    color: var(--color-danger);
 }
 
