@@ -80,7 +80,7 @@
     <main>
         <aside class="aside">
             <div class="aside-title">
-                <h3 class="px-md py-sm">Components</h3>
+                <h3 class="px-md py-1">Components</h3>
             </div>
             <div class="overlay-content overlay-content-down">
                 <div><a href="#alert" class="py-0 px-1 m-sm">Alert</a></div>
@@ -103,8 +103,8 @@
         <div class="main-content p-2">
             <article id="alert" class="flex-col-sb-start">
                 <h1 class="text-extra-lg">Alert</h1>
-                <h2 class="text-md">Alerts are used to provide contexual feedback messages. It displays in a virtual box
-                    that pops up on the screen.</h2>
+                <p>Alerts are used to provide contexual feedback messages. It displays in a virtual box
+                    that pops up on the screen.</p>
                 <section class="example">
                     <h3>Examples of Alert Bars</h3>
                     <p>Alerts are available for any length of text, as well as an optional dismiss button. For proper
@@ -134,10 +134,11 @@
                     <div class="m-md"></div>
                     <iframe
                         src="https://carbon.now.sh/embed?bg=rgba%28243%2C78%2C78%2C1%29&t=theme%3A4e9xgxcylu4&wt=none&l=auto&width=1080&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=10px&ph=11px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520alert-primary%2522%253EA%2520primary%2520alert%2520example%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-secondary%2522%253EA%2520secondary%2520alert%2520example%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-success%2522%253EA%2520success%2520alert%2520example%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-danger%2522%253EA%2520danger%2520alert%2520example%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-warning%2522%253EA%2520warning%2520alert%2520example%253C%252Fdiv%253E%250A"
-                        style="width: 100%; height: 189px; border:0; transform: scale(1); overflow:hidden;"
+                        style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
                         sandbox="allow-scripts allow-same-origin">
                     </iframe>
                 </section>
+                <div class="m-md"></div>
 
                 <section class="example">
                     <h3>Examples of Alert Bars with dismiss.</h3>
@@ -160,9 +161,20 @@
                     <div class="m-md"></div>
                     <iframe
                         src="https://carbon.now.sh/embed?bg=rgba%28243%2C78%2C78%2C1%29&t=theme%3A4e9xgxcylu4&wt=none&l=auto&width=1080&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=10px&ph=11px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520alert-danger%2522%2520id%253D%2522alert-close%2522%253E%250A%253Cspan%253E%253Ci%2520class%253D%2522fal%2520fa-skull-crossbones%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250AA%2520danger%2520alert%2520example%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn-close%2522%2520id%253D%2522alert-close-btn%2522%253E%253Ci%2520class%253D%2522fal%2520fa-times%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%253C%252Fdiv%253E"
-                        style="width: 869px; height: 170px; border:0; transform: scale(1); overflow:hidden;"
+                        style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
                         sandbox="allow-scripts allow-same-origin">
                     </iframe>
+                    <div class="m-md"></div>
+
+                    <div class="section-js">
+                        <h3>JavaScript</h3>
+                        <p>Copy and paste the following code into your js file.</p>
+                        <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28243%2C78%2C78%2C1%29&t=theme%3A4e9xgxcylu4&wt=none&l=auto&width=1080&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=10px&ph=11px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=const%2520alertCloseBox%2520%253D%2520document.querySelector%28%2522%2523alert-close%2522%29%253B%250Aconst%2520alertCloseBtn%2520%253D%2520document.querySelector%28%2522%2523alert-close-btn%2522%29%253B%250A%250AalertCloseBtn.addEventListener%28%2522click%2522%252C%28%29%253D%253E%257B%250A%2520%2520%2520%2520alertCloseBox.style.display%2520%253D%2520%2522none%2522%253B%250A%257D%29%250A"
+                        style="width: 100%; height: 190px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                      </iframe>
+                    </div>
                 </section>
             </article>
         </div>
