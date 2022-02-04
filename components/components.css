@@ -1,0 +1,21 @@
+.flex-row {
+    display: flex;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-col-sb-start {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.eg-container {
+    width: 100%;
+    height: max-content;
+    border: 2px solid var(--font-color-grey);
+}
