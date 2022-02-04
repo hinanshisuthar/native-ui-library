@@ -76,6 +76,10 @@ p,
     font-size: 1.875rem;
 }
 
+.text-extra-lg {
+    font-size: 3rem;
+}
+
 /* font weights */
 
 .text-extra-light {
