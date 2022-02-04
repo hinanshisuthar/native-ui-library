@@ -18,4 +18,6 @@
     width: 100%;
     height: max-content;
     border: 2px solid var(--font-color-grey);
+    border-radius: 5px;
 }
+
