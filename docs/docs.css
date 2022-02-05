@@ -6,6 +6,7 @@
 @import url(/components/components.css);
 @import url(/components/alert.css);
 @import url(/components/avatar.css);
+@import url(/components/badge.css);
 
 p {
     margin: 1rem 0;
@@ -168,6 +169,10 @@ iframe {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+}
+
+#badge .eg-container {
+    gap: 2rem;
 }
 
 /* media queries */
