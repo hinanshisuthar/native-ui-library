@@ -1,0 +1,94 @@
+:root {
+    --color-online: #047504;
+    --color-dnd: #e20b0b;
+    --color-idle: #ffff00;
+}
+
+.badge-container {
+    position: relative;
+}
+
+.fa-circle {
+    position: absolute;
+    bottom: -2px;
+    right: -1px;
+    font-size: 8px;
+    padding: 0;
+    color: var(--color-online);
+    border: 3px solid var(--background-color);
+}
+
+.fa-do-not-enter {
+    position: absolute;
+    bottom: -2px;
+    right: -1px;
+    font-size: 1rem;
+    border: 3px solid var(--background-color);
+    padding: 0;
+    color: var(--color-dnd);
+    background-color: var(--background-color);
+}
+
+.fa-moon-badge {
+    background-color: var(--background-color);
+    border: 3px solid var(--background-color);
+    bottom: -2px;
+    color: var(--color-idle);
+    font-size: 1.3rem;
+    padding: 0;
+    position: absolute;
+    right: -1px;
+}
+
+.fa-mobile {
+    border: 3px solid var(--background-color);
+    bottom: 5px;
+    font-size: 1.5rem;
+    position: absolute;
+    right: 0.75rem;
+    color: var(--color-online);
+    padding: 1px;
+    border-radius: 5px;
+    background-color: var(--background-color);
+}
+
+.fa-circle-lg {
+    background-color: var(--background-color);
+    position: absolute;
+    bottom: 10px;
+    right: 0.75;
+    color: var(--color-idle);
+    font-size: 1.8rem;
+    border: 3px solid var(--background-color);
+    padding: 1px;
+}
+
+.count-badge {
+    font-size: 1rem;
+    border-radius: 50%;
+    position: absolute;
+    top: -1.25rem;
+    right: -5px;
+    padding: 1px 5px;
+}
+
+.badge-icon-base {
+    font-size: 1.5rem;
+}
+
+.cart-badge-number {
+    background-color: var(--cta-color);
+}
+
+.heart-badge-number {
+    background-color: var(--cta-color);
+}
+
+.message-badge-number {
+    background-color: var(--cta-color);
+}
+
+.bell-badge-number {
+    background-color: var(--cta-color);
+}
+
