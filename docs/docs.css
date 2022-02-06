@@ -7,6 +7,7 @@
 @import url(/components/alert.css);
 @import url(/components/avatar.css);
 @import url(/components/badge.css);
+@import url(/components/button.css);
 
 p {
     margin: 1rem 0;
@@ -171,8 +172,8 @@ iframe {
     flex-wrap: wrap;
 }
 
-#badge .eg-container {
-    gap: 2rem;
+article .eg-container {
+    gap: 1.5rem;
 }
 
 /* media queries */
