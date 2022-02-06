@@ -1,0 +1,110 @@
+:root {
+    /* colors palette*/
+    --background-color: #fff8e7;
+    --accent-color: #8b82fa;
+    --cta-color: #f34e4e;
+
+    /* hover colors */
+    --hover-color-links: #fbc416;
+    --hover-color-links-light: #fbc6169d;
+    --hover-color-btn-prim: #e94444;
+    --hover-color-btn-sec: #726ad1;
+}
+
+.btn {
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.btn-lg {
+    font-size: 1.1rem;
+    padding: 1.5rem 1.5rem;
+    font-weight: 600;
+}
+
+.btn-lg:hover {
+    background-color: var(--background-color) !important;
+    color: var(--cta-color);
+}
+
+.btn-primary {
+    background-color: var(--cta-color);
+    color: var(--background-color);
+    border-radius: 5px;
+    border: 2px solid var(--cta-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--hover-color-btn-prim);
+}
+
+.btn-secondary {
+    background-color: var(--background-color);
+    border: 2px solid var(--cta-color);
+    color: var(--cta-color);
+    border-radius: 5px;
+}
+
+.btn-secondary {
+    background-color: var(--hover-color-button-sec);
+}
+
+.btn-accent {
+    background-color: var(--accent-color);
+    color: var(--background-color);
+    border-radius: 5px;
+}
+
+.btn-accent:hover {
+    background-color: var(--hover-color-btn-sec);
+}
+
+/* link buttons */
+
+/* .link {
+    border-bottom: 2px solid var(--cta-color);
+}
+
+.link:hover {
+    border-bottom: 2px solid var(--hover-color-links);
+} */
+
+.link {
+    background: 
+      linear-gradient(to right, #8b82fa, #8b82fa),
+      linear-gradient(to right, #f34e4e, #f34e4e, #f34e4e);
+    background-size: 100% 0.15em, 0.15em 0.15em;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+  }
+  
+  .link:hover,
+  .link:focus {
+    background-size: 0 0.15em, 100% 0.15em;
+  }
+
+.link h5 {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+}
+
+.btn-float {
+    padding: 8px;
+    border-radius: 50%;
+    font-size: 1.1rem;
+}
+
+.fa-chevron-square-up {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+}
+
+i{
+    font-size: 1.2rem;
+}
+
