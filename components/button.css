@@ -61,24 +61,14 @@
     background-color: var(--hover-color-btn-sec);
 }
 
-/* link buttons */
-
-/* .link {
-    border-bottom: 2px solid var(--cta-color);
-}
-
-.link:hover {
-    border-bottom: 2px solid var(--hover-color-links);
-} */
-
 .link {
     background: 
-      linear-gradient(to right, #8b82fa, #8b82fa),
+      linear-gradient(to right, #fff8e7, #fff8e7),
       linear-gradient(to right, #f34e4e, #f34e4e, #f34e4e);
     background-size: 100% 0.15em, 0.15em 0.15em;
-    background-position: 100% 100%, 0 100%;
+    background-position:100% 100%, 0 100%;
     background-repeat: no-repeat;
-    transition: background-size 400ms;
+    transition: background-size 300ms;
   }
   
   .link:hover,
@@ -91,6 +81,7 @@
     text-transform: uppercase;
     font-size: 0.8rem;
     letter-spacing: 0.1em;
+    padding: 5px;
 }
 
 .btn-float {
