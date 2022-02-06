@@ -8,6 +8,7 @@
 @import url(/components/avatar.css);
 @import url(/components/badge.css);
 @import url(/components/button.css);
+@import url(/components/cards.css);
 
 p {
     margin: 1rem 0;
