@@ -1,0 +1,42 @@
+textarea {
+    resize: vertical;
+    font-size: var(--size-9);
+    font-family: var(--font-family);
+    border: 1px solid var(--accent-color);
+    border-radius: var(--size-4);
+    width: 100%;
+}
+
+textarea:focus, input:focus {
+    outline: 1px solid var(--accent-color);
+}
+
+input {
+    border: 1px solid var(--accent-color);
+    width: 100%;
+    border-radius: 5px;
+    background: transparent;
+}
+
+form {
+    border: 1px solid var(--accent-color);
+    border-radius: 5px;
+    width: 20rem;
+    height: auto;
+}
+
+.input {
+    width: 100%;
+}
+
+.form-btn {
+    margin-top: auto;
+}
+
+.error-false {
+    color: #c91515;
+}
+
+.error-true {
+    color: #055e05;
+}
