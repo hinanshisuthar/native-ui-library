@@ -183,6 +183,13 @@ article .eg-container {
     width: 30%;
 }
 
+#typography .text-left,
+#typography .text-center,
+#typography .text-right {
+    width: 100%;
+}
+
+
 /* media queries */
 
 @media screen and (max-width: 275px) {
