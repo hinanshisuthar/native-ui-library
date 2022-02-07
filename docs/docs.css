@@ -9,6 +9,7 @@
 @import url(/components/badge.css);
 @import url(/components/button.css);
 @import url(/components/cards.css);
+@import url(/components/image.css);
 
 p {
     margin: 1rem 0;
@@ -175,6 +176,10 @@ iframe {
 
 article .eg-container {
     gap: 1.5rem;
+}
+
+.responsive-img-container {
+    width: 30%;
 }
 
 /* media queries */
