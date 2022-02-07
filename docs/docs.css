@@ -10,6 +10,7 @@
 @import url(/components/button.css);
 @import url(/components/cards.css);
 @import url(/components/image.css);
+@import url(/components/input.css);
 
 p {
     margin: 1rem 0;
