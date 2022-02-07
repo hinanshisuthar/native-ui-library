@@ -49,7 +49,7 @@ h5,
 
 h6,
 .h6 {
-    font-size: 1.875rem;
+    font-size: 0.875rem;
 }
 
 /* text size*/
@@ -131,3 +131,12 @@ h6,
 .text-capitalize {
     text-transform: capitalize;
 }
+
+.text-grey {
+    color: var(--font-color-grey);
+}
+
+.text-strikethrough {
+    text-decoration: line-through;
+}
+
