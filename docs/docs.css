@@ -177,7 +177,7 @@ iframe {
 }
 
 article .eg-container {
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 .responsive-img-container {
@@ -190,6 +190,10 @@ article .eg-container {
     width: 100%;
 }
 
+.grid > div {
+    background-color: var(--font-color-grey);
+    height: 5rem;
+}
 
 /* media queries */
 
