@@ -1,5 +1,5 @@
 :root {
-    /* colors palette*/
+  /* colors palette*/
   --background-color: #fff8e7;
   --accent-color: #8b82fa;
   --cta-color: #f34e4e;
@@ -9,16 +9,25 @@
   /* box shadow */
   --box-shadow: rgba(0, 0, 0, 0.123) 0px 25px 20px -20px;
 
-   /* hover colors */
+  /* hover colors */
   --hover-color-links: #fbc416;
   --hover-color-links-light: #fbc6169d;
   --hover-color-btn-prim: #f54242;
   --hover-color-btn-sec: #f54242;
 
-   /* font family */
+  --bg-success: #b4faa8;
+  --color-success: #144b09;
+  --bg-error: #fab7b7;
+  --color-error: #6d0909;
+  --bg-normal: #bfd0fd;
+  --color-normal: #13096d;
+  --bg-grey: #d9dadb;
+  --color-dark-alt: #18171b;
+
+  /* font family */
   --font-family: 'Inter', sans-serif;
 
-   /* sizes */
+  /* sizes */
   --size-0: 0;
   --size-1: 1px;
   --size-2: 2px;
@@ -48,4 +57,5 @@
   --z-3: 3;
   --z-4: 4;
   --z-5: 5;
-}   
+}
+
