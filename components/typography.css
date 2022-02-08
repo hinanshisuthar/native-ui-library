@@ -132,6 +132,10 @@ h6,
     text-transform: capitalize;
 }
 
+.text-justify {
+    text-align: justify;
+}
+
 .text-grey {
     color: var(--font-color-grey);
 }
