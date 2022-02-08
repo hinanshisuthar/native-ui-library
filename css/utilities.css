@@ -120,3 +120,25 @@ i{
     justify-content: space-around;
     align-items: center;
 }
+
+/* grids */
+
+.grid-20-80 {
+    grid-template-columns: 20% 1fr;
+}
+
+.grid-3-col {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-50-50 {
+    grid-template-columns: 50% 1fr;
+}
+
+.grid-4-col {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
