@@ -55,6 +55,12 @@
     align-items: center;
 }
 
+.flex-row-end-center {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 .flex-col-sb {
     display: flex;
     flex-direction: column;
