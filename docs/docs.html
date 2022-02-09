@@ -23,10 +23,10 @@
             <div class="center nav-center">
                 <h5 class="text-bold mx-2"><a href="/index.html">Home</a></h5>
                 <h5 class="text-bold mx-2"><a href="#get-started">Get Started</a></h5>
-                <h5 class="text-bold mx-2"><a href="docs.html">Documentation</a></h5>
+                <h5 class="text-bold mx-2"><a href="docs.html" id="underline">Documentation</a></h5>
             </div>
             <div class="flex-row-se social-links">
-                <a href="https://github.com/hinanshisuthar/native-ui" target="_blank" rel="noopener noreferrer"><i
+                <a href="https://github.com/hinanshisuthar/native-ui-library" target="_blank" rel="noopener noreferrer"><i
                         class="fab fa-github m-sm"></i></a>
                 <a href="https://twitter.com/hinanshi04" target="_blank" rel="noopener noreferrer"><i
                         class="fab fa-twitter m-sm"></i></a>
@@ -43,9 +43,9 @@
         <div id="myNav" class="overlay">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="overlay-content">
-                <h5><a href="#">Home</a></h5>
+                <h5><a href="/index.html">Home</a></h5>
                 <h5><a href="#">Get Started</a></h5>
-                <h5><a href="#">Documentation</a></h5>
+                <h5><a href="docs.html">Documentation</a></h5>
             </div>
         </div>
     </nav>
@@ -65,11 +65,6 @@
                 <h5 class="m-sm"><a href="#cards">Cards</a></h5>
                 <h5 class="m-sm"><a href="#form">Form</a></h5>
                 <h5 class="m-sm"><a href="#image">Image</a></h5>
-                <h5 class="m-sm"><a href="#lists">Lists</a></h5>
-                <h5 class="m-sm"><a href="#modal">Modal</a></h5>
-                <h5 class="m-sm"><a href="#navigation">Navigation</a></h5>
-                <h5 class="m-sm"><a href="#rating">Rating</a></h5>
-                <h5 class="m-sm"><a href="#slider">Slider</a></h5>
                 <h5 class="m-sm"><a href="#grid">Grid</a></h5>
                 <h5 class="m-sm"><a href="#typography">Typography</a></h5>
                 <h5 class="m-sm"><a href="#toast">Toast</a></h5>
@@ -79,8 +74,16 @@
 
     <main>
         <aside class="aside">
+            <div class="py-sm">
+                <div class="aside-title">
+                    <h3 class="px-md py-sm">Get Started</h3>
+                </div>
+                <div class="overlay-content overlay-content-down">
+                    <div><a href="#installation-sec" class="py-0 px-1 m-sm">Installation</a></div>
+                </div>
+            </div>
             <div class="aside-title">
-                <h3 class="px-md py-1">Components</h3>
+                <h3 class="px-md py-sm">Components</h3>
             </div>
             <div class="overlay-content overlay-content-down">
                 <div><a href="#alert" class="py-0 px-1 m-sm">Alert</a></div>
@@ -89,18 +92,41 @@
                 <div><a href="#button" class="py-0 px-1 m-sm">Button</a></div>
                 <div><a href="#cards" class="py-0 px-1 m-sm">Cards</a></div>
                 <div><a href="#image" class="py-0 px-1 m-sm">Image</a></div>
-                <div><a href="#input" class="py-0 px-1 m-sm">Input and Form</a></div>
-                <div><a href="#lists" class="py-0 px-1 m-sm">Lists</a></div>
-                <div><a href="#modal" class="py-0 px-1 m-sm">Modal</a></div>
-                <div><a href="#navigation" class="py-0 px-1 m-sm">Navigation</a></div>
-                <div><a href="#rating" class="py-0 px-1 m-sm">Rating</a></div>
-                <div><a href="#slider" class="py-0 px-1 m-sm">Slider</a></div>
+                <div><a href="#input" class="py-0 px-1 m-sm">Input</a></div>
                 <div><a href="#grid" class="py-0 px-1 m-sm">Grid</a></div>
                 <div><a href="#typography" class="py-0 px-1 m-sm">Typography</a></div>
                 <div><a href="#toast" class="py-0 px-1 m-sm">Toast</a></div>
             </div>
         </aside>
         <div class="main-content p-2">
+
+            <article id="installation-sec" class="flex-col-sb-start">
+                <h1 class="text-extra-lg">Installation</h1>
+                <p>To use Native UI to your projects, copy the given link below and paste it in the head tag of your
+                    html, above all other style sheets. And voila! Done.</p>
+                <p>Go ahead with the documentaion once you are ready with your stylesheet. To know about the styled
+                    components, their variations, read the documentaion</p>
+                <p>You can use both dark and light themes according to your need.</p>
+
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=11px&ph=11px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%250A%253C%21--%2520copy%2520and%2520paste%2520it%2520in%2520your%2520head%2520section%2520--%253E%250A%250A%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522native-ui.css%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+                    style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+
+                <h3>Import all the icons used via font-awesome</h3>
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=11px&ph=11px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%250A%253C%21--%2520copy%2520and%2520paste%2520the%2520font%2520awesome%2520link%2520in%2520your%2520head%2520section%2520--%253E%250A%250A%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fcdnjs.cloudflare.com%252Fajax%252Flibs%252Ffont-awesome%252F4.7.0%252Fcss%252Ffont-awesome.min.css%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+                    style="width: 100%; height: 205px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+
+            </article>
+
+            <div class="my-2">
+                <hr>
+            </div>
+
             <article id="alert" class="flex-col-sb-start">
                 <h1 class="text-extra-lg">Alert</h1>
                 <p>Alerts are used to provide contexual feedback messages. It displays in a virtual box
@@ -109,10 +135,14 @@
                     <h3>Examples of Alert Bars</h3>
                     <p>Alerts are available for any length of text, as well as an optional dismiss button. For proper
                         styling, use any of the following.</p>
-                    <p>To use this alert just use class name alert-box and also add class according to alert type-
-                        alert-primary, alert-secondary, alert-danger, alert-success, alert-warning.
-                        (e.g.class="alert-box alert-primary").
-                        You can copy html part from below code snippet.</p>
+                    <p>To use this alert just use class name <span class="highlight-class">alert</span> and also add the
+                        following class <span class="highlight-class">alert-primary</span>
+                        <span class="highlight-class">alert-secondary</span>
+                        <span class="highlight-class">alert-danger</span>
+                        <span class="highlight-class">alert-success</span>
+                        <span class="highlight-class">alert-warning</span>
+                        (e.g.class="alert-box alert-primary")
+                    </p>
                     <section class="eg-container flex-col-sb p-md">
                         <div class="alert alert-primary">
                             A primary alert example.
@@ -131,21 +161,19 @@
                         </div>
                     </section>
 
-                    <div class="m-md"></div>
                     <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28243%2C78%2C78%2C1%29&t=theme%3A4e9xgxcylu4&wt=none&l=auto&width=1080&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=10px&ph=11px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520alert-primary%2522%253EA%2520primary%2520alert%2520example%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-secondary%2522%253EA%2520secondary%2520alert%2520example%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-success%2522%253EA%2520success%2520alert%2520example%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-danger%2522%253EA%2520danger%2520alert%2520example%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-warning%2522%253EA%2520warning%2520alert%2520example%253C%252Fdiv%253E%250A"
+                        src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=11px&ph=11px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%250A%253Cdiv%2520class%253D%2522alert%2520alert-primary%2522%253E%250A%2520%2520%2520%2520A%2520primary%2520alert%2520example.%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-secondary%2522%253E%250A%2520%2520%2520%2520A%2520secondary%2520alert%2520example.%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-success%2522%253E%250A%2520%2520%2520%2520A%2520success%2520alert%2520example.%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-danger%2522%253E%250A%2520%2520%2520%2520A%2520danger%2520alert%2520example.%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-warning%2522%253E%250A%2520%2520%2520%2520A%2520warning%2520alert%2520example.%250A%253C%252Fdiv%253E%250A"
                         style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
                         sandbox="allow-scripts allow-same-origin">
                     </iframe>
                 </section>
-                <div class="m-md"></div>
 
                 <section class="example">
                     <h3>Examples of Alert Bars with dismiss.</h3>
                     <p>Alerts can also wait for the user to dismiss it.</p>
-                    <p>To use this alert just use class name alert-box and also add class according to alert type :
-                        alert-primary, and id as alert-close
-                        You can copy html part from below code snippet.</p>
+                    <p>To use this alert you just have to add a button with class <span
+                            class="hightlight-class">btn-close and id <span
+                                class="hightlight-class">alert-close-btn</span></span></p>
                     <section class="eg-container flex-col-sb p-md">
                         <div class="alert alert-danger" id="alert-close">
                             <span>
@@ -155,23 +183,21 @@
                             <button type="button" class="btn-close" id="alert-close-btn"><i
                                     class="fal fa-times"></i></button>
                         </div>
-
                     </section>
 
-                    <div class="m-md"></div>
+
                     <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28243%2C78%2C78%2C1%29&t=theme%3A4e9xgxcylu4&wt=none&l=auto&width=1080&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=10px&ph=11px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520alert-danger%2522%2520id%253D%2522alert-close%2522%253E%250A%253Cspan%253E%253Ci%2520class%253D%2522fal%2520fa-skull-crossbones%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250AA%2520danger%2520alert%2520example%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn-close%2522%2520id%253D%2522alert-close-btn%2522%253E%253Ci%2520class%253D%2522fal%2520fa-times%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%253C%252Fdiv%253E"
+                        src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=11px&ph=11px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%250A%253Cdiv%2520class%253D%2522alert%2520alert-danger%2522%2520id%253D%2522alert-close%2522%253E%250A%2520%2520%2520%2520%253Cspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fal%2520fa-skull-crossbones%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520A%2520danger%2520alert%2520example%250A%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn-close%2522%2520id%253D%2522alert-close-btn%2522%253E%253Ci%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522fal%2520fa-times%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%253C%252Fdiv%253E%250A"
                         style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
                         sandbox="allow-scripts allow-same-origin">
                     </iframe>
-                    <div class="m-md"></div>
+
 
                     <div class="section-js">
                         <h3>JavaScript</h3>
-                        <p>Copy and paste the following code into your js file.</p>
                         <iframe
-                            src="https://carbon.now.sh/embed?bg=rgba%28243%2C78%2C78%2C1%29&t=theme%3A4e9xgxcylu4&wt=none&l=auto&width=1080&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=10px&ph=11px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=const%2520alertCloseBox%2520%253D%2520document.querySelector%28%2522%2523alert-close%2522%29%253B%250Aconst%2520alertCloseBtn%2520%253D%2520document.querySelector%28%2522%2523alert-close-btn%2522%29%253B%250A%250AalertCloseBtn.addEventListener%28%2522click%2522%252C%28%29%253D%253E%257B%250A%2520%2520%2520%2520alertCloseBox.style.display%2520%253D%2520%2522none%2522%253B%250A%257D%29%250A"
-                            style="width: 100%; height: 190px; border:0; transform: scale(1); overflow:hidden;"
+                            src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=11px&ph=11px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%250Aconst%2520alertCloseBox%2520%253D%2520document.querySelector%28%2522%2523alert-close%2522%29%253B%250Aconst%2520alertCloseBtn%2520%253D%2520document.querySelector%28%2522%2523alert-close-btn%2522%29%253B%250A%250AalertCloseBtn.addEventListener%28%2522click%2522%252C%28%29%253D%253E%257B%250A%2520%2520%2520%2520alertCloseBox.style.display%2520%253D%2520%2522none%2522%253B%250A%257D%29%250A"
+                            style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
                             sandbox="allow-scripts allow-same-origin">
                         </iframe>
                     </div>
@@ -191,9 +217,12 @@
                     <p>The Avatar component comes in 5 sizes. For proper
                         styling, use any of the following.</p>
                     <p>To use this avatar just use class name avatar and also add class according to avatar type:
-                        avatar-lg, avatar-md, avatar-sm, avatar-xs
-                        (e.g.class="avatar avatar-md").
-                        You can copy html part from below code snippet.</p>
+                        <span class="highlight-class">avatar-lg</span>,
+                        <span class="highlight-class">avatar-md</span>
+                        <span class="highlight-class">avatar-sm</span>
+                        <span class="highlight-class">avatar-xs</span>
+                        <span class="highlight-class">avatar-lg</span>
+                    </p>
                     <section class="eg-container flex-row-se p-md avatar-con">
                         <div class="avatar avatar-xs flex-items">
                             <img src="/assets/avatar.jpg" alt="avatar-img" class="img-responsive img-circular">
@@ -212,21 +241,21 @@
                         </div>
                     </section>
 
-                    <div class="m-md"></div>
+
                     <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28207%2C207%2C207%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=10px&ph=5px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar%2520avatar-xs%2522%253E%250A%2509%253Cimg%2520src%253D%2522%252Fassets%252Favatar.jpg%2522%2520alt%253D%2522avatar-img%2522%2520class%253D%2522img-responsive%2520img-circular%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2509%253Cimg%2520src%253D%2522%252Fassets%252Favatar.jpg%2522%2520alt%253D%2522avatar-img%2522%2520class%253D%2522img-responsive%2520img-circular%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-rg%2522%253E%250A%2509%253Cimg%2520src%253D%2522%252Fassets%252Favatar.jpg%2522%2520alt%253D%2522avatar-img%2522%2520class%253D%2522img-responsive%2520img-circular%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-md%2522%253E%250A%2509%253Cimg%2520src%253D%2522%252Fassets%252Favatar.jpg%2522%2520alt%253D%2522avatar-img%2522%2520class%253D%2522img-responsive%2520img-circular%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-lg%2522%253E%250A%2509%253Cimg%2520src%253D%2522%252Fassets%252Favatar.jpg%2522%2520alt%253D%2522avatar-img%2522%2520class%253D%2522img-responsive%2520img-circular%2522%253E%250A%253C%252Fdiv%253E%250A%2520%2520%2520%2520"
-                        style="width: 100%; height: 397px; border:0; transform: scale(1); overflow:hidden;"
+                        src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=11px&ph=11px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-xs%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fassets%252Favatar.jpg%2522%2520alt%253D%2522avatar-img%2522%2520class%253D%2522img-responsive%2520img-circular%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fassets%252Favatar.jpg%2522%2520alt%253D%2522avatar-img%2522%2520class%253D%2522img-responsive%2520img-circular%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-rg%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fassets%252Favatar.jpg%2522%2520alt%253D%2522avatar-img%2522%2520class%253D%2522img-responsive%2520img-circular%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-md%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fassets%252Favatar.jpg%2522%2520alt%253D%2522avatar-img%2522%2520class%253D%2522img-responsive%2520img-circular%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-lg%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fassets%252Favatar.jpg%2522%2520alt%253D%2522avatar-img%2522%2520class%253D%2522img-responsive%2520img-circular%2522%253E%250A%253C%252Fdiv%253E%250A"
+                        style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
                         sandbox="allow-scripts allow-same-origin">
                     </iframe>
                 </section>
 
-                <div class="m-md"></div>
+
 
                 <section class="example">
                     <h3>Examples of Avatar with text.</h3>
                     <p>Avatars can also have text instead of picture.</p>
-                    <p>To use this avatar just add class (avatar-text) according to previous avatar type.
-                        You can copy html part from below code snippet.</p>
+                    <p>To use this avatar just add a following class to previous classes i.e. <span
+                            class="highlight-class">avatar-text</span> </p>
                     <section class="eg-container flex-row-se p-md avatar-con">
                         <div class="avatar avatar-xs flex-items avatar-text">
                             <p>H</p>
@@ -245,13 +274,13 @@
                         </div>
                     </section>
 
-                    <div class="m-md"></div>
+
                     <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28207%2C207%2C207%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=10px&ph=5px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar%2520avatar-xs%2520avatar-text%2522%253EH%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-sm%2520avatar-text%2522%253EH%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-rg%2520avatar-text%2522%253EH%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-md%2520avatar-text%2522%253EH%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-lg%2520avatar-text%2522%253EH%253C%252Fdiv%253E%250A"
+                        src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=11px&ph=11px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-xs%2520avatar-text%2522%253E%250A%2520%2520%2520%2520%253Cp%253EH%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-sm%2520avatar-text%2522%253E%250A%2520%2520%2520%2520%253Cp%253EXYZ%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-rg%2520avatar-text%2522%253E%250A%2520%2520%2520%2520%253Cp%253EH%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-md%2520avatar-text%2522%253E%250A%2520%2520%2520%2520%253Cp%253EH%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-lg%2520avatar-text%2522%253E%250A%2520%2520%2520%2520%253Cp%253EH%253C%252Fp%253E%250A%253C%252Fdiv%253E"
                         style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
                         sandbox="allow-scripts allow-same-origin">
                     </iframe>
-                    <div class="m-md"></div>
+
 
                 </section>
             </article>
@@ -264,14 +293,11 @@
                 <h1 class="text-extra-lg">Badges</h1>
                 <p>The Badge component is used to represent a user's status - online, offline etc. They can also be used
                     to display a notification or cart count.</p>
+                <p>To use this badge component just use wrap the html in the div having a class named <span
+                        class="highlight-class">badge-component</span>
+                </p>
                 <section class="example">
                     <h3>Examples of Badges on Avatar</h3>
-                    <p>The Avatar component comes in 5 sizes. For proper
-                        styling, use any of the following.</p>
-                    <p>To use this avatar just use class name avatar and also add class according to avatar type:
-                        avatar-lg, avatar-md, avatar-sm, avatar-xs
-                        (e.g.class="avatar avatar-md").
-                        You can copy html part from below code snippet.</p>
                     <section class="eg-container flex-row-se p-md avatar-con">
                         <div class="badge-container">
                             <div class="avatar avatar-xs">
@@ -307,22 +333,19 @@
 
                     </section>
 
-                    <div class="m-md"></div>
+
                     <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28207%2C207%2C207%2C1%29&t=one-light&wt=none&l=auto&width=1130&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=39px&ph=36px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2509%253Cdiv%2520class%253D%2522avatar%2520avatar-xs%253E%250A%2509%2509%253Cimg%2520src%253D%2522%252Fassets%252Favatar.jpg%2522%2520alt%253D%2522avatar-img%2522%2520class%253D%2522img-responsive%2520img-circular%2522%253E%250A%2509%253C%252Fdiv%253E%250A%2509%253Ci%2520class%253D%2522fas%2520fa-circle%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2509%253Cdiv%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2509%2509%253Cimg%2520src%253D%2522%252Fassets%252Favatar.jpg%2522%2520alt%253D%2522avatar-img%2522%2520class%253D%2522img-responsive%2520img-circular%2522%253E%250A%2509%253C%252Fdiv%253E%250A%2509%253Ci%2520class%253D%2522fas%2520fa-do-not-enter%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%2520%2520%2520%2520%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2509%253Cdiv%2520class%253D%2522avatar%2520avatar-rg%2522%253E%250A%2509%2509%253Cimg%2520src%253D%2522%252Fassets%252Favatar.jpg%2522%2520alt%253D%2522avatar-img%2522%2520class%253D%2522img-responsive%2520img-circular%2522%253E%250A%2509%253C%252Fdiv%253E%250A%2509%253Ci%2520class%253D%2522fas%2520fa-moon%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2509%253Cdiv%2520class%253D%2522avatar%2520avatar-md%2522%253E%250A%2509%2509%253Cimg%2520src%253D%2522%252Fassets%252Favatar.jpg%2522%2520alt%253D%2522avatar-img%2522%2520class%253D%2522img-responsive%2520img-circular%2522%253E%250A%2509%253C%252Fdiv%253E%250A%2509%253Ci%2520class%253D%2522fas%2520fa-mobile%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2509%253Cdiv%2520class%253D%2522avatar%2520avatar-lg%2522%253E%250A%2509%2509%253Cimg%2520src%253D%2522%252Fassets%252Favatar.jpg%2522%2520alt%253D%2522avatar-img%2522%2520class%253D%2522img-responsive%2520img-circular%2522%253E%250A%2509%253C%252Fdiv%253E%250A%2509%253Ci%2520class%253D%2522fas%2520fa-circle%2520fa-circle-lg%2522%253E%250A%253C%252Fdiv%253E"
+                        src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=11px&ph=11px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-xs%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fassets%252Favatar.jpg%2522%2520alt%253D%2522avatar-img%2522%2520class%253D%2522img-responsive%2520img-circular%2522%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-circle%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fassets%252Favatar.jpg%2522%2520alt%253D%2522avatar-img%2522%2520class%253D%2522img-responsive%2520img-circular%2522%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-do-not-enter%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-rg%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fassets%252Favatar.jpg%2522%2520alt%253D%2522avatar-img%2522%2520class%253D%2522img-responsive%2520img-circular%2522%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-moon%2520fa-moon-badge%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fassets%252Favatar.jpg%2522%2520alt%253D%2522avatar-img%2522%2520class%253D%2522img-responsive%2520img-circular%2522%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-mobile%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-lg%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fassets%252Favatar.jpg%2522%2520alt%253D%2522avatar-img%2522%2520class%253D%2522img-responsive%2520img-circular%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-circle%2520fa-circle-lg%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E"
                         style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
                         sandbox="allow-scripts allow-same-origin">
                     </iframe>
                 </section>
 
-                <div class="m-md"></div>
+
 
                 <section class="example">
                     <h3>Examples of Bagde on icons.</h3>
-                    <p>The Badge component is also used
-                        to display a notification or cart count.</p>
-                    <p>To use this avatar just add class (avatar-text) according to previous avatar type.
-                        You can copy html part from below code snippet.</p>
+                    <p>To use this badge uou can copy html part from below code snippet.</p>
                     <section class="eg-container flex-row-se p-md avatar-con">
                         <a>
                             <span class="badge-icon badge-container"><i
@@ -347,16 +370,20 @@
                         </a>
                     </section>
 
-                    <div class="m-md"></div>
+
                     <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28207%2C207%2C207%2C1%29&t=one-light&wt=none&l=auto&width=1130&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=39px&ph=36px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Ca%253E%250A%2509%253Cspan%2520class%253D%2522badge-icon%2520badge-container%2522%253E%253Ci%2520class%253D%2522fad%2520fa-shopping-cart%2520badge-icon-base%2522%253E%253C%252Fi%253E%250A%2509%2509%253Cspan%2520class%253D%2522count-badge%2520cart-badge-number%2522%253E2%253C%252Fspan%253E%250A%2509%253C%252Fspan%253E%250A%253C%252Fa%253E%250A%253Ca%253E%250A%2509%253Cspan%2520class%253D%2522badge-icon%2520badge-container%2522%253E%253Ci%2520class%253D%2522fas%2520fa-heart%2520badge-icon-base%2522%253E%253C%252Fi%253E%250A%2509%2509%253Cspan%2520class%253D%2522count-badge%2520heart-badge-number%2522%253E4%253C%252Fspan%253E%250A%2509%253C%252Fspan%253E%250A%253C%252Fa%253E%250A%253Ca%253E%250A%2509%253Cspan%2520class%253D%2522badge-icon%2520badge-container%2522%253E%253Ci%2520class%253D%2522far%2520fa-envelope%2520badge-icon-base%2522%253E%253C%252Fi%253E%250A%2509%2509%253Cspan%2520class%253D%2522count-badge%2520message-badge-number%2522%253E5%253C%252Fspan%253E%250A%2509%253C%252Fspan%253E%250A%253C%252Fa%253E%250A%253Ca%253E%250A%2509%253Cspan%2520class%253D%2522badge-icon%2520badge-container%2522%253E%253Ci%2520class%253D%2522fas%2520fa-bell%2520badge-icon-base%2522%253E%253C%252Fi%253E%250A%2509%2509%253Cspan%2520class%253D%2522count-badge%2520bell-badge-number%2522%253E10%253C%252Fspan%253E%250A%2509%253C%252Fspan%253E%250A%253C%252Fa%253E"
+                        src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=11px&ph=11px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%250A%253Ca%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-icon%2520badge-container%2522%253E%253Ci%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522fad%2520fa-shopping-cart%2520badge-icon-base%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522count-badge%2520cart-badge-number%2522%253E2%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%253C%252Fa%253E%250A%253Ca%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-icon%2520badge-container%2522%253E%253Ci%2520class%253D%2522fas%2520fa-heart%2520badge-icon-base%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522count-badge%2520heart-badge-number%2522%253E4%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%253C%252Fa%253E%250A%253Ca%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-icon%2520badge-container%2522%253E%253Ci%2520class%253D%2522far%2520fa-envelope%2520badge-icon-base%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522count-badge%2520message-badge-number%2522%253E5%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%253C%252Fa%253E%250A%253Ca%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-icon%2520badge-container%2522%253E%253Ci%2520class%253D%2522fas%2520fa-bell%2520badge-icon-base%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522count-badge%2520bell-badge-number%2522%253E10%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%253C%252Fa%253E"
                         style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
                         sandbox="allow-scripts allow-same-origin">
                     </iframe>
-                    <div class="m-md"></div>
+
 
                 </section>
             </article>
+
+            <div class="my-2">
+                <hr>
+            </div>
 
             <article id="button" class="flex-col-sb-start">
                 <h1 class="text-extra-lg">Buttons</h1>
@@ -364,7 +391,7 @@
                     dialog, canceling an action, or performing a delete operation.</p>
                 <section class="example">
                     <h3>Examples of Primary Buttons</h3>
-                    <p>primary actions, or things that we want the user to do as often as possible. Buttons that execute
+                    <p>Primary actions, or things that we want the user to do as often as possible. Buttons that execute
                         primary actions—primary buttons—should be as visible as possible.</p>
                     <section class="eg-container flex-row-se p-md avatar-con">
                         <button class="btn btn-primary">Add to Bag</button>
@@ -374,20 +401,19 @@
                         <button class="btn btn-primary">Checkout</button>
                     </section>
 
-                    <div class="m-md"></div>
+
                     <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28207%2C207%2C207%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=17px&ph=20px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%250A%253Ca%2520class%253D%2522btn%2520btn-primary%2522%253EAdd%2520to%2520Bag%253C%252Fa%253E%250A%253Ca%2520class%253D%2522btn%2520btn-primary%2522%253ELogin%253C%252Fa%253E%250A%253Ca%2520class%253D%2522btn%2520btn-primary%2520btn-lg%2522%253EShop%2520Now%253C%252Fa%253E%250A%253Ca%2520class%253D%2522btn%2520btn-accent%2522%253EBuy%2520Now%253C%252Fa%253E%250A%253Ca%2520class%253D%2522btn%2520btn-primary%2522%253ECheckout%253C%252Fa%253E"
+                        src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=11px&ph=11px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%250A%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EAdd%2520to%2520Bag%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253ELogin%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520btn-lg%2522%253EShop%2520Now%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-accent%2522%253EBuy%2520Now%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253ECheckout%253C%252Fbutton%253E"
                         style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
                         sandbox="allow-scripts allow-same-origin">
                     </iframe>
                 </section>
 
-                <div class="m-md"></div>
+
 
                 <section class="example">
                     <h3>Examples of Link Buttons</h3>
-                    <p>primary actions, or things that we want the user to do as often as possible. Buttons that execute
-                        primary actions—primary buttons—should be as visible as possible.</p>
+                    </p>
                     <section class="eg-container flex-row-se p-md avatar-con">
                         <a class="link" href="#">
                             <h5>Dogs</h5>
@@ -412,20 +438,20 @@
                         </a>
                     </section>
 
-                    <div class="m-md"></div>
+
                     <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28207%2C207%2C207%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=17px&ph=20px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%250A%253Ca%2520class%253D%2522link%2522%2520href%253D%2522%2523%2522%253E%253Ch5%253EDogs%253C%252Fh5%253E%253C%252Fa%253E%250A%253Ca%2520class%253D%2522link%2522%2520href%253D%2522%2523%2522%253E%253Ch5%253ERead%2520Now%253C%252Fh5%253E%253C%252Fa%253E%250A%253Ca%2520class%253D%2522link%2522%2520href%253D%2522%2523%2522%253E%253Ch5%253ESuper%2520Saver%2520Deals%253C%252Fh5%253E%253C%252Fa%253E%250A%253Ca%2520class%253D%2522link%2522%2520href%253D%2522%2523%2522%253E%253Ch5%253EUnder%2520199%253C%252Fh5%253E%253C%252Fa%253E%250A%253Ca%2520class%253D%2522link%2522%2520href%253D%2522%2523%2522%253E%253Ch5%253EBrands%253C%252Fh5%253E%253C%252Fa%253E%250A%253Ca%2520class%253D%2522link%2522%2520href%253D%2522%2523%2522%253E%253Ch5%253EGrooming%253C%252Fh5%253E%253C%252Fa%253E%250A%253Ca%2520class%253D%2522link%2522%2520href%253D%2522%2523%2522%253E%253Ch5%253EVet%2520Consultation%253C%252Fh5%253E%253C%252Fa%253E"
+                        src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=11px&ph=11px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%250A%253Ca%2520class%253D%2522link%2522%2520href%253D%2522%2523%2522%253E%250A%2520%2520%2520%2520%253Ch5%253EDogs%253C%252Fh5%253E%250A%253C%252Fa%253E%250A%253Ca%2520class%253D%2522link%2522%2520href%253D%2522%2523%2522%253E%250A%2520%2520%2520%2520%253Ch5%253ERead%2520Now%253C%252Fh5%253E%250A%253C%252Fa%253E%250A%253Ca%2520class%253D%2522link%2522%2520href%253D%2522%2523%2522%253E%250A%2520%2520%2520%2520%253Ch5%253ESuper%2520Saver%2520Deals%253C%252Fh5%253E%250A%253C%252Fa%253E%250A%253Ca%2520class%253D%2522link%2522%2520href%253D%2522%2523%2522%253E%250A%2520%2520%2520%2520%253Ch5%253EUnder%2520199%253C%252Fh5%253E%250A%253C%252Fa%253E%250A%253Ca%2520class%253D%2522link%2522%2520href%253D%2522%2523%2522%253E%250A%2520%2520%2520%2520%253Ch5%253EBrands%253C%252Fh5%253E%250A%253C%252Fa%253E%250A%253Ca%2520class%253D%2522link%2522%2520href%253D%2522%2523%2522%253E%250A%2520%2520%2520%2520%253Ch5%253EGrooming%253C%252Fh5%253E%250A%253C%252Fa%253E%250A%253Ca%2520class%253D%2522link%2522%2520href%253D%2522%2523%2522%253E%250A%2520%2520%2520%2520%253Ch5%253EVet%2520Consultation%253C%252Fh5%253E%250A%253C%252Fa%253E"
                         style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
                         sandbox="allow-scripts allow-same-origin">
                     </iframe>
                 </section>
 
-                <div class="m-md"></div>
+
 
                 <section class="example">
                     <h3>Examples of Floating Buttons</h3>
-                    <p>primary actions, or things that we want the user to do as often as possible. Buttons that execute
-                        primary actions—primary buttons—should be as visible as possible.</p>
+                    <p>Floating buttons are used to perfom a particular function for example talking to a customer care
+                        person, moving towards the top of the page etc.</p>
                     <section class="eg-container flex-row-se p-md avatar-con">
                         <button class="btn btn-primary btn-float">
                             <i class="fas fa-plus"></i>
@@ -438,23 +464,20 @@
                         <button class="btn">
                             <i class="fal fa-chevron-square-up"></i>
                         </button>
-
                     </section>
 
-                    <div class="m-md"></div>
+
                     <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28207%2C207%2C207%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=17px&ph=20px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%250A%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520btn-float%2522%253E%250A%2509%253Ci%2520class%253D%2522fas%2520fa-plus%2522%253E%253C%252Fi%253E%250A%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520btn-float%2522%253E%250A%2509%253Ci%2520class%253D%2522fab%2520fa-whatsapp%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2522%253E%250A%2509%253Ci%2520class%253D%2522fal%2520fa-chevron-square-up%2522%253E%253C%252Fi%253E%250A%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520btn-float%2522%253E%250A%2509%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%253C%252Fbutton%253E"
+                        src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=11px&ph=11px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%250A%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520btn-float%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-plus%2522%253E%253C%252Fi%253E%250A%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520btn-float%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fab%2520fa-whatsapp%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fal%2520fa-chevron-square-up%2522%253E%253C%252Fi%253E%250A%253C%252Fbutton%253E"
                         style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
                         sandbox="allow-scripts allow-same-origin">
                     </iframe>
                 </section>
 
-                <div class="m-md"></div>
+
 
                 <section class="example">
                     <h3>Examples of Icon Buttons</h3>
-                    <p>primary actions, or things that we want the user to do as often as possible. Buttons that execute
-                        primary actions—primary buttons—should be as visible as possible.</p>
                     <section class="eg-container flex-row-se p-md avatar-con">
                         <button class="btn">
                             <i class="fas fa-shopping-cart"></i>
@@ -473,9 +496,9 @@
                         </button>
                     </section>
 
-                    <div class="m-md"></div>
+
                     <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28207%2C207%2C207%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=17px&ph=20px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%250A%253Cbutton%2520class%253D%2522btn%2522%253E%250A%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%250A%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2522%253E%250A%253Ci%2520class%253D%2522fa%2520fa-heart%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2522%253E%250A%253Ci%2520class%253D%2522fad%2520fa-trash-alt%2522%253E%253C%252Fi%253E%250A%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2522%253E%250A%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%253C%252Fbutton%253E"
+                        src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=11px&ph=11px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%250A%253Cbutton%2520class%253D%2522btn%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%250A%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-heart%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fad%2520fa-trash-alt%2522%253E%253C%252Fi%253E%250A%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%253C%252Fbutton%253E"
                         style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
                         sandbox="allow-scripts allow-same-origin">
                     </iframe>
@@ -492,8 +515,10 @@
                     wide variety of content, contextual background colors, and powerful display options.</p>
                 <section class="example">
                     <h3>Examples of Card with Badges</h3>
-                    <p>primary actions, or things that we want the user to do as often as possible. Buttons that execute
-                        primary actions—primary buttons—should be as visible as possible.</p>
+                    <p>Use to portray important information regarding what is being display on cards. Such as <span
+                            class="higlight-class">new</span><span class="highlight-class">Best Seller</span> etc.</p>
+
+
                     <section class="eg-container flex-row-se p-md avatar-con">
 
                         <div class="card-badge">
@@ -567,20 +592,19 @@
 
                     </section>
 
-                    <div class="m-md"></div>
+
                     <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28207%2C207%2C207%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=17px&ph=20px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%253Cdiv%2520class%253D%2522card-badge%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522product%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522prod-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fassets%252Fcards.png%2522%2520alt%253D%2522product%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522btn-badge%2520blue%2522%253ENEW%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522prod-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%253EDear%2520pet%2520Blooming%2520Yellow%2520Dog%2520Harness%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522prod-info%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522prod-price%2522%253ERs%2520299%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522ratings-con%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fad%2520fa-star-half%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522size-options%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253ES%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253EM%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253EL%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522prod-links%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522prod-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EAdd%2520to%2520Bag%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522prod-like%2522%253E%253Ci%2520class%253D%2522fal%2520fa-heart%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%253C%252Fdiv%253E"
+                        src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=11px&ph=11px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%250A%253Cdiv%2520class%253D%2522card-badge%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522product%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522prod-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fassets%252Fcards.png%2522%2520alt%253D%2522product%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522btn-badge%2520blue%2522%253ENEW%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522prod-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%253EDear%2520pet%2520Blooming%2520Yellow%2520Dog%2520Harness%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522prod-info%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522prod-price%2522%253ERs%2520299%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522ratings-con%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fad%2520fa-star-half%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522size-options%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253ES%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253EM%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253EL%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522prod-links%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522prod-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EAdd%2520to%2520Bag%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522prod-like%2522%253E%253Ci%2520class%253D%2522fal%2520fa-heart%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
                         style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
                         sandbox="allow-scripts allow-same-origin">
                     </iframe>
                 </section>
 
-                <div class="m-md"></div>
+
 
                 <section class="example">
                     <h3>Example of Card with Dismiss</h3>
-                    <p>primary actions, or things that we want the user to do as often as possible. Buttons that execute
-                        primary actions—primary buttons—should be as visible as possible.</p>
+                    <p>Native UI provides with dismiss option for cards too. Add the proper HTML code to use it.</p>
                     <section class="eg-container flex-row-se p-md avatar-con">
                         <div class="card-badge" id="card-dismiss">
                             <div class="product">
@@ -618,30 +642,30 @@
                         </div>
                     </section>
 
-                    <div class="m-md"></div>
+
                     <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28207%2C207%2C207%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=17px&ph=20px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%253Cdiv%2520class%253D%2522card-badge%2522%2520id%253D%2522card-dismiss%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522product%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522prod-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fassets%252Fcards1.png%2522%2520alt%253D%2522product%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522btn-badge-dismiss%2520blue%2522%253E%253Ci%2520class%253D%2522fa%2520fa-times%2522%2520id%253D%2522close-card%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522prod-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%253EDear%2520pet%2520Blooming%2520Yellow%2520Dog%2520Harness%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522prod-info%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522prod-price%2522%253ERs%2520299%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522ratings-con%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fad%2520fa-star-half%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522size-options%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253ES%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253EM%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253EL%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522prod-links%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522prod-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EAdd%2520to%2520Bag%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522prod-like%2522%253E%253Ci%2520class%253D%2522fal%2520fa-heart%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                        src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=11px&ph=11px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%250A%253Cdiv%2520class%253D%2522card-badge%2522%2520id%253D%2522card-dismiss%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522product%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522prod-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fassets%252Fcards1.png%2522%2520alt%253D%2522product%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522btn-badge-dismiss%2520blue%2522%253E%253Ci%2520class%253D%2522fa%2520fa-times%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520id%253D%2522close-card%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522prod-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%253EDear%2520pet%2520Blooming%2520Yellow%2520Dog%2520Harness%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522prod-info%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522prod-price%2522%253ERs%2520299%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522ratings-con%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fad%2520fa-star-half%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522size-options%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253ES%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253EM%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253EL%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522prod-links%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522prod-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EAdd%2520to%2520Bag%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522prod-like%2522%253E%253Ci%2520class%253D%2522fal%2520fa-heart%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
                         style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
                         sandbox="allow-scripts allow-same-origin">
                     </iframe>
-                    <div class="m-md"></div>
+
                     <h4>JavaScript</h4>
-                    <div class="m-md"></div>
+
 
                     <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28207%2C207%2C207%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=17px&ph=20px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250Aconst%2520closeCard%2520%253D%2520document.querySelector%28%2522%2523close-card%2522%29%253B%250Aconst%2520cardDismiss%2520%253D%2520document.querySelector%28%2522%2523card-dismiss%2522%29%253B%250A%250Aconst%2520closeCardFunction%2520%253D%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520cardDismiss.style.display%2520%253D%2520%2522none%2522%250A%257D%250A%250AcloseCard.addEventListener%28%2522click%2522%252C%2520closeCardFunction%29%253B"
+                        src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=11px&ph=11px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%250Aconst%2520closeCard%2520%253D%2520document.querySelector%28%2522%2523close-card%2522%29%253B%250Aconst%2520cardDismiss%2520%253D%2520document.querySelector%28%2522%2523card-dismiss%2522%29%253B%250A%250Aconst%2520closeCardFunction%2520%253D%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520cardDismiss.style.display%2520%253D%2520%2522none%2522%250A%257D%250A%250AcloseCard.addEventListener%28%2522click%2522%252C%2520closeCardFunction%29%253B"
                         style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
                         sandbox="allow-scripts allow-same-origin">
                     </iframe>
 
                 </section>
 
-                <div class="m-md"></div>
+
 
                 <section class="example">
                     <h3>Examples of Cards With Text Overlay</h3>
-                    <p>primary actions, or things that we want the user to do as often as possible. Buttons that execute
-                        primary actions—primary buttons—should be as visible as possible.</p>
+                    <p>Disabled Cards are useful to depict a disable feature. For eg if the product if <span
+                            class="highlight-class">out of stock</span></p>, we can use them.
                     <section class="eg-container flex-row-se p-md avatar-con">
                         <div class="card-badge card-overlay">
                             <div class="overlay-bg">
@@ -683,20 +707,19 @@
 
                     </section>
 
-                    <div class="m-md"></div>
+
                     <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28207%2C207%2C207%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=17px&ph=20px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%253Cdiv%2520class%253D%2522card-badge%2520card-overlay%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522overlay-bg%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522product%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522prod-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fassets%252Fcards1.png%2522%2520alt%253D%2522product%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522prod-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%253EDear%2520pet%2520Blooming%2520Yellow%2520Dog%2520Harness%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522prod-info%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522prod-price%2522%253ERs%2520299%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522ratings-con%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fad%2520fa-star-half%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522size-options%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253ES%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253EM%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253EL%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522prod-links%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522prod-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EAdd%2520to%2520Bag%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522prod-like%2522%253E%253Ci%2520class%253D%2522fal%2520fa-heart%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522text-overlay%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253EOut%2520Of%2520Stock%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                        src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=11px&ph=11px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%250A%253Cdiv%2520class%253D%2522card-badge%2520card-overlay%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522overlay-bg%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522product%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522prod-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fassets%252Fcards1.png%2522%2520alt%253D%2522product%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522prod-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%253EDear%2520pet%2520Blooming%2520Yellow%2520Dog%2520Harness%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522prod-info%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522prod-price%2522%253ERs%2520299%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522ratings-con%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fad%2520fa-star-half%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522size-options%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253ES%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253EM%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253EL%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522prod-links%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522prod-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EAdd%2520to%2520Bag%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522prod-like%2522%253E%253Ci%2520class%253D%2522fal%2520fa-heart%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522text-overlay%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253EOut%2520Of%2520Stock%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
                         style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
                         sandbox="allow-scripts allow-same-origin">
                     </iframe>
                 </section>
 
-                <div class="m-md"></div>
+
 
                 <section class="example">
                     <h3>Examples of Text Only Cards and Shadow Cards</h3>
-                    <p>primary actions, or things that we want the user to do as often as possible. Buttons that execute
-                        primary actions—primary buttons—should be as visible as possible.</p>
+                    <p>Cards with only textual information.</p>
                     <section class="eg-container flex-row-se p-md avatar-con">
                         <div class="text-card">
                             <div class="text-card-title">
@@ -709,28 +732,20 @@
                                 <p>Native Paws is the name that visions to comfort pets and pet parents by catering the
                                     market of pet essentials. We aim to reach at every doorstep around the globe & serve
                                     our
-                                    cuddle buddies the best quality products. Our supplies range from all kinds of Food
-                                    to
-                                    Grooming,Clothing, Accessories, Utilities, Travel Gears & Innovative Toys. We aim to
-                                    deliver what our pets crave for rather than what we want to serve. So, we make sure
-                                    that
-                                    our pet supplies fulfil all the standards of quality checks and protocols so that
-                                    there’s no stop to joy in our little one’s life.
+                                    cuddle buddies the best quality products.
                                 </p>
                                 <p>
                                     At Native Paws, you will find a flawless experience in searching for the right
                                     product
-                                    for your pets. We are confident that your online shopping experience for your pets
-                                    will
-                                    be much easier than before.
+                                    for your pets.
                                 </p>
                             </div>
                         </div>
                     </section>
 
-                    <div class="m-md"></div>
+
                     <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28207%2C207%2C207%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=17px&ph=20px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%253Cdiv%2520class%253D%2522text-card%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522text-card-title%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch1%253E%2520NATIVE%2520PAWS%253A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520INDIA%27S%2520FIRST%2520ONLINE%2520PET%2520SHOP%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fh1%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Chr%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522text-card-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253ENative%2520Paws%2520is%2520the%2520name%2520that%2520visions%2520to%2520comfort%2520pets%2520and%2520pet%2520parents%2520by%2520catering%2520the%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520market%2520of%2520pet%2520essentials.%2520We%2520aim%2520to%2520reach%2520at%2520every%2520doorstep%2520around%2520the%2520globe%2520%2526%2520serve%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520our%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520cuddle%2520buddies%2520the%2520best%2520quality%2520products.%2520Our%2520supplies%2520range%2520from%2520all%2520kinds%2520of%2520Food%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520to%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Grooming%252CClothing%252C%2520Accessories%252C%2520Utilities%252C%2520Travel%2520Gears%2520%2526%2520Innovative%2520Toys.%2520We%2520aim%2520to%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520deliver%2520what%2520our%2520pets%2520crave%2520for%2520rather%2520than%2520what%2520we%2520want%2520to%2520serve.%2520So%252C%2520we%2520make%2520sure%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520that%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520our%2520pet%2520supplies%2520fulfil%2520all%2520the%2520standards%2520of%2520quality%2520checks%2520and%2520protocols%2520so%2520that%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520there%25E2%2580%2599s%2520no%2520stop%2520to%2520joy%2520in%2520our%2520little%2520one%25E2%2580%2599s%2520life.%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520At%2520Native%2520Paws%252C%2520you%2520will%2520find%2520a%2520flawless%2520experience%2520in%2520searching%2520for%2520the%2520right%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520product%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520for%2520your%2520pets.%2520We%2520are%2520confident%2520that%2520your%2520online%2520shopping%2520experience%2520for%2520your%2520pets%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520will%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520be%2520much%2520easier%2520than%2520before.%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                        src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=11px&ph=11px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%250A%253Cdiv%2520class%253D%2522text-card%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522text-card-title%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch1%253E%2520NATIVE%2520PAWS%253A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520INDIA%27S%2520FIRST%2520ONLINE%2520PET%2520SHOP%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fh1%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Chr%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522text-card-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253ENative%2520Paws%2520is%2520the%2520name%2520that%2520visions%2520to%2520comfort%2520pets%2520and%2520pet%2520parents%2520by%2520catering%2520the%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520market%2520of%2520pet%2520essentials.%2520We%2520aim%2520to%2520reach%2520at%2520every%2520doorstep%2520around%2520the%2520globe%2520%2526%2520serve%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520our%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520cuddle%2520buddies%2520the%2520best%2520quality%2520products.%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520At%2520Native%2520Paws%252C%2520you%2520will%2520find%2520a%2520flawless%2520experience%2520in%2520searching%2520for%2520the%2520right%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520product%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520for%2520your%2520pets.%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
                         style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
                         sandbox="allow-scripts allow-same-origin">
                     </iframe>
@@ -738,8 +753,7 @@
 
                 <section class="example">
                     <h3>Examples of Vertical Cards</h3>
-                    <p>primary actions, or things that we want the user to do as often as possible. Buttons that execute
-                        primary actions—primary buttons—should be as visible as possible.</p>
+                    <p>Vertical cards provided by Native UI can be used for displaying products.</p>
                     <section class="eg-container flex-row-se p-md avatar-con">
 
                         <div class="card-badge">
@@ -777,20 +791,19 @@
 
                     </section>
 
-                    <div class="m-md"></div>
+
                     <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28207%2C207%2C207%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=17px&ph=20px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%253Cdiv%2520class%253D%2522card-badge%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522product%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522prod-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fassets%252Fcards1.png%2522%2520alt%253D%2522product%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522prod-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%253EDear%2520pet%2520Blooming%2520Yellow%2520Dog%2520Harness%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522prod-info%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522prod-price%2522%253ERs%2520299%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522ratings-con%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fad%2520fa-star-half%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522size-options%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253ES%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253EM%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253EL%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522prod-links%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522prod-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EAdd%2520to%2520Bag%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522prod-like%2522%253E%253Ci%2520class%253D%2522fal%2520fa-heart%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                        src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=11px&ph=11px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%250A%253Cdiv%2520class%253D%2522card-badge%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522product%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522prod-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fassets%252Fcards1.png%2522%2520alt%253D%2522product%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522prod-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%253EDear%2520pet%2520Blooming%2520Yellow%2520Dog%2520Harness%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522prod-info%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522prod-price%2522%253ERs%2520299%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522ratings-con%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fad%2520fa-star-half%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522size-options%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253ES%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253EM%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253EL%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522prod-links%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522prod-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EAdd%2520to%2520Bag%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522prod-like%2522%253E%253Ci%2520class%253D%2522fal%2520fa-heart%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
                         style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
                         sandbox="allow-scripts allow-same-origin">
                     </iframe>
                 </section>
 
-                <div class="m-md"></div>
+
 
                 <section class="example">
                     <h3>Examples of Horizontal Cards</h3>
-                    <p>primary actions, or things that we want the user to do as often as possible. Buttons that execute
-                        primary actions—primary buttons—should be as visible as possible.</p>
+                    <p>Small devices, horizontal cards come to action.</p>
                     <section class="eg-container flex-row-se p-md avatar-con">
 
                         <div class="card-horizontal">
@@ -861,9 +874,9 @@
 
                     </section>
 
-                    <div class="m-md"></div>
+
                     <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28207%2C207%2C207%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=17px&ph=20px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%253Cdiv%2520class%253D%2522card-horizontal%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522product%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522prod-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fassets%252Fcards1.png%2522%2520alt%253D%2522product%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522prod-links%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522prod-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%253EDear%2520pet%2520Blooming%2520Yellow%2520Dog%2520Harness%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522prod-info%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522prod-price%2522%253ERs%2520299%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522ratings-con%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fad%2520fa-star-half%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522size-options%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253ES%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253EM%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253EL%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522prod-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EAdd%2520to%2520Bag%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2522%253EQuick%2520View%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522prod-like%2522%253E%253Ci%2520class%253D%2522fal%2520fa-heart%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                        src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=11px&ph=11px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%250A%253Cdiv%2520class%253D%2522card-horizontal%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522product%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522prod-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fassets%252Fcards1.png%2522%2520alt%253D%2522product%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522prod-links%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522prod-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%253EDear%2520pet%2520Blooming%2520Yellow%2520Dog%2520Harness%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522prod-info%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522prod-price%2522%253ERs%2520299%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522ratings-con%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fad%2520fa-star-half%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522size-options%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253ES%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253EM%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253EL%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522prod-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EAdd%2520to%2520Bag%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2522%253EQuick%2520View%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522prod-like%2522%253E%253Ci%2520class%253D%2522fal%2520fa-heart%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
                         style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
                         sandbox="allow-scripts allow-same-origin">
                     </iframe>
@@ -883,31 +896,29 @@
                     <h3>Examples of Responsive Images</h3>
                     <p>Images should show responsive behavior so they never become larger than their parent elements.
                     </p>
-                    <p>To use this alert just use class name alert-box and also add class according to alert type-
-                        alert-primary, alert-secondary, alert-danger, alert-success, alert-warning.
-                        (e.g.class="alert-box alert-primary").
-                        You can copy html part from below code snippet.</p>
+                    <p>Use class: <span class="highlight-class">img-responsive</span>which adds a <span
+                            class="highlight-class">max-width: 100%</span> and <span class="highlight-class">height:
+                            auto</span></p>
                     <section class="eg-container flex-row-se p-md">
                         <div class="responsive-img-container">
                             <img src="/assets/petflix.jpg" alt="" class="img-responsive">
                         </div>
                     </section>
 
-                    <div class="m-md"></div>
+
                     <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28207%2C207%2C207%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=17px&ph=20px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%253Cdiv%2520class%253D%2522responsive-img-container%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fassets%252Favatar.jpg%2522%2520alt%253D%2522%2522%2520class%253D%2522img-responsive%2520avatar-md%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522responsive-img-container%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fassets%252Favatar.jpg%2522%2520alt%253D%2522%2522%2520class%253D%2522img-responsive%2522%253E%250A%253C%252Fdiv%253E"
+                        src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=11px&ph=11px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%250A%253Cdiv%2520class%253D%2522responsive-img-container%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fassets%252Fpetflix.jpg%2522%2520alt%253D%2522%2522%2520class%253D%2522img-responsive%2522%253E%250A%253C%252Fdiv%253E"
                         style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
                         sandbox="allow-scripts allow-same-origin">
                     </iframe>
                 </section>
-                <div class="m-md"></div>
+
 
                 <section class="example">
                     <h3>Examples of Round Images</h3>
-                    <p>Alerts can also wait for the user to dismiss it.</p>
-                    <p>To use this alert just use class name alert-box and also add class according to alert type :
-                        alert-primary, and id as alert-close
-                        You can copy html part from below code snippet.</p>
+                    <p>Round or Cirular Images are used mainly for avatars or any image feature link.</p>
+                    <p>Add a class<span class="highlight-class">img-circular</span>to the img tag to use this component.
+                    </p>
                     <section class="eg-container flex-row-se p-md">
                         <div class="responsive-img-container">
                             <img src="https://picsum.photos/200" alt="" class="img-responsive avatar-md img-circular">
@@ -917,13 +928,13 @@
                         </div>
                     </section>
 
-                    <div class="m-md"></div>
+
                     <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28207%2C207%2C207%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=17px&ph=20px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%253Cdiv%2520class%253D%2522responsive-img-container%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F200%2522%2520alt%253D%2522%2522%2520class%253D%2522img-responsive%2520avatar-md%2520img-circular%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522responsive-img-container%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F400%2522%2520alt%253D%2522%2522%2520class%253D%2522img-responsive%2520img-circular%2522%253E%250A%253C%252Fdiv%253E"
+                        src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=11px&ph=11px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%250A%253Cdiv%2520class%253D%2522responsive-img-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F200%2522%2520alt%253D%2522%2522%2520class%253D%2522img-responsive%2520avatar-md%2520img-circular%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522responsive-img-container%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F400%2522%2520alt%253D%2522%2522%2520class%253D%2522img-responsive%2520img-circular%2522%253E%250A%253C%252Fdiv%253E"
                         style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
                         sandbox="allow-scripts allow-same-origin">
                     </iframe>
-                    <div class="m-md"></div>
+
 
                 </section>
             </article>
@@ -942,32 +953,24 @@
                     <p>Textboxes are used to collect more detailed information from the user, rather than just providing
                         values or options.
                     </p>
-                    <p>To use this alert just use class name alert-box and also add class according to alert type-
-                        alert-primary, alert-secondary, alert-danger, alert-success, alert-warning.
-                        (e.g.class="alert-box alert-primary").
-                        You can copy html part from below code snippet.</p>
                     <section class="eg-container flex-row-se p-md">
                         <textarea class="textbox p-1" rows="10" placeholder="Enter a comment (Optional)">
                         </textarea>
                     </section>
 
-                    <div class="m-md"></div>
+
                     <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28207%2C207%2C207%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=17px&ph=20px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%253Ctextarea%2520class%253D%2522textbox%2522%2520rows%253D%252210%2522%2520cols%253D%252230%2522%2520placeholder%253D%2522Enter%2520a%2520comment%2520%28Optional%29%2522%253E%253C%252Ftextarea%253E"
-                        style="width: 100%; height: px; border:0; transform: scale(1); overflow:hidden;"
+                        src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=11px&ph=11px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%250A%253Ctextarea%2520class%253D%2522textbox%2520p-1%2522%2520rows%253D%252210%2522%2520placeholder%253D%2522Enter%2520a%2520comment%2520%28Optional%29%2522%253E%253C%252Ftextarea%253E"
+                        style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
                         sandbox="allow-scripts allow-same-origin">
                     </iframe>
                 </section>
 
                 <section class="example">
                     <h3>Example of Input with validation and error</h3>
-                    <p>Textboxes are used to collect more detailed information from the user, rather than just providing
-                        values or options.
-                    </p>
-                    <p>To use this alert just use class name alert-box and also add class according to alert type-
-                        alert-primary, alert-secondary, alert-danger, alert-success, alert-warning.
-                        (e.g.class="alert-box alert-primary").
-                        You can copy html part from below code snippet.</p>
+                    <p>Validation for inputs is used to ensure that the user is not entering the false information or
+                        leaving the field empty.</p>
+                    <p>A simple sign up/ log in form could look like this.</p>
                     <section class="eg-container flex-row-se p-md">
                         <form class="form flex-col-start-start p-1">
                             <div class="input input-email p-sm flex-col-start-start">
@@ -997,14 +1000,14 @@
                         </form>
                     </section>
 
-                    <div class="m-md"></div>
+
                     <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28207%2C207%2C207%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=17px&ph=20px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%253Cform%2520class%253D%2522form%2520flex-col-start-start%2520p-1%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input%2520input-email%2520p-sm%2520flex-col-start-start%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522email%2520m-sm%2522%253EEmail%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522email%2522%2520name%253D%2522input%2522%2520id%253D%2522email%2522%2520class%253D%2522p-sm%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522%2522%253E%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522error-false%2522%253E%253Ci%2520class%253D%2522fad%2520fa-exclamation-circle%2522%253E%253C%252Fi%253EInvalid%2520Email%2520Address%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input%2520input-password%2520p-sm%2520flex-col-start-start%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522password%2522%253EPassword%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522password%2522%2520name%253D%2522input%2522%2520id%253D%2522password%2522%2520class%253D%2522p-sm%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522error-true%2522%253E%253Ci%2520class%253D%2522fad%2520fa-check-circle%2522%253E%253C%252Fi%253EPassword%2520Matches%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-btn%2520center%2522%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2520m-sm%2522%2520type%253D%2522submit%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Log%2520In%250A%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520m-sm%2522%2520type%253D%2522submit%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Sign%2520Up%250A%2520%2520%2520%2520%253C%252Fbutton%253E%250A%253C%252Fdiv%253E%250A%253C%252Fform%253E"
+                        src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=11px&ph=11px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%250A%253Cform%2520class%253D%2522form%2520flex-col-start-start%2520p-1%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input%2520input-email%2520p-sm%2520flex-col-start-start%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522email%2520m-sm%2522%253EEmail%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522email%2522%2520name%253D%2522input%2522%2520id%253D%2522email%2522%2520class%253D%2522p-sm%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522error-false%2522%253E%253Ci%2520class%253D%2522fad%2520fa-exclamation-circle%2522%253E%253C%252Fi%253EInvalid%2520Email%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Address%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input%2520input-password%2520p-sm%2520flex-col-start-start%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522password%2522%253EPassword%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522password%2522%2520name%253D%2522input%2522%2520id%253D%2522password%2522%2520class%253D%2522p-sm%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522error-true%2522%253E%253Ci%2520class%253D%2522fad%2520fa-check-circle%2522%253E%253C%252Fi%253EPassword%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Matches%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-btn%2520center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2520m-sm%2522%2520type%253D%2522submit%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Log%2520In%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520m-sm%2522%2520type%253D%2522submit%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Sign%2520Up%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fform%253E"
                         style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
                         sandbox="allow-scripts allow-same-origin">
                     </iframe>
                 </section>
-                <div class="m-md"></div>
+
 
             </article>
 
@@ -1033,10 +1036,10 @@
                         <h6>Heading 6</h6>
                     </section>
 
-                    <div class="m-md"></div>
+
 
                     <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28207%2C207%2C207%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=17px&ph=20px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%253Ch1%253EHeading%25201%253C%252Fh1%253E%250A%253Ch2%253EHeading%25202%253C%252Fh2%253E%250A%253Ch3%253EHeading%25203%253C%252Fh3%253E%250A%253Ch4%253EHeading%25204%253C%252Fh4%253E%250A%253Ch5%253EHeading%25205%253C%252Fh5%253E%250A%253Ch6%253EHeading%25206%253C%252Fh6%253E"
+                        src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=11px&ph=11px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%250A%253Ch1%253EHeading%25201%253C%252Fh1%253E%250A%253Ch2%253EHeading%25202%253C%252Fh2%253E%250A%253Ch3%253EHeading%25203%253C%252Fh3%253E%250A%253Ch4%253EHeading%25204%253C%252Fh4%253E%250A%253Ch5%253EHeading%25205%253C%252Fh5%253E%250A%253Ch6%253EHeading%25206%253C%252Fh6%253E"
                         style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
                         sandbox="allow-scripts allow-same-origin">
                     </iframe>
@@ -1046,10 +1049,10 @@
                     <h3>Example of Paragraph Text</h3>
                     <p>For paragraph u can use p element.
                     </p>
-                    <p>To use this alert just use class name alert-box and also add class according to alert type-
-                        alert-primary, alert-secondary, alert-danger, alert-success, alert-warning.
-                        (e.g.class="alert-box alert-primary").
-                        You can copy html part from below code snippet.</p>
+                    <p>Add class: <span class="highlight-class">text-sm</span> , <span
+                            class="highlight-class">text-rg</span> , <span class="highlight-class">text-md</span> ,
+                        <span class="highlight-class">text-lg</span> , <span
+                            class="highlight-class">text-extra-lg</span></p>
                     <section class="eg-container flex-col-start-start p-md">
                         <p>Normal Paragraph Text</p>
                         <p class="text-sm">Small Font Text</p>
@@ -1059,24 +1062,24 @@
                         <p class="text-extra-lg">Extra Large Text</p>
                     </section>
 
-                    <div class="m-md"></div>
+
                     <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28207%2C207%2C207%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=17px&ph=20px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%253Cp%253ENormal%2520Paragraph%2520Text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-sm%2522%253ESmall%2520Font%2520Text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-rg%2522%253ERegular%2520Font%2520Text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-md%2522%253EMedium%2520Text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-lg%2522%253ELarge%2520Font%2520Text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-extra-lg%2522%253EExtra%2520Large%2520Text%253C%252Fp%253E"
+                        src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=11px&ph=11px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%250A%253Cp%253ENormal%2520Paragraph%2520Text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-sm%2522%253ESmall%2520Font%2520Text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-rg%2522%253ERegular%2520Font%2520Text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-md%2522%253EMedium%2520Text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-lg%2522%253ELarge%2520Font%2520Text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-extra-lg%2522%253EExtra%2520Large%2520Text%253C%252Fp%253E"
                         style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
                         sandbox="allow-scripts allow-same-origin">
                     </iframe>
                 </section>
 
-                <div class="m-md"></div>
+
 
                 <section class="example">
                     <h3>Example of Weighted Text</h3>
                     <p>Native UI provide a font-weight to the text too.
                     </p>
-                    <p>To use this alert just use class name alert-box and also add class according to alert type-
-                        alert-primary, alert-secondary, alert-danger, alert-success, alert-warning.
-                        (e.g.class="alert-box alert-primary").
-                        You can copy html part from below code snippet.</p>
+                    <p>Add class: <span class="highlight-class">text-extra-light</span> , <span
+                            class="highlight-class">text-light</span> , <span
+                            class="highlight-class">text-regular</span> , <span class="highlight-class">text-bold</span>
+                        , <span class="highlight-class">text-extra-bold</span></p>
                     <section class="eg-container flex-col-start-start p-md">
                         <p class="text-extra-light">Extra Light Text</p>
                         <p class="text-light">Light Text</p>
@@ -1086,49 +1089,49 @@
                         <p class="text-extra-bold">Extra Bold Text</p>
                     </section>
 
-                    <div class="m-md"></div>
+
                     <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28207%2C207%2C207%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=17px&ph=20px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%253Cp%2520class%253D%2522text-extra-light%2522%253EExtra%2520Light%2520Text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-light%2522%253ELight%2520Text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-regular%2522%253ERegular%2520Text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-bold%2522%253EBold%2520Text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-bolder%2522%253EBolder%2520Large%2520Text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-extra-bold%2522%253EExtra%2520Bold%2520Text%253C%252Fp%253E"
+                        src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=11px&ph=11px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%250A%253Cp%2520class%253D%2522text-extra-light%2522%253EExtra%2520Light%2520Text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-light%2522%253ELight%2520Text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-regular%2522%253ERegular%2520Text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-bold%2522%253EBold%2520Text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-bolder%2522%253EBolder%2520Large%2520Text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-extra-bold%2522%253EExtra%2520Bold%2520Text%253C%252Fp%253E"
                         style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
                         sandbox="allow-scripts allow-same-origin">
                     </iframe>
                 </section>
 
-                <div class="m-md"></div>
+
 
                 <section class="example">
                     <h3>Example of Text Alignment</h3>
                     <p>Native UI provides text-alignment also.
                     </p>
-                    <p>To use this alert just use class name alert-box and also add class according to alert type-
-                        alert-primary, alert-secondary, alert-danger, alert-success, alert-warning.
-                        (e.g.class="alert-box alert-primary").
-                        You can copy html part from below code snippet.</p>
+                    <p>Add class: <span class="highlight-class">text-left</span> , <span
+                            class="highlight-class">text-center</span> , <span class="highlight-class">text-right</span>
+                    </p>
                     <section class="eg-container flex-col-start-start p-md">
                         <p class="text-left">Left Text</p>
                         <h3 class="text-center">Center Text</h3>
                         <div class="text-right">Right Text</div>
                     </section>
 
-                    <div class="m-md"></div>
+
                     <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28207%2C207%2C207%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=17px&ph=20px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%253Cp%2520class%253D%2522text-left%2522%253ELeft%2520Text%253C%252Fp%253E%250A%253Ch3%2520class%253D%2522text-center%2522%253ECenter%2520Text%253C%252Fh3%253E%250A%253Cdiv%2520class%253D%2522text-right%2522%253ERight%2520Text%253C%252Fdiv%253E"
+                        src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=11px&ph=11px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%250A%253Cp%2520class%253D%2522text-left%2522%253ELeft%2520Text%253C%252Fp%253E%250A%253Ch3%2520class%253D%2522text-center%2522%253ECenter%2520Text%253C%252Fh3%253E%250A%253Cdiv%2520class%253D%2522text-right%2522%253ERight%2520Text%253C%252Fdiv%253E"
                         style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
                         sandbox="allow-scripts allow-same-origin">
                     </iframe>
                 </section>
 
-                <div class="m-md"></div>
+
 
                 <section class="example">
                     <h3>Example of other Text Utilities</h3>
                     <p>Native UI provides text Utilities such as: small-text, strikethrough, grey-text, lowercase text,
                         uppercase text, capitalise text and marked text.
                     </p>
-                    <p>To use this alert just use class name alert-box and also add class according to alert type-
-                        alert-primary, alert-secondary, alert-danger, alert-success, alert-warning.
-                        (e.g.class="alert-box alert-primary").
-                        You can copy html part from below code snippet.</p>
+                    <p>Add class: <span class="highlight-class">text-lowercase</span> , <span
+                            class="highlight-class">text-uppercase</span> , <span
+                            class="highlight-class">text-captializw</span> , <span
+                            class="highlight-class">text-grey</span> , <span
+                            class="highlight-class">text-strikethrough</span></p>
                     <section class="eg-container flex-col-start-start p-md">
                         <p class="text-lowercase">LOWERCase teXt</p>
                         <p class="text-uppercase">uppercase text</p>
@@ -1138,9 +1141,9 @@
                         <div class="text-strikethrough">strikethrough text</div>
                     </section>
 
-                    <div class="m-md"></div>
+
                     <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28207%2C207%2C207%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=17px&ph=20px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%253Cp%2520class%253D%2522text-lowercase%2522%253ELOWERCase%2520teXt%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-uppercase%2522%253Euppercase%2520text%253C%252Fp%253E%250A%253Cdiv%2520class%253D%2522text-capitalize%2522%253Ecapitalise%2520text%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522text-grey%2522%253EGrey%2520Text%253C%252Fdiv%253E%250A%253Csmall%253Esmall%2520text%253C%252Fsmall%253E%250A%253Cdiv%2520class%253D%2522text-strikethrough%2522%253Estrikethrough%2520text%253C%252Fdiv%253E"
+                        src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=11px&ph=11px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%250A%253Cp%2520class%253D%2522text-lowercase%2522%253ELOWERCase%2520teXt%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-uppercase%2522%253Euppercase%2520text%253C%252Fp%253E%250A%253Cdiv%2520class%253D%2522text-capitalize%2522%253Ecapitalise%2520text%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522text-grey%2522%253EGrey%2520Text%253C%252Fdiv%253E%250A%253Csmall%253Esmall%2520text%253C%252Fsmall%253E%250A%253Cdiv%2520class%253D%2522text-strikethrough%2522%253Estrikethrough%2520text%253C%252Fdiv%253E"
                         style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
                         sandbox="allow-scripts allow-same-origin">
                     </iframe>
@@ -1165,6 +1168,12 @@
                         Native
                         UI provides different types of toast such as: success, error, normal and stacked.
                     </p>
+                    <p>Add class: <span class="highlight-class">toast</span> and add a following class: <span
+                            class="highlight-class">toast-success</span> , <span
+                            class="highlight-class">toast-stacked</span> , <span
+                            class="highlight-class">toast-content</span> , <span
+                            class="highlight-class">toast-dismiss</span> , <span
+                            class="highlight-class">toast-error.</span></p>
                     <section class="eg-container flex-col-start-start p-md">
                         <div class="toast toast-success py-sm px-1 flex-row-sb">
                             <div class="toast-content">Order Confirmed! We are as happy as you.</div>
@@ -1190,10 +1199,10 @@
                         </div>
                     </section>
 
-                    <div class="m-md"></div>
+
 
                     <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28207%2C207%2C207%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=17px&ph=20px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%253Cdiv%2520class%253D%2522toast%2520toast-success%2520py-sm%2520px-1%2520flex-row-sb%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522toast-content%2522%253EOrder%2520Confirmed%21%2520We%2520are%2520as%2520happy%2520as%2520you.%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522toast-dismiss%2522%253E%253Ci%2520class%253D%2522fal%2520fa-times%2522%253E%253C%252Fi%253E%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522toast%2520toast-error%2520py-sm%2520px-1%2520%2520flex-row-sb%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522toast-content%2522%253ENetwork%2520Issue.%2520Try%2520again.%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522toast-dismiss%2522%253E%253Ci%2520class%253D%2522fal%2520fa-times%2522%253E%253C%252Fi%253E%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522toast%2520toast-normal%2520py-sm%2520px-1%2520%2520flex-row-sb%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522toast-content%2522%253EGetting%2520confirmation...%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522toast-dismiss%2522%253E%253Ci%2520class%253D%2522fal%2520fa-times%2522%253E%253C%252Fi%253E%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522toast%2520toast-stacked%2520py-sm%2520px-1%2520%2520flex-col-start-start%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522toast-content%2522%253EThis%2520is%2520a%2520stacked%2520toast.%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522toast-btn%2520flex-row-end-center%2520m-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2520mx-sm%2522%253ELEARN%2520MORE%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522toast-dismiss%2522%253E%253Ci%2520class%253D%2522fal%2520fa-times%2520text-md%2522%253E%253C%252Fi%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                        src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=11px&ph=11px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%250A%253Cdiv%2520class%253D%2522toast%2520toast-success%2520py-sm%2520px-1%2520flex-row-sb%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522toast-content%2522%253EOrder%2520Confirmed%21%2520We%2520are%2520as%2520happy%2520as%2520you.%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522toast-dismiss%2522%253E%253Ci%2520class%253D%2522fal%2520fa-times%2522%253E%253C%252Fi%253E%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522toast%2520toast-error%2520py-sm%2520px-1%2520%2520flex-row-sb%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522toast-content%2522%253ENetwork%2520Issue.%2520Try%2520again.%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522toast-dismiss%2522%253E%253Ci%2520class%253D%2522fal%2520fa-times%2522%253E%253C%252Fi%253E%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522toast%2520toast-normal%2520py-sm%2520px-1%2520%2520flex-row-sb%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522toast-content%2522%253EGetting%2520confirmation...%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522toast-dismiss%2522%253E%253Ci%2520class%253D%2522fal%2520fa-times%2522%253E%253C%252Fi%253E%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522toast%2520toast-stacked%2520py-sm%2520px-1%2520%2520flex-col-start-start%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522toast-content%2522%253EThis%2520is%2520a%2520stacked%2520toast.%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522toast-btn%2520flex-row-end-center%2520m-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2520mx-sm%2522%253ELEARN%2520MORE%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522toast-dismiss%2522%253E%253Ci%2520class%253D%2522fal%2520fa-times%2520text-md%2522%253E%253C%252Fi%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
                         style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
                         sandbox="allow-scripts allow-same-origin">
                     </iframe>
@@ -1207,7 +1216,7 @@
                     </section>
 
 
-                    <div class="m-md"></div>
+
                 </section>
                 <div class="toast toast-success py-sm px-1 flex-row-sb" id="demo-toast" style="display: none;">
                     <div class="toast-content">Order Confirmed! We are as happy as you.</div>
@@ -1215,19 +1224,27 @@
                 </div>
 
                 <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%28207%2C207%2C207%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=17px&ph=20px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%2520id%253D%2522btn-demo-toast%2522%253EClick%2520Here%253C%252Fbutton%253E%250A%250A%253Cdiv%2520class%253D%2522toast%2520toast-success%2520py-sm%2520px-1%2520flex-row-sb%2522%2520id%253D%2522demo-toast%2522%2520style%253D%2522display%253A%2520none%253B%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522toast-content%2522%253EOrder%2520Confirmed%21%2520We%2520are%2520as%2520happy%2520as%2520you.%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522toast-dismiss%2522%2520id%253D%2522cancel-toast%2522%253E%253Ci%2520class%253D%2522fal%2520fa-times%2522%253E%253C%252Fi%253E%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
-                    style="width: 1024px; height: 275px; border:0; transform: scale(1); overflow:hidden;"
+                    src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=11px&ph=11px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%250A%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%2520id%253D%2522btn-demo-toast%2522%253EClick%2520Here%253C%252Fbutton%253E%250A%250A%253Cdiv%2520class%253D%2522toast-content%2522%253EOrder%2520Confirmed%21%2520We%2520are%2520as%2520happy%2520as%2520you.%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522toast-dismiss%2522%2520id%253D%2522cancel-toast%2522%253E%253Ci%2520class%253D%2522fal%2520fa-times%2522%253E%253C%252Fi%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+                    style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
                     sandbox="allow-scripts allow-same-origin">
                 </iframe>
 
-                <div class="m-md"></div>
+
 
             </article>
+
+            <div class="my-2">
+                <hr>
+            </div>
 
             <article id="grid" class="flex-col-sb-start">
                 <h1 class="text-extra-lg">Grids</h1>
                 <p>Grids are very useful in arranging the content over the website hasle free.
                 </p>
+                <p>Add class: <p>Add class: <span class="highlight-class">grid</span> to the paren div. And add the
+                        following as per requiremene.</p><span class="highlight-class">grid-20-80</span> , <span
+                        class="highlight-class">grid-3-col</span> , <span class="highlight-class">grid-50-50</span> ,
+                    <span class="highlight-class">grid-4-col</span></p>
                 <section class="example">
                     <h3>Example of 20-80 grid systm,</h3>
                     <section class="eg-container grid grid-20-80 p-md">
@@ -1237,10 +1254,10 @@
                         </div>
                     </section>
 
-                    <div class="m-md"></div>
+
 
                     <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28207%2C207%2C207%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=17px&ph=20px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%253Csection%2520class%253D%2522eg-container%2520grid-20-80%2520p-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522p-sm%2522%253E%252020%2525%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522p-sm%2522%253E%252080%2525%2520%253C%252Fdiv%253E%250A%253C%252Fsection%253E"
+                        src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=11px&ph=11px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%250A%253Csection%2520class%253D%2522eg-container%2520grid%2520grid-20-80%2520p-md%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522p-sm%2520text-justify%2522%253E%252020%2525%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522p-sm%2520text-justify%2522%253E%252080%2525%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fsection%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
                         style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
                         sandbox="allow-scripts allow-same-origin">
                     </iframe>
@@ -1248,6 +1265,7 @@
 
                 <section class="example">
                     <h3>Example of three column grid system</h3>
+                    <p>Add class: <span class="highlight-class">grid-3-col</span> to the paren div.</p>
 
                     <section class="eg-container grid grid-3-col p-md">
                         <div class="p-sm"> 1fr
@@ -1257,10 +1275,10 @@
                         <div class="p-sm"> 1fr
                         </div>
                     </section>
-                    <div class="m-md"></div>
+
 
                     <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28207%2C207%2C207%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=17px&ph=20px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%253Csection%2520class%253D%2522eg-container%2520grid%2520grid-3-col%2520p-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522p-sm%2522%253E%25201fr%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522p-sm%2522%253E%25201fr%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522p-sm%2522%253E%25201fr%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fsection%253E"
+                        src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=11px&ph=11px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%250A%253Csection%2520class%253D%2522eg-container%2520grid%2520grid-3-col%2520p-md%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522p-sm%2522%253E%25201fr%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522p-sm%2522%253E%25201fr%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522p-sm%2522%253E%25201fr%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fsection%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
                         style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
                         sandbox="allow-scripts allow-same-origin">
                     </iframe>
@@ -1276,10 +1294,8 @@
                         </div>
                     </section>
 
-                    <div class="m-md"></div>
-
                     <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28207%2C207%2C207%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=17px&ph=20px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%253Csection%2520class%253D%2522eg-container%2520grid%2520grid-50-50%2520p-md%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522p-sm%2522%253E%252050%2525%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522p-sm%2522%253E%252050%2525%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fsection%253E"
+                        src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=11px&ph=11px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%250A%253Csection%2520class%253D%2522eg-container%2520grid%2520grid-50-50%2520p-md%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522p-sm%2522%253E%252050%2525%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522p-sm%2522%253E%252050%2525%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fsection%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
                         style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
                         sandbox="allow-scripts allow-same-origin">
                     </iframe>
@@ -1299,38 +1315,35 @@
                         </div>
                     </section>
 
-                    <div class="m-md"></div>
-
                     <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28207%2C207%2C207%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=17px&ph=20px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%253Csection%2520class%253D%2522eg-container%2520grid%2520grid-50-50%2520p-md%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522p-sm%2522%253E%252050%2525%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522p-sm%2522%253E%252050%2525%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fsection%253E"
-                        style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
+                        src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=11px&ph=11px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%250A%253Csection%2520class%253D%2522eg-container%2520grid%2520grid-4-col%2520p-md%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522p-sm%2522%253E%25201fr%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522p-sm%2522%253E%25201fr%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522p-sm%2522%253E%25201fr%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522p-sm%2522%253E%25201fr%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fsection%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+                        style="width: 100%; height: 400px; border:0; transform: scale(1); overflow:hidden;"
                         sandbox="allow-scripts allow-same-origin">
                     </iframe>
                 </section>
 
-
                 <div class="my-2">
                     <hr>
                 </div>
+            </article>
+
+            <div class="my-2">
+                <hr>
+            </div>
 
         </div>
-        <nav class="main-nav flex-col-sb m-sm p-sm">
-            <a href="#alert" class="page-links m-sm">
-                <small>Alert</small>
-            </a>
-            <a href="#" class="page-links m-sm">
-                <small>Example - Text</small>
-            </a>
-            <a href="#" class="page-links m-sm">
-                <small>Example - Dismiss</small>
-            </a>
-        </nav>
+        <div>
+            <button class="btn btn-primary btn-float" id="go-top">
+                <i class="fas fa-chevron-double-up"></i>
+            </button>
+        </div>
     </main>
 </body>
 
 <script src="/docs/collapseMenu.js"></script>
-<script src="/components/js/components.js"></script>
+<script src="/components/js/alert.js"></script>
 <script src="/components/js/cards.js"></script>
 <script src="/components/js/toast.js"></script>
+<script src="/components/js/float-top.js"></script>
 
 </html>
