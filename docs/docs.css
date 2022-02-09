@@ -1,17 +1,4 @@
-@import url(/components/spacing.css);
-@import url(/components/typography.css);
-@import url(/css/utilities.css);
-@import url(/css/reset.css);
-@import url(/css/base.css);
-@import url(/components/components.css);
-@import url(/components/alert.css);
-@import url(/components/avatar.css);
-@import url(/components/badge.css);
-@import url(/components/button.css);
-@import url(/components/cards.css);
-@import url(/components/image.css);
-@import url(/components/input.css);
-@import url(/components/toast.css);
+@import url(/native-ui.css);
 
 p {
     margin: 1rem 0;
@@ -42,6 +29,10 @@ p {
 .logo {
     max-width: 100%;
     height: auto;
+}
+
+#underline {
+    border-bottom: 2px solid var(--cta-color);
 }
 
 .nav .flex-row-se {
@@ -125,8 +116,8 @@ p {
     width: max-content;
 }
 
-.overlay a:focus {
-    background-color: var(--accent-color);
+.overlay a:active {
+    color: var(--accent-color);
 }
 
 .overlay .closebtn {
@@ -154,7 +145,7 @@ header {
     padding: 3rem 2rem;
 }
 
-i{
+i {
     cursor: pointer;
 }
 
@@ -190,9 +181,31 @@ article .eg-container {
     width: 100%;
 }
 
-.grid > div {
-    background-color: var(--font-color-grey);
+.grid>div {
+    background-color: var(--bg-normal);
     height: 5rem;
+}
+
+article section {
+    margin: 1rem 0;
+}
+
+/* scroll bar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 1px;
+    background: rgb(116, 115, 115);
 }
 
 /* media queries */
@@ -216,7 +229,7 @@ article .eg-container {
         top: 3rem;
         left: 0;
         right: 0;
-}
+    }
 }
 
 @media screen and (min-width: 1000px) {
@@ -240,7 +253,7 @@ article .eg-container {
 
     main {
         display: grid;
-        grid-template-columns: 18% 70% 12%;
+        grid-template-columns: 18% 75% 7%;
     }
 
     aside {
@@ -253,10 +266,10 @@ article .eg-container {
     }
 
     .aside-title h3 {
-        background-color: var(--cta-color);
         font-size: 1.1rem;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        color: var(--cta-color);
     }
 
     aside .overlay-content {
@@ -273,18 +286,17 @@ article .eg-container {
 
     aside .overlay-content div {
         padding: 0.7rem 2rem 0.7rem 1rem;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
+        border-bottom: 2px solid transparent;
         font-size: 1.1rem;
         cursor: pointer;
     }
 
-    aside .overlay-content div:hover {
-        background-color: var(--hover-color-links-light);
+    aside .overlay-content div a:hover {
+        font-weight: 700;
     }
 
-    aside .overlay-content div:active {
-        background-color: var(--accent-color);
+    aside .overlay-content div a:focus {
+        font-weight: 700;
     }
 
     .nav-center h5 {
@@ -302,6 +314,7 @@ article .eg-container {
     .social-links i:hover {
         color: var(--hover-color-links)
     }
+
     main .main-nav {
         display: flex;
         height: max-content;
@@ -313,7 +326,18 @@ article .eg-container {
         top: 4.8rem;
         right: 0;
     }
+
     .page-links:active {
         font-weight: 600;
+    }
+    #go-top {
+        position: fixed;
+        bottom:2rem;
+        right: 2rem;
+        border-radius: 50%;
+        padding: 5px;
+    }
+    #go-top:hover {
+        color: var(--cta-color);
     }
 }
