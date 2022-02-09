@@ -26,13 +26,13 @@
                 <h4 class="documentation pointer-cursor none"><a href="docs/docs.html">Documentation</a></h4>
             </div>
             <div class="social-links">
-                <a href="https://github.com/hinanshisuthar/native-ui" target="_blank" rel="noopener noreferrer"><i class="fab fa-github pointer-cursor"></i></a>
+                <a href="https://github.com/hinanshisuthar/native-ui-library" target="_blank" rel="noopener noreferrer"><i class="fab fa-github pointer-cursor"></i></a>
                 <a href="https://twitter.com/hinanshi04" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter pointer-cursor"></i></a>
                 <a href="https://www.linkedin.com/in/hinanshi-suthar-7128201b0/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin pointer-cursor"></i></a>
                 <a href=""><i class="fa fa-moon pointer-cursor"></i></a>
             </div>
             <div class="hamburger">
-                <i class="fa fa-bars" onclick="menu()"></i>
+                <i class="fa fa-bars" id="index-ham"></i>
             </div>
         </div>
         <div class="menu">
@@ -49,12 +49,10 @@
         </div>
         <div class="right hero-text">
             <h1>Build fast, responsive frontend with Native</h1>
-            <h3>Design your dream project by copying and pasting the component clases at one click. It is user-friendly
-                and customizable. Spend less time in
-                designing and concentrate more on logic without hustling on UI.</h3>
+            <h3>Speed up your process to build your dream project by using our pre-made css components. It is 100% responsive, 100% easy to use. Quickly design and customize responsive mobile-first sites with Native. Design whenever you like, wherever you are. Native UI got you covered.</h3>
             <div class="hero-buttons">
-                <button class="button primary-btn pointer-cursor">Get Started</button>
-                <button class="button secondary-btn pointer-cursor">Documentation</button>
+                <button class="button primary-btn pointer-cursor"><a href="#get-started">Get Started</a></button>
+                <button class="button secondary-btn pointer-cursor"><a href="/docs/docs.html">Documentation</a></button>
             </div>
         </div>
     </main>
@@ -64,16 +62,10 @@
             <div class="section-content">
                 <h1>Get Started</h1>
             </div>
-            <h3>Copy and paste the code in the head tag of your html document. To use it, add the class names to your
-                elements. And voila! Done.</h3>
+            <h3>To use Native UI to your projects, copy the given link below and paste it in the head tag of your html, above all other style sheets. And voila! Done.</h3>
             <h3>Go ahead with the documentaion once you are ready with your stylesheet.</h3>
-            <div class="version-1">
-                <h3>Version 1</h3>
-                <ul>
-                    <li>Light Theme</li>
-                </ul>
-            </div>
             <h3>To know about the styled components, their variations, read the documentaion</h3>
+            <h3>You can use both dark and light themes according to your need.</h3>
         </div>
         <div class="left iframe">
             <iframe
@@ -87,27 +79,16 @@
     <footer>
         <div class="footer-text">
             <h4>Made with <i class="fa fa-heart"></i> by Hinanshi Suthar</h4>
+            <h4>Connect with me.</h4>
         </div>
         <div class="social-links">
-            <a href="https://github.com/hinanshisuthar/native-ui" target="_blank" rel="noopener noreferrer"><i class="fab fa-github pointer-cursor"></i></a>
+            <a href="https://github.com/hinanshisuthar/native-ui-library" target="_blank" rel="noopener noreferrer"><i class="fab fa-github pointer-cursor"></i></a>
             <a href="https://twitter.com/hinanshi04" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter pointer-cursor"></i></a>
             <a href="https://www.linkedin.com/in/hinanshi-suthar-7128201b0/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin pointer-cursor"></i></a>
         </div>
-        <small>© 2022 Native</small>
+        <small>© Native UI. 2020</small>
     </footer>
 
 </body>
-
-<script>
-    const openMenu = document.querySelector(".menu")
-    function menu() {
-        // console.log("here");
-        if(openMenu.style.display === "block") {
-            openMenu.style.display = "none";
-        } else {
-        openMenu.style.display = "block";
-        }
-    }
-</script>
-
+<script src="/components/js/index-ham.js"></script>
 </html>
