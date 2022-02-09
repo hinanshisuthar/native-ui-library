@@ -5,11 +5,16 @@ p {
 }
 
 .navigation {
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
+    right: 0;
     background-color: var(--background-color);
     z-index: var(--z-2);
+}
+
+header {
+    z-index: var(--z-1);
 }
 
 .nav,
@@ -133,7 +138,6 @@ p {
 
 aside {
     display: none;
-    z-index: 0;
 }
 
 header {
@@ -154,7 +158,7 @@ i {
 }
 
 iframe {
-    z-index: -1;
+    z-index: var(--z-0);
 }
 
 #avatar .flex-items {
@@ -208,20 +212,18 @@ article section {
     background: rgb(116, 115, 115);
 }
 
-/* media queries */
-
-@media screen and (max-width: 275px) {
-    .myMenu {
-        position: fixed;
-        top: 3.5rem;
-        left: 0;
-        right: 0;
-    }
-
-    .myMenu {
-        padding: 0rem;
-    }
+#go-top {
+    position: fixed;
+    bottom:2rem;
+    right: 2rem;
+    border-radius: 50%;
+    padding: 5px;
 }
+#go-top:hover {
+    color: var(--cta-color);
+}
+
+/* media queries */
 
 @media screen and (max-width: 190px) {
     .myMenu {
@@ -329,15 +331,5 @@ article section {
 
     .page-links:active {
         font-weight: 600;
-    }
-    #go-top {
-        position: fixed;
-        bottom:2rem;
-        right: 2rem;
-        border-radius: 50%;
-        padding: 5px;
-    }
-    #go-top:hover {
-        color: var(--cta-color);
     }
 }
