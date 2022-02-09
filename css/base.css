@@ -1,6 +1,6 @@
 :root {
   /* colors palette*/
-  --background-color: #fff8e7;
+  --background-color: #fff9ec;
   --accent-color: #8b82fa;
   --cta-color: #f34e4e;
   --font-color-dark: #1a0e31;
@@ -25,7 +25,7 @@
   --color-dark-alt: #18171b;
 
   /* font family */
-  --font-family: 'Inter', sans-serif;
+  --font-family: 'Lato', sans-serif;
 
   /* sizes */
   --size-0: 0;
