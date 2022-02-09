@@ -21,6 +21,7 @@
 
 .btn-primary:hover {
     background-color: var(--hover-color-button-prim);
+    color: var(--cta-color);
 }
 
 .btn-secondary {
