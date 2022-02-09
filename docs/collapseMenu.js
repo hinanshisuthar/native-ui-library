@@ -20,3 +20,10 @@ function closeNav2() {
     arrowDown.style.display = "block";
     arrowUp.style.display = "none";
 }
+
+const closeLink = document.querySelectorAll(".menu-link");
+
+closeLink.forEach((link) => {
+    link.addEventListener("click", closeNav2);
+})
+
