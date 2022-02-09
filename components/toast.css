@@ -1,6 +1,6 @@
 .toast {
     border-radius: 5px;
-    width: max-content;
+    flex-wrap: wrap;
 }
 
 .toast-success {
@@ -26,7 +26,6 @@
     color: var(--color-dark-alt);
     border: 1px solid var(--color-dark-alt);
     gap: var(--size-7);
-    width: 15rem;
 }
 
 .toast-btn {
