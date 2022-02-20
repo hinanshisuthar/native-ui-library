@@ -40,3 +40,12 @@
     height: 3rem;
 }
 
+@media screen and (max-width: 670px) {
+    #demo-toast {
+        left: 10vw;
+        top: 8rem;
+        height: max-content;
+        width: 14rem;
+    }
+}
+
