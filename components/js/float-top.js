@@ -1,9 +1,11 @@
 const topBtn = document.querySelector("#go-top");
+const mainContent = document.querySelector(".main-content");
 
-window.onscroll = function() {scrollFunction()};
+mainContent.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  console.log("1")
+  if (mainContent.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     topBtn.style.display = "block";
   } else {
     topBtn.style.display = "none";
@@ -12,8 +14,8 @@ function scrollFunction() {
 
 const goToTop = (e) => {
     console.log("here")
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
+    mainContent.scrollTop = 0
 }
 
 topBtn.addEventListener("click", goToTop);
+
