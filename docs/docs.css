@@ -148,6 +148,9 @@ header {
 .main-content {
     padding: 3rem 2rem;
     margin-top: 5rem;
+    height: 87vh;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 i {
@@ -224,6 +227,10 @@ article section {
     color: var(--cta-color);
 }
 
+.highlight-class {
+    color: var(--cta-color);
+}
+
 /* media queries */
 
 @media screen and (max-width: 190px) {
@@ -256,7 +263,7 @@ article section {
 
     main {
         display: grid;
-        grid-template-columns: 18% 75% 7%;
+        grid-template-columns: 25% 75%;
     }
 
     aside {
