@@ -5,7 +5,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
-    /* word-wrap: break-word; */
 }
 
 :root {
@@ -15,13 +14,14 @@
     /* --font-color: #04151F;
     --font-color-2: #011936; */
     --font-color: #160C28;
+    --font-color: #1f103b;
 }
 
 body {
     display: flex;
     flex-direction: column;
     background-color: var(--background-linen);
-    /* color: var(--font-color); */
+    color: var(--font-color);
 }
 
 nav {
@@ -59,18 +59,13 @@ nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 1rem;
-    /* height: 30rem; */
-    padding-right: 3rem;
+    padding-right: 1rem;
     flex-wrap: wrap;
-    /* z-index: -1; */
 
 }
 
 .hero-image {
     display: block;
-    /* justify-content: center;
-    align-items: center; */
 }
 
 .hero {
@@ -157,7 +152,6 @@ button {
     justify-content: space-evenly;
     align-items: flex-start;
     gap: 1rem;
-    /* padding: 3rem 0rem; */
 }
 
 ul {
@@ -225,6 +219,13 @@ i:hover {
 
 .menu {
     display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+.menu h4 {
+    display: block;
 }
 
 .footer-text {
@@ -245,7 +246,7 @@ i:hover {
     }
 
     .hero {
-        width: 90%;
+        width: 100%;
     }
 
     .installation-section {
@@ -270,11 +271,6 @@ i:hover {
     h1 {
         font-size: 2rem;
     }
-
-    /* nav {
-        display: flex;
-        justify-content: space-around;
-    } */
 }
 
 @media screen and (max-width: 650px) {
@@ -283,11 +279,6 @@ i:hover {
     .nav .social-links {
         display: none;
     }
-
-    /* .fa-bars:hover {
-        cursor: pointer;
-        color: #fbc416;
-    } */
 
     .hamburger {
         display: block;
@@ -323,9 +314,12 @@ i:hover {
     }
 
     .hero-text {
-        padding-left: 2rem;
+        padding: 1rem;
     }
     .logo {
         min-width: 70%;
+    }
+    .right.installation-section h3 {
+        text-align: center;
     }
 }
