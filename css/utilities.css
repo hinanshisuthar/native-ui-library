@@ -144,8 +144,10 @@ i{
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+/* dark mode */
+
 .dark-mode {
-    background-color: #121212ea;
+    background-color: #041624;
     color: var(--background-color);
     transition: background-color 1s;
 }
@@ -155,13 +157,13 @@ body.dark-mode i, body.dark-mode a {
 }
 
 body.dark-mode nav {
-    background-color: #1b1b1b;
+    background-color: #010f1a;
     color: var(--background-color);
     transition: background-color 1s;
 }
 
 body.dark-mode footer {
-    background-color: #1b1b1b;
+    background-color: #010f1a;
     color: var(--background-color);
     transition: background-color 1s;
 }
@@ -175,7 +177,7 @@ body.dark-mode .logo {
 }
 
 body.dark-mode aside {
-    background-color: #1b1b1b;
+    background-color: #010f1a;
     transition: background-color 1s;
 }
 
@@ -184,7 +186,7 @@ body.dark-mode .eg-container {
 }
 
 body.dark-mode #myNav {
-    background-color: #1b1b1b;
+    background-color: #010f1a;
     color: var(--background-color);
     transition: background-color 1s;
 }

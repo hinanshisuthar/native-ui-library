@@ -202,6 +202,18 @@ article section {
     margin: 1rem 0;
 }
 
+.dmb-2 {
+    display: none;
+}
+
+body.dark-mode .dmb-2 {
+    display: block;
+}
+
+body.dark-mode .dmb {
+    display: none;
+}
+
 /* scroll bar */
 
 /* width */
@@ -322,11 +334,11 @@ article section {
     }
 
     .nav-center h5:hover {
-        border-bottom: 2px solid var(--hover-color-links);
+        border-bottom: 2px solid var(--cta-color);
     }
 
-    .social-links i:hover {
-        color: var(--hover-color-links)
+    .social-links i:hover, .social-links i:active {
+        color: var(--cta-color)
     }
 
     main .main-nav {
