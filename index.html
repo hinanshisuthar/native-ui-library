@@ -17,6 +17,7 @@
         <div class="nav">
             <div class="logo-container">
                 <img src="/assets/logo.svg" alt="logo" class="logo" width="195px" height="auto">
+                <img src="/assets/logo-dark.png" alt="logo" class="logo-dark" width="195px" height="auto">
             </div>
             <div class="nav-center">
                 <h4 class="pointer-cursor none"><a href="index.html">Home</a></h4>
@@ -30,7 +31,7 @@
                         class="fab fa-twitter pointer-cursor"></i></a>
                 <a href="https://www.linkedin.com/in/hinanshi-suthar-7128201b0/" target="_blank"
                     rel="noopener noreferrer"><i class="fab fa-linkedin pointer-cursor"></i></a>
-                <a href=""><i class="fa fa-moon pointer-cursor"></i></a>
+                <button class="dark-mode-button"><i class="fa fa-moon pointer-cursor"></i></button>
             </div>
             <div class="hamburger">
                 <i class="fa fa-bars" id="index-ham"></i>
@@ -46,10 +47,11 @@
     <main class="main">
         <div class="left hero-image">
             <img src="/assets/hero-img.svg" alt="" class="hero">
+            <!-- <img src="/assets/hero-img-alt.png" alt="" class="hero"> -->
         </div>
         <div class="right hero-text">
-            <h1>Build fast, responsive frontend with Native</h1>
-            <h3>Speed up your process to build your dream project by using our pre-made css components. It is 100%
+            <h1 class="text">Build fast, responsive frontend with Native</h1>
+            <h3 class="text">Speed up your process to build your dream project by using our pre-made css components. It is 100%
                 responsive, 100% easy to use. Quickly design and customize responsive mobile-first sites with Native.
                 Design whenever you like, wherever you are. Native UI got you covered.</h3>
             <div class="hero-buttons">
@@ -62,13 +64,13 @@
     <section class="section" id="get-started">
         <div class="right installation-section">
             <div class="section-content">
-                <h1>Get Started</h1>
+                <h1 class="text">Get Started</h1>
             </div>
-            <h3>To use Native UI to your projects, copy the given link below and paste it in the head tag of your html,
+            <h3 class="text">To use Native UI to your projects, copy the given link below and paste it in the head tag of your html,
                 above all other style sheets. And voila! Done.</h3>
-            <h3>Go ahead with the documentaion once you are ready with your stylesheet.</h3>
-            <h3>To know about the styled components, their variations, read the documentaion</h3>
-            <h3>You can use both dark and light themes according to your need.</h3>
+            <h3 class="text">Go ahead with the documentaion once you are ready with your stylesheet.</h3>
+            <h3 class="text">To know about the styled components, their variations, read the documentaion</h3>
+            <h3 class="text">You can use both dark and light themes according to your need.</h3>
         </div>
         <div class="left iframe">
             <iframe
@@ -81,8 +83,8 @@
 
     <footer>
         <div class="footer-text">
-            <h4>Made with <i class="fa fa-heart"></i> by Hinanshi Suthar</h4>
-            <h4>Connect with me.</h4>
+            <h4 class="text">Made with <i class="fa fa-heart"></i> by Hinanshi Suthar</h4>
+            <h4 class="text">Connect with me.</h4>
         </div>
         <div class="social-links">
             <a href="https://github.com/hinanshisuthar/native-ui-library" target="_blank" rel="noopener noreferrer"><i
@@ -92,10 +94,12 @@
             <a href="https://www.linkedin.com/in/hinanshi-suthar-7128201b0/" target="_blank"
                 rel="noopener noreferrer"><i class="fab fa-linkedin pointer-cursor"></i></a>
         </div>
-        <small>© Native UI. 2020</small>
+        <small class="text">© Native UI. 2020</small>
     </footer>
 
 </body>
 <script src="/components/js/index-ham.js"></script>
+<script src="/docs/darkMode.js"></script>
 
 </html>
+
