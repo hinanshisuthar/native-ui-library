@@ -12,7 +12,9 @@ function menu() {
     }
 }
 
-homeMenuLinks.forEach("click", () => {
-    openMenu.style.display = "none";
+homeMenuLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        openMenu.style.display = "none";
+    })
 });
 

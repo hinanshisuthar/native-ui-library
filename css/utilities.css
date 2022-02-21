@@ -143,3 +143,51 @@ i{
 .grid-4-col {
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+
+/* dark mode */
+
+.dark-mode {
+    background-color: #041624;
+    color: var(--background-color);
+    transition: background-color 1s;
+}
+
+body.dark-mode i, body.dark-mode a {
+    color: var(--background-color);
+}
+
+body.dark-mode nav {
+    background-color: #010f1a;
+    color: var(--background-color);
+    transition: background-color 1s;
+}
+
+body.dark-mode footer {
+    background-color: #010f1a;
+    color: var(--background-color);
+    transition: background-color 1s;
+}
+
+body.dark-mode .logo-dark {
+    display: block;
+}
+
+body.dark-mode .logo {
+    display: none;
+}
+
+body.dark-mode aside {
+    background-color: #010f1a;
+    transition: background-color 1s;
+}
+
+body.dark-mode .eg-container {
+    border: 2px solid #75757533;
+}
+
+body.dark-mode #myNav {
+    background-color: #010f1a;
+    color: var(--background-color);
+    transition: background-color 1s;
+}
+

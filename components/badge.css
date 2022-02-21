@@ -18,6 +18,18 @@
     border: 3px solid var(--background-color);
 }
 
+body.dark-mode .fa-circle {
+    color: var(--color-online);
+    border: 3px solid #121212ea;
+    background-color: #121212ea;
+}
+
+body.dark-mode .fa-do-not-enter {
+    color: var(--color-dnd);
+    border: 3px solid #121212ea;
+    background-color: #121212ea;
+}
+
 .fa-do-not-enter {
     position: absolute;
     bottom: -2px;
@@ -40,6 +52,12 @@
     right: -1px;
 }
 
+body.dark-mode .fa-moon-badge {
+    color: var(--color-idle);
+    border: 3px solid #121212ea;
+    background-color: #121212ea;
+}
+
 .fa-mobile {
     border: 3px solid var(--background-color);
     bottom: 5px;
@@ -50,6 +68,12 @@
     padding: 1px;
     border-radius: 5px;
     background-color: var(--background-color);
+}
+
+body.dark-mode .fa-mobile {
+    color: var(--color-online);
+    border: 3px solid #121212ea;
+    background-color: #121212ea;
 }
 
 .fa-circle-lg {

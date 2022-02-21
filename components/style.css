@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap');
+@import url(/css/utilities.css);
 
 * {
     margin: 0;
@@ -50,6 +51,7 @@ nav {
     justify-content: space-evenly;
     gap: 1.3rem;
     font-size: 1.3rem;
+    align-items: center;
 }
 
 .main {
@@ -67,7 +69,7 @@ nav {
 
 .hero {
     width: 85%;
-    mix-blend-mode: multiply;
+    /* mix-blend-mode: multiply; */
     min-width: 50%;
     height: auto;
 }
@@ -114,11 +116,14 @@ button {
     padding: 1.5rem 1.5rem;
     border: none;
     font-size: 1.1rem;
-    border-right: 1.9px solid var(--cta-color);
     background-color: transparent;
     color: var(--cta-color);
     font-weight: 600;
     cursor: pointer;
+}
+
+.primary-btn {
+    border-right: 1.9px solid var(--cta-color);
 }
 
 .secondary-btn {
@@ -188,7 +193,7 @@ i {
 }
 
 i:hover {
-    color: #fbc416;
+    color: var(--cta-color);
     border-radius: 50%;
 }
 
@@ -201,7 +206,7 @@ i:hover {
 }
 
 .nav-center h4:hover {
-    border-bottom: 2px solid #fbc416;
+    border-bottom: 2px solid var(--cta-color);
 }
 
 .secondary-btn:hover {
@@ -227,6 +232,50 @@ i:hover {
 
 .footer-text {
     text-align: center;
+}
+
+.logo-dark {
+    display: none;
+}
+
+/* dark-mode */
+
+.dark-mode {
+    background-color: #021a2c;
+    color: var(--background-color);
+    transition: background-color 1s;
+}
+
+body.dark-mode .text, .social-links {
+    color: var(--background-linen);
+}
+
+body.dark-mode .nav-center h4 a {
+    color: #fff9ec;
+}
+
+body.dark-mode .logo {
+    display: none;
+}
+
+body.dark-mode .logo-dark {
+    display: block;
+}
+
+.dmb-2 {
+    display: none;
+}
+
+body.dark-mode .dmb-2 {
+    display: block;
+}
+
+body.dark-mode .dmb {
+    display: none;
+}
+
+.highlight-class {
+    color: var(--cta-color);
 }
 
 /* media querries */
@@ -257,7 +306,6 @@ i:hover {
         justify-content: center;
         align-items: center;
         text-align: center;
-        /* gap: 1rem; */
     }
 
     iframe {
@@ -320,3 +368,4 @@ i:hover {
         text-align: center;
     }
 }
+

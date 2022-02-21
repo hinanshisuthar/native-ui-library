@@ -25,3 +25,6 @@
     width: 100%;
 }
 
+#grid .example .eg-container div {
+    color: var(--cta-color);
+}
