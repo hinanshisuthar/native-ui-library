@@ -1,0 +1,146 @@
+.logo {
+    flex-basis: 10%;
+    margin-right: 5rem;
+}
+
+.user i {
+    -webkit-text-stroke: 1px var(--font-color-dark);
+}
+
+i {
+    cursor: pointer;
+}
+
+.right-nav {
+    align-items: center;
+    flex-basis: 50%;
+}
+
+.form-search {
+    border: 2px solid var(--color-dark-blue);
+    border-radius: var(--size-12);
+    box-shadow: var(--box-shadow-2);
+    width: 100%;
+    min-width: 2rem;
+}
+
+#search-field {
+    border: transparent;
+    outline: transparent;
+}
+
+.text-rg {
+    margin: 0;
+}
+
+.search-icon {
+    color: var(--accent-color);
+}
+
+header {
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    box-shadow: var(--box-shadow);
+    background-color: var(--background-color);
+    z-index: var(--z-1);
+}
+
+/* Account Options */
+
+.dropbtn {
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--light-grey);
+    min-width: 160px;
+    overflow: auto;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+    color: var(--color-dark-blue);
+}
+
+.dropdown-content a:hover, .dropdown-content a:focus {
+    font-weight: 600;
+}
+
+.show {
+    display: block;
+}
+
+.min-img {
+    min-width: 10rem;
+}
+
+.min-img-small {
+    min-width: 5rem;
+}
+
+.hori-scroll {
+    width: 100vw;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.bars-con {
+    display: none;
+}
+
+.search-btm {
+    display: none;
+}
+
+.menu {
+    display: none;
+}
+
+@media screen and (max-width: 1035px) {
+    .bars-con {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        background-color: var(--light-grey);
+        color: var(--color-dark-blue);
+        z-index: 2;
+        position: absolute;
+        top: 5rem;
+        right: 0;
+        overflow: auto;
+        width: 100vw;
+    }
+
+    .menu h5 {
+        padding: 1rem;
+    }
+
+    .right-nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 484px) {
+    .search-btm {
+        display: block;
+        width: 100%;
+    }
+
+    .search-con {
+        display: none;
+    }
+}
+
