@@ -160,8 +160,6 @@ Types:
 
 List are very useful components for handling structure and/or order of text on website.
 <br />
-You can check out the various types of list [here](https://powertrain-ui.netlify.app/documentation/html/list.html)
-
 Types:
 * Basic list
   * Bullet
@@ -172,6 +170,15 @@ Types:
   * Alphabet
   * Triangle
 * Stacked list ( eg. notifications )
+
+<hr />
+
+### Modal (live example added)
+
+Modals are built with HTML, CSS, and JavaScript. They’re positioned over everything else in the document and remove scroll from the so that modal content scrolls instead.
+<br />
+Types:
+* Modal with two buttons
 
 <hr />
 
