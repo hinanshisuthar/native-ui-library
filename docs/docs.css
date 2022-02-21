@@ -202,6 +202,8 @@ article section {
     margin: 1rem 0;
 }
 
+/* dark mode */
+
 .dmb-2 {
     display: none;
 }
@@ -212,6 +214,18 @@ body.dark-mode .dmb-2 {
 
 body.dark-mode .dmb {
     display: none;
+}
+
+/* lists */
+
+.stacked-list {
+    background-color: var(--bg-grey);
+    width: 13rem;
+}
+
+.stacked-list hr {
+    border: 1px solid var(--font-color-dark);
+    width: 100%;
 }
 
 /* scroll bar */
