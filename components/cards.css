@@ -160,8 +160,11 @@ button {
 .text-overlay div {
     padding: 8px;
     border-radius: 5px;
-    font-size: #000;
     background-color: var(--background-color);
+}
+
+body.dark-mode .text-overlay div {
+    color: var(--font-color-dark);
 }
 
 .text-card {
