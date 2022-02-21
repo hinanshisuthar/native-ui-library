@@ -257,6 +257,12 @@ body.dark-mode #live-modal-con {
     background-color: var(--bg-grey);    
 }
 
+/* ratings */
+
+.ratings-cont {
+    width: 10rem;
+}
+
 /* scroll bar */
 
 /* width */
