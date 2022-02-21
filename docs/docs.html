@@ -73,6 +73,7 @@
                 <h5 class="m-sm menu-link"><a href="#list">Lists</a></h5>
                 <h5 class="m-sm menu-link"><a href="#modal">Modal</a></h5>
                 <h5 class="m-sm menu-link"><a href="#navigation">Navigation</a></h5>
+                <h5 class="m-sm menu-link"><a href="#rating">Ratings</a></h5>
                 <h5 class="m-sm menu-link"><a href="#typography">Typography</a></h5>
                 <h5 class="m-sm menu-link"><a href="#toast">Toast</a></h5>
             </div>
@@ -104,6 +105,7 @@
                 <div><a href="#list" class="py-0 px-1 m-sm">Lists</a></div>
                 <div><a href="#modal" class="py-0 px-1 m-sm">Modal</a></div>
                 <div><a href="#navigation" class="py-0 px-1 m-sm">Navigation</a></div>
+                <div><a href="#rating" class="py-0 px-1 m-sm">Ratings</a></div>
                 <div><a href="#typography" class="py-0 px-1 m-sm">Typography</a></div>
                 <div><a href="#toast" class="py-0 px-1 m-sm">Toast</a></div>
             </div>
@@ -1239,8 +1241,6 @@
                         </div>
                     </section>
 
-
-
                     <iframe
                         src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=11px&ph=11px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%250A%253Csection%2520class%253D%2522eg-container%2520grid%2520grid-20-80%2520p-md%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522p-sm%2520text-justify%2522%253E%252020%2525%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522p-sm%2520text-justify%2522%253E%252080%2525%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fsection%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
                         style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
@@ -1490,6 +1490,32 @@
                     <h2 class="p-md">JavaScript</h2>
                     <iframe
                         src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=14px&ph=13px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250Aconst%2520modalBtn%2520%253D%2520document.querySelector%28%2522%2523live-modal-btn%2522%29%253B%250Aconst%2520modalCon%2520%253D%2520document.querySelector%28%2522%2523live-modal-con%2522%29%253B%250Aconst%2520modalDismissBtn%2520%253D%2520document.querySelector%28%2522.modal-dismiss-btn%2522%29%253B%250A%250Aconst%2520showModal%2520%253D%2520%28e%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520modalCon.style.display%2520%253D%2520%2522grid%2522%253B%250A%257D%250A%250Aconst%2520closeModal%2520%253D%2520%28e%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520modalCon.style.display%2520%253D%2520%2522none%2522%250A%257D%250A%250AmodalBtn.addEventListener%28%2522click%2522%252C%2520showModal%29%253B%250AmodalDismissBtn.addEventListener%28%2522click%2522%252C%2520closeModal%29%253B"
+                        style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </section>
+            </article>
+            <div class="my-2">
+                <hr>
+            </div>
+
+            <article id="rating" class="flex-col-sb-start">
+                <h1 class="text-extra-lg">Ratings</h1>
+                <p>Native's 5-star ratings component can be used to allow the users to share their opinion about the
+                    product, documentation page, photo and more.</p>
+                <section class="example">
+                    <h3>Example of Ratings</h3>
+                    <section class="eg-container p-md ">
+                        <div class="ratings-cont flex-row-se">
+                            <span class="rating"><i class="fa-solid fa-star"></i></span>
+                            <span class="rating"><i class="fa-solid fa-star"></i></span>
+                            <span class="rating"><i class="fa-solid fa-star"></i></span>
+                            <span class="rating"><i class="fa-solid fa-star"></i></span>
+                            <span class="rating rating-half"><i class="fa-regular fa-star"></i></span>
+                        </div>
+                    </section>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=14px&ph=13px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%253Cdiv%2520class%253D%2522ratings-cont%2520flex-row-se%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522rating%2522%253E%253Ci%2520class%253D%2522fa-solid%2520fa-star%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522rating%2522%253E%253Ci%2520class%253D%2522fa-solid%2520fa-star%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522rating%2522%253E%253Ci%2520class%253D%2522fa-solid%2520fa-star%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522rating%2522%253E%253Ci%2520class%253D%2522fa-solid%2520fa-star%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522rating%2520rating-half%2522%253E%253Ci%2520class%253D%2522fa-regular%2520fa-star%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
                         style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
                         sandbox="allow-scripts allow-same-origin">
                     </iframe>
