@@ -155,6 +155,7 @@ header {
     height: 87vh;
     overflow-x: hidden;
     overflow-y: auto;
+    scroll-behavior: smooth;
 }
 
 i {
@@ -193,7 +194,7 @@ article .eg-container {
     width: 100%;
 }
 
-.grid>div {
+#grid-con>div {
     background-color: var(--bg-normal);
     height: 5rem;
 }
@@ -239,6 +240,23 @@ body.dark-mode .dmb {
     top: 3rem;
     z-index: 0;
 }
+
+/* modal */
+
+#live-modal-con {
+    display: none;
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    z-index: 5;
+    background-color: var(--bg-normal);
+}
+
+body.dark-mode #live-modal-con {
+    color: var(--font-color-dark);
+    background-color: var(--bg-grey);    
+}
+
 /* scroll bar */
 
 /* width */
@@ -304,7 +322,7 @@ body.dark-mode .dmb {
 
     main {
         display: grid;
-        grid-template-columns: 25% 75%;
+        grid-template-columns: 20% 80%;
     }
 
     aside {
@@ -346,7 +364,7 @@ body.dark-mode .dmb {
         font-weight: 700;
     }
 
-    aside .overlay-content div a:focus {
+    aside .overlay-content div a:active {
         font-weight: 700;
     }
 
