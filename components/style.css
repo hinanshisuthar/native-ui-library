@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap');
+@import url(/css/utilities.css);
 
 * {
     margin: 0;
@@ -50,6 +51,7 @@ nav {
     justify-content: space-evenly;
     gap: 1.3rem;
     font-size: 1.3rem;
+    align-items: center;
 }
 
 .main {
@@ -114,11 +116,14 @@ button {
     padding: 1.5rem 1.5rem;
     border: none;
     font-size: 1.1rem;
-    border-right: 1.9px solid var(--cta-color);
     background-color: transparent;
     color: var(--cta-color);
     font-weight: 600;
     cursor: pointer;
+}
+
+.primary-btn {
+    border-right: 1.9px solid var(--cta-color);
 }
 
 .secondary-btn {
@@ -227,6 +232,38 @@ i:hover {
 
 .footer-text {
     text-align: center;
+}
+
+.logo-dark {
+    display: none;
+}
+
+/* dark-mode */
+
+.dark-mode {
+    background-color: #121212ea;
+    color: var(--background-color);
+    transition: background-color 1s;
+}
+
+body.dark-mode .text, .social-links {
+    color: var(--background-linen);
+}
+
+body.dark-mode .nav-center h4 a {
+    color: #fff9ec;
+}
+
+body.dark-mode .logo {
+    display: none;
+}
+
+body.dark-mode .logo-dark {
+    display: block;
+}
+
+body.dark-mode .hero {
+    
 }
 
 /* media querries */
