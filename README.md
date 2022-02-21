@@ -4,7 +4,7 @@
   
 # NATIVE UI
 
-### Build Fast, Responsive Frontend with Native.
+### Build Fast, Responsive Frontend with Native. Night Mode now available.
 
 #### Use pre-made components to focus more on logic. 
 
