@@ -24,7 +24,7 @@
             </div>
             <div class="center nav-center">
                 <h5 class="text-bold mx-2"><a href="/index.html">Home</a></h5>
-                <h5 class="text-bold mx-2"><a href="#get-started">Get Started</a></h5>
+                <h5 class="text-bold mx-2"><a href="#installation-sec">Get Started</a></h5>
                 <h5 class="text-bold mx-2"><a href="docs.html" id="underline">Documentation</a></h5>
             </div>
             <div class="flex-row-se social-links">
@@ -47,7 +47,7 @@
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="overlay-content">
                 <h5><a href="/index.html">Home</a></h5>
-                <h5><a href="#">Get Started</a></h5>
+                <h5><a href="#installation-sec">Get Started</a></h5>
                 <h5><a href="docs.html">Documentation</a></h5>
             </div>
         </div>
@@ -71,6 +71,7 @@
                 <h5 class="m-sm menu-link"><a href="#image">Image</a></h5>
                 <h5 class="m-sm menu-link"><a href="#grid">Grid</a></h5>
                 <h5 class="m-sm menu-link"><a href="#list">Lists</a></h5>
+                <h5 class="m-sm menu-link"><a href="#modal">Modal</a></h5>
                 <h5 class="m-sm menu-link"><a href="#navigation">Navigation</a></h5>
                 <h5 class="m-sm menu-link"><a href="#typography">Typography</a></h5>
                 <h5 class="m-sm menu-link"><a href="#toast">Toast</a></h5>
@@ -101,6 +102,7 @@
                 <div><a href="#input" class="py-0 px-1 m-sm">Input</a></div>
                 <div><a href="#grid" class="py-0 px-1 m-sm">Grid</a></div>
                 <div><a href="#list" class="py-0 px-1 m-sm">Lists</a></div>
+                <div><a href="#modal" class="py-0 px-1 m-sm">Modal</a></div>
                 <div><a href="#navigation" class="py-0 px-1 m-sm">Navigation</a></div>
                 <div><a href="#typography" class="py-0 px-1 m-sm">Typography</a></div>
                 <div><a href="#toast" class="py-0 px-1 m-sm">Toast</a></div>
@@ -1230,7 +1232,7 @@
                     <span class="highlight-class">grid-4-col</span></p>
                 <section class="example">
                     <h3>Example of 20-80 grid systm,</h3>
-                    <section class="eg-container grid grid-20-80 p-md">
+                    <section class="eg-container grid grid-20-80 p-md" id="grid-con">
                         <div class="p-sm text-justify"> 20%
                         </div>
                         <div class="p-sm text-justify"> 80%
@@ -1416,6 +1418,84 @@
                     </section>
             </article>
 
+            <div class="my-2">
+                <hr>
+            </div>
+
+            <article id="modal" class="flex-col-sb-start">
+                <h1 class="text-extra-lg">Modal</h1>
+                <p>Modals are built with HTML, CSS, and JavaScript. They’re positioned over everything else in the
+                    document and remove scroll from the so that modal content scrolls instead.
+                </p>
+                <section class="example">
+                    <h3>Example of Modal</h3>
+                    <section class="eg-container p-md ">
+                        <div class="modal grid grid-90-10 p-1">
+                            <div class="modal-con">
+                                <div class="modal-content">
+                                    <h1>Modal Title</h1>
+                                </div>
+                                <div>
+                                    <p>Sunt ad dolore quis aute consequat. Magna exercitation reprehenderit magna aute
+                                        tempor cupidatat consequat elit dolor adipisicing. Mollit dolor eiusmod sunt ex
+                                        incididunt cillum quis. Velit duis sit officia eiusmod Lorem aliqua enim laboris
+                                        do dolor eiusmod. Et mollit incididunt nisi consectetur esse laborum eiusmod
+                                        pariatur proident Lorem eiusmod et. Culpa deserunt nostrud ad veniam.</p>
+                                </div>
+                                <div>
+                                    <button class="btn btn-primary">Close</button>
+                                    <button class="btn btn-secondary">Secondary Action</button>
+                                </div>
+                            </div>
+                            <div class="modal-dismiss">
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </div>
+                    </section>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=14px&ph=13px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%253Cdiv%2520class%253D%2522modal%2520grid%2520grid-90-10%2520p-1%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-con%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch1%253EModal%2520Title%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253ESunt%2520ad%2520dolore%2520quis%2520aute%2520consequat.%2520Magna%2520exercitation%2520reprehenderit%2520magna%2520aute%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520tempor%2520cupidatat%2520consequat%2520elit%2520dolor%2520adipisicing.%2520Mollit%2520dolor%2520eiusmod%2520sunt%2520ex%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520incididunt%2520cillum%2520quis.%2520Velit%2520duis%2520sit%2520officia%2520eiusmod%2520Lorem%2520aliqua%2520enim%2520laboris%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520do%2520dolor%2520eiusmod.%2520Et%2520mollit%2520incididunt%2520nisi%2520consectetur%2520esse%2520laborum%2520eiusmod%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520pariatur%2520proident%2520Lorem%2520eiusmod%2520et.%2520Culpa%2520deserunt%2520nostrud%2520ad%2520veniam.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EClose%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2522%253ESecondary%2520Action%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-dismiss%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-times%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                        style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </section>
+                <section class="example">
+                    <h3>Live Demo</h3>
+                    <section class="eg-container p-md ">
+                        <button class="btn btn-primary" id="live-modal-btn">Live Demo</button>
+                    </section>
+                    <p>For including a live modal, just add <span class="highlight-class">id = "live-modal-con"</span>
+                    </p>
+                    <div class="modal grid grid-90-10 p-1" id="live-modal-con">
+                        <div class="modal-con">
+                            <div class="modal-content">
+                                <h1>Modal Title</h1>
+                            </div>
+                            <div>
+                                <p class="text">Sunt ad dolore quis aute consequat. Magna exercitation reprehenderit
+                                    magna aute
+                                    tempor cupidatat consequat elit dolor adipisicing. Mollit dolor eiusmod sunt ex
+                                    incididunt cillum quis. Velit duis sit officia eiusmod Lorem aliqua enim laboris
+                                    do dolor eiusmod. Et mollit incididunt nisi consectetur esse laborum eiusmod
+                                    pariatur proident Lorem eiusmod et. Culpa deserunt nostrud ad veniam.</p>
+                            </div>
+                            <div>
+                                <button class="btn btn-primary">Close</button>
+                                <button class="btn btn-secondary">Secondary Action</button>
+                            </div>
+                        </div>
+                        <div class="modal-dismiss">
+                            <i class="fa fa-times modal-dismiss-btn"></i>
+                        </div>
+                    </div>
+                    <h2 class="p-md">JavaScript</h2>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=14px&ph=13px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250Aconst%2520modalBtn%2520%253D%2520document.querySelector%28%2522%2523live-modal-btn%2522%29%253B%250Aconst%2520modalCon%2520%253D%2520document.querySelector%28%2522%2523live-modal-con%2522%29%253B%250Aconst%2520modalDismissBtn%2520%253D%2520document.querySelector%28%2522.modal-dismiss-btn%2522%29%253B%250A%250Aconst%2520showModal%2520%253D%2520%28e%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520modalCon.style.display%2520%253D%2520%2522grid%2522%253B%250A%257D%250A%250Aconst%2520closeModal%2520%253D%2520%28e%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520modalCon.style.display%2520%253D%2520%2522none%2522%250A%257D%250A%250AmodalBtn.addEventListener%28%2522click%2522%252C%2520showModal%29%253B%250AmodalDismissBtn.addEventListener%28%2522click%2522%252C%2520closeModal%29%253B"
+                        style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </section>
+            </article>
+
             <div>
                 <button class="btn btn-primary btn-float" id="go-top">
                     <i class="fa-solid fa-circle-arrow-up"></i>
@@ -1431,6 +1511,6 @@
 <script src="/components/js/toast.js"></script>
 <script src="/components/js/float-top.js"></script>
 <script src="/docs/darkMode.js"></script>
+<script src="/components/js/modal.js"></script>
 
 </html>
-

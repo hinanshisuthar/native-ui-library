@@ -1,0 +1,13 @@
+.grid {
+    display: grid;
+}
+
+.grid-90-10 {
+    grid-template-columns: 90% 1fr;
+}
+
+.modal {
+    width: 25rem;
+    background-color: var(--bg-grey);
+}
+
