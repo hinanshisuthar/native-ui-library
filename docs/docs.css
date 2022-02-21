@@ -228,6 +228,17 @@ body.dark-mode .dmb {
     width: 100%;
 }
 
+/* navigation */
+
+.eg-container-nav {
+    position: relative;
+    height: 12rem;
+}
+.page-header {
+    position: absolute;
+    top: 3rem;
+    z-index: 0;
+}
 /* scroll bar */
 
 /* width */
@@ -371,3 +382,4 @@ body.dark-mode .dmb {
         font-weight: 600;
     }
 }
+

@@ -71,6 +71,7 @@
                 <h5 class="m-sm menu-link"><a href="#image">Image</a></h5>
                 <h5 class="m-sm menu-link"><a href="#grid">Grid</a></h5>
                 <h5 class="m-sm menu-link"><a href="#list">Lists</a></h5>
+                <h5 class="m-sm menu-link"><a href="#navigation">Navigation</a></h5>
                 <h5 class="m-sm menu-link"><a href="#typography">Typography</a></h5>
                 <h5 class="m-sm menu-link"><a href="#toast">Toast</a></h5>
             </div>
@@ -100,6 +101,7 @@
                 <div><a href="#input" class="py-0 px-1 m-sm">Input</a></div>
                 <div><a href="#grid" class="py-0 px-1 m-sm">Grid</a></div>
                 <div><a href="#list" class="py-0 px-1 m-sm">Lists</a></div>
+                <div><a href="#navigation" class="py-0 px-1 m-sm">Navigation</a></div>
                 <div><a href="#typography" class="py-0 px-1 m-sm">Typography</a></div>
                 <div><a href="#toast" class="py-0 px-1 m-sm">Toast</a></div>
             </div>
@@ -1308,129 +1310,115 @@
                 <hr>
             </div>
 
-            <article id="list" class="flex-col-sb-start">
-                <h1 class="text-extra-lg">Lists</h1>
-                <p>Lists can be used at so many places, navigation bar, stacked notifications, article pages, etc. They
-                    can be <span class="highlight-class">nested</span> or <span class="highlight-class">simple</span>
-                </p>
-                <p>Add class: <span class="highlight-class">list</span> to the parent div. And add the
-                    following as per requirement.</p>
-                <p>
-                    <span class="highlight-class">list</span>,
-                    <span class="highlight-class">list-disc</span>,
-                    <span class="highlight-class">list-circle</span>,
-                    <span class="highlight-class">list-decimal</span>,
-                    <span class="highlight-class">list-triangle</span>,
-                    <span class="highlight-class">list-roman</span>,
-                    <span class="highlight-class">list-alpha</span>
-                </p>
-                <section class="example">
-                    <h3>Example of Normal Lists</h3>
-                    <section class="eg-container grid grid-4-col p-md">
-                        <ul class="list">
-                            <li>Item 1</li>
-                            <li>Item 2</li>
-                            <li>Item 3</li>
-                            <li>Item 4</li>
-                            <li>Item 5</li>
-                        </ul>
-                        <ul class="list list-disc">
-                            <li>Item 1</li>
-                            <li>Item 2</li>
-                            <li>Item 3</li>
-                            <li>Item 4</li>
-                            <li>Item 5</li>
-                        </ul>
-                        <ul class="list list-alpha-lower">
-                            <li>Item 1</li>
-                            <li>Item 2</li>
-                            <li>Item 3</li>
-                            <li>Item 4</li>
-                            <li>Item 5</li>
-                        </ul>
-                        <ul class="list list-alpha-upper">
-                            <li>Item 1</li>
-                            <li>Item 2</li>
-                            <li>Item 3</li>
-                            <li>Item 4</li>
-                            <li>Item 5</li>
-                        </ul>
-                        <ul class="list list-circle">
-                            <li>Item 1</li>
-                            <li>Item 2</li>
-                            <li>Item 3</li>
-                            <li>Item 4</li>
-                            <li>Item 5</li>
-                        </ul>
-                        <ul class="list list-decimal">
-                            <li>Item 1</li>
-                            <li>Item 2</li>
-                            <li>Item 3</li>
-                            <li>Item 4</li>
-                            <li>Item 5</li>
-                        </ul>
-                        <ul class="list list-roman-lower">
-                            <li>Item 1</li>
-                            <li>Item 2</li>
-                            <li>Item 3</li>
-                            <li>Item 4</li>
-                            <li>Item 5</li>
-                        </ul>
-                        <ul class="list list-roman-upper">
-                            <li>Item 1</li>
-                            <li>Item 2</li>
-                            <li>Item 3</li>
-                            <li>Item 4</li>
-                            <li>Item 5</li>
-                        </ul>
-                        <ul class="list list-triangle">
-                            <li>Item 1</li>
-                            <li>Item 2</li>
-                            <li>Item 3</li>
-                            <li>Item 4</li>
-                            <li>Item 5</li>
-                        </ul>
+            <article id="navigation" class="flex-col-sb-start">
+                <h1 class="text-extra-lg">Navigation</h1>
+                <p>A Navigation bar helps in accessing information. It is the UI element on a webpage that includes
+                    links for the other sections of the website. The navbar provided by native is also responsive. It
+                    will turn into a <span class="highlight-class">hamburger</span> menu when the width decreases.
+                    <p>It has the following fields</p>
+                    <p>
+                        <span class="highlight-class">Logo</span>,
+                        <span class="highlight-class">Search box</span>,
+                        <span class="highlight-class">social links section</span>,
+                        <span class="highlight-class">Button Links</span>,
+                        <span class="highlight-class">Icon Links</span>,
+                        <span class="highlight-class">Hamburger</span>,
+                    </p>
+                    <section class="example">
+                        <h3>Example of Navigation Bar</h3>
+                        <section class="eg-container eg-container-nav p-md ">
+                            <header class="page-header flex-col-sb">
+                                <div class="header-content flex-row-sb p-1">
+                                    <a href="/index.html" class="logo">
+                                        <img src="/assets/logo.svg" alt="logo" class="min-img img-responsive">
+                                    </a>
+                                    <div class="search-con flex-row-sb img-responsive">
+                                        <form action="#" class="form-search flex-row-sb">
+                                            <input type="text" class="text-rg pl-1" id="search-field"
+                                                placeholder="search the entire store...">
+                                            <button type="submit" class="btn-icon pr-sm"><i
+                                                    class="fa-solid fa-magnifying-glass search-icon thin"></i></button>
+                                        </form>
+                                    </div>
+                                    <div class="flex-row-sb right-nav px-sm">
+                                        <div class="shop-con flex-row-sb">
+                                            <a class="link" href="/screens/product-page.html">
+                                                <h5>Shop</h5>
+                                            </a>
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </div>
+                                        <div class="experience-con flex-row-sb">
+                                            <a class="link" href="#">
+                                                <h5>experience</h5>
+                                            </a>
+                                        </div>
+                                        <div class="location-con">
+                                            <div class="location flex-row-sb">
+                                                <a class="link" href="#">
+                                                    <h5>location</h5>
+                                                </a>
+                                                <i class="fa-solid fa-angle-down"></i>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown account-con">
+                                            <i class="fa-regular fa-user text-md dropbtn"></i>
+                                            <div id="myDropdown" class="dropdown-content">
+                                                <a href="/screens/sign-up.html" class="p-1">Sign Up</a>
+                                                <a href="/screens/log-in.html" class="p-1">Log In</a>
+                                            </div>
+                                        </div>
+                                        <div class="wish-con">
+                                            <a href="/screens/wishlist-page.html">
+                                                <span class="badge-icon badge-container"><i
+                                                        class="fas fa-heart badge-icon-base text-md"></i>
+                                                    <span class="count-badge heart-badge-number">4</span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="cart-con">
+                                            <a href="/screens/cart-page.html">
+                                                <span class="badge-icon badge-container"><i
+                                                        class="fa-solid fa-cart-shopping text-md"></i>
+                                                    <span class="count-badge cart-badge-number">3</span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="bars-con">
+                                        <div class="user">
+                                            <i class="fas fa-bars"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="search-btm p-1">
+                                    <form action="#" class="form-search flex-row-sb">
+                                        <input type="text" class="text-rg pl-1" id="search-field"
+                                            placeholder="search the entire store...">
+                                        <button type="submit" class="btn-icon pr-sm"><i
+                                                class="fa-solid fa-magnifying-glass search-icon thin"></i></button>
+                                    </form>
+                                </div>
+                                <div class="menu p-sm">
+                                    <h5><a href="/screens/product-page.html">Shop All Products</h5></a>
+                                    <h5><a href="/screens/wishlist-page.html">My Wishlist</h5></a>
+                                    <h5><a href="/screens/cart-page.html">My Shopping Cart</h5></a>
+                                    <h5><a href="">Location</h5></a>
+                                    <h5><a href="/screens/sign-up.html">Sign Up</h5></a>
+                                    <h5><a href="/screens/log-in.html">Log In</h5></a>
+                                </div>
+                            </header>
+                        </section>
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=14px&ph=13px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%253Cheader%2520class%253D%2522page-header%2520flex-col-sb%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522header-content%2520flex-row-sb%2520p-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%252Findex.html%2522%2520class%253D%2522logo%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fassets%252Flogo.svg%2522%2520alt%253D%2522logo%2522%2520class%253D%2522min-img%2520img-responsive%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522search-con%2520flex-row-sb%2520img-responsive%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cform%2520action%253D%2522%2523%2522%2520class%253D%2522form-search%2520flex-row-sb%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520class%253D%2522text-rg%2520pl-1%2522%2520id%253D%2522search-field%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520placeholder%253D%2522search%2520the%2520entire%2520store...%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522submit%2522%2520class%253D%2522btn-icon%2520pr-sm%2522%253E%253Ci%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522fa-solid%2520fa-magnifying-glass%2520search-icon%2520thin%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fform%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-row-sb%2520right-nav%2520px-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522shop-con%2520flex-row-sb%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522link%2522%2520href%253D%2522%252Fscreens%252Fproduct-page.html%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%253EShop%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-angle-down%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522experience-con%2520flex-row-sb%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522link%2522%2520href%253D%2522%2523%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%253Eexperience%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522location-con%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522location%2520flex-row-sb%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522link%2522%2520href%253D%2522%2523%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%253Elocation%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-angle-down%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dropdown%2520account-con%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-regular%2520fa-user%2520text-md%2520dropbtn%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520id%253D%2522myDropdown%2522%2520class%253D%2522dropdown-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%252Fscreens%252Fsign-up.html%2522%2520class%253D%2522p-1%2522%253ESign%2520Up%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%252Fscreens%252Flog-in.html%2522%2520class%253D%2522p-1%2522%253ELog%2520In%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522wish-con%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520hr"
+                            style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
                     </section>
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=11px&ph=13px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%250A%253Cul%2520class%253D%2522list%2522%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25201%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25202%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25203%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25204%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25205%253C%252Fli%253E%250A%253C%252Ful%253E%250A%253Cul%2520class%253D%2522list%2520list-disc%2522%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25201%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25202%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25203%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25204%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25205%253C%252Fli%253E%250A%253C%252Ful%253E%250A%253Cul%2520class%253D%2522list%2520list-alpha-lower%2522%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25201%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25202%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25203%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25204%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25205%253C%252Fli%253E%250A%253C%252Ful%253E%250A%253Cul%2520class%253D%2522list%2520list-alpha-upper%2522%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25201%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25202%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25203%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25204%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25205%253C%252Fli%253E%250A%253C%252Ful%253E%250A%253Cul%2520class%253D%2522list%2520list-circle%2522%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25201%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25202%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25203%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25204%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25205%253C%252Fli%253E%250A%253C%252Ful%253E%250A%253Cul%2520class%253D%2522list%2520list-decimal%2522%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25201%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25202%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25203%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25204%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25205%253C%252Fli%253E%250A%253C%252Ful%253E%250A%253Cul%2520class%253D%2522list%2520list-roman-lower%2522%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25201%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25202%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25203%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25204%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25205%253C%252Fli%253E%250A%253C%252Ful%253E%250A%253Cul%2520class%253D%2522list%2520list-roman-upper%2522%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25201%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25202%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25203%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25204%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25205%253C%252Fli%253E%250A%253C%252Ful%253E%250A%253Cul%2520class%253D%2522list%2520list-triangle%2522%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25201%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25202%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25203%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25204%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25205%253C%252Fli%253E%250A%253C%252Ful%253E"
-                        style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
-                </section>
-
-                <section class="example">
-                    <h3>Example of Stacked Lists</h3>
-                    <section class="eg-container p-md">
-                        <div class="stacked-list flex-col-sb p-md">
-                            <h4 class="p-sm">Notifications</h4>
-                            <hr />
-                            <div class="sl-body flex-col-sb-start">
-                                <div class="sl-item flex-row-se">
-                                    <i class="fa  fa-user"></i>
-                                    <p>Liked Your Photo</p>
-                                </div>
-                                <div class="sl-item flex-row-se">
-                                    <i class="fa  fa-user"></i>
-                                    <p>Started Following You</p>
-                                </div>
-                                <div class="sl-item flex-row-se">
-                                    <i class="fa  fa-user"></i>
-                                    <p>Mentioned You</p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=11px&ph=13px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%250A%253Cdiv%2520class%253D%2522stacked-list%2520flex-col-sb%2520p-md%2522%253E%250A%2520%2520%2520%2520%253Ch4%2520class%253D%2522p-sm%2522%253ENotifications%253C%252Fh4%253E%250A%2520%2520%2520%2520%253Chr%2520%252F%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522sl-body%2520flex-col-sb-start%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522sl-item%2520flex-row-se%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520%2520fa-user%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253ELiked%2520Your%2520Photo%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522sl-item%2520flex-row-se%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520%2520fa-user%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EStarted%2520Following%2520You%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522sl-item%2520flex-row-se%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520%2520fa-user%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EMentioned%2520You%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
-                        style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
-                </section>
             </article>
 
             <div>
                 <button class="btn btn-primary btn-float" id="go-top">
-                    <i class="fas fa-chevron-double-up"></i>
+                    <i class="fa-solid fa-circle-arrow-up"></i>
                 </button>
             </div>
         </div>
@@ -1445,3 +1433,4 @@
 <script src="/docs/darkMode.js"></script>
 
 </html>
+
