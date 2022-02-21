@@ -13,6 +13,10 @@ p {
     z-index: var(--z-2);
 }
 
+.logo-dark {
+    display: none;
+}
+
 header {
     z-index: var(--z-1);
 }
@@ -87,7 +91,7 @@ header {
 }
 
 .overlay-down {
-    top: 18%;
+    top: 22%;
     height: 0;
     width: 100%;
 }
