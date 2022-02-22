@@ -74,6 +74,7 @@
                 <h5 class="m-sm menu-link"><a href="#modal">Modal</a></h5>
                 <h5 class="m-sm menu-link"><a href="#navigation">Navigation</a></h5>
                 <h5 class="m-sm menu-link"><a href="#rating">Ratings</a></h5>
+                <h5 class="m-sm menu-link"><a href="#slider">Slider</a></h5>
                 <h5 class="m-sm menu-link"><a href="#typography">Typography</a></h5>
                 <h5 class="m-sm menu-link"><a href="#toast">Toast</a></h5>
             </div>
@@ -106,6 +107,7 @@
                 <div><a href="#modal" class="py-0 px-1 m-sm">Modal</a></div>
                 <div><a href="#navigation" class="py-0 px-1 m-sm">Navigation</a></div>
                 <div><a href="#rating" class="py-0 px-1 m-sm">Ratings</a></div>
+                <div><a href="#slider" class="py-0 px-1 m-sm">Slider</a></div>
                 <div><a href="#typography" class="py-0 px-1 m-sm">Typography</a></div>
                 <div><a href="#toast" class="py-0 px-1 m-sm">Toast</a></div>
             </div>
@@ -1312,10 +1314,6 @@
                 <hr>
             </div>
 
-            <div class="my-2">
-                <hr>
-            </div>
-
             <article id="list" class="flex-col-sb-start">
                 <h1 class="text-extra-lg">Lists</h1>
                 <p>Lists can be used at so many places, navigation bar, stacked notifications, article pages, etc. They
@@ -1435,6 +1433,10 @@
                     </iframe>
                 </section>
             </article>
+
+            <div class="my-2">
+                <hr>
+            </div>
 
             <article id="navigation" class="flex-col-sb-start">
                 <h1 class="text-extra-lg">Navigation</h1>
@@ -1619,6 +1621,7 @@
                     </iframe>
                 </section>
             </article>
+
             <div class="my-2">
                 <hr>
             </div>
@@ -1640,6 +1643,46 @@
                     </section>
                     <iframe
                         src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=14px&ph=13px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%253Cdiv%2520class%253D%2522ratings-cont%2520flex-row-se%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522rating%2522%253E%253Ci%2520class%253D%2522fa-solid%2520fa-star%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522rating%2522%253E%253Ci%2520class%253D%2522fa-solid%2520fa-star%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522rating%2522%253E%253Ci%2520class%253D%2522fa-solid%2520fa-star%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522rating%2522%253E%253Ci%2520class%253D%2522fa-solid%2520fa-star%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522rating%2520rating-half%2522%253E%253Ci%2520class%253D%2522fa-regular%2520fa-star%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+                        style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </section>
+            </article>
+
+            <div class="my-2">
+                <hr>
+            </div>
+
+            <article id="slider" class="flex-col-sb-start">
+                <h1 class="text-extra-lg">Slider</h1>
+                <p>Sliders are used to decide range for something like sound in videos, price in shopping sites, etc..
+                </p>
+                <section class="example">
+                    <h3>Example of Slider with Value</h3>
+                    <section class="eg-container p-md ">
+                        <form name="price-field" oninput="range1value.value = range1.valueAsNumber" class="price-field">
+                            <input name="range1" type="range" step="1" min="1" max="5" value="1">
+                            <div><output name="range1value" for="range1">1</output><span>⭐ and above</span></div>
+                        </form>
+                    </section>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=14px&ph=13px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%253Cform%2520name%253D%2522price-field%2522%2520oninput%253D%2522range1value.value%2520%253D%2520range1.valueAsNumber%2522%2520class%253D%2522price-field%2522%253E%250A%2520%2520%2520%2520%253Cinput%2520name%253D%2522range1%2522%2520type%253D%2522range%2522%2520step%253D%25221%2522%2520min%253D%25221%2522%2520max%253D%25225%2522%2520value%253D%25221%2522%253E%250A%2520%2520%2520%2520%253Cdiv%253E%253Coutput%2520name%253D%2522range1value%2522%2520for%253D%2522range1%2522%253E1%253C%252Foutput%253E%253Cspan%253E%25E2%25AD%2590%2520and%2520above%253C%252Fspan%253E%253C%252Fdiv%253E%250A%253C%252Fform%253E"
+                        style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </section>
+                <section class="example">
+                    <h3>Example of Slider with Icon</h3>
+                    <section class="eg-container p-md ">
+                        <form name="price-field" oninput="range1value.value = range1.valueAsNumber"
+                            class="price-field flex-row-se">
+                            <label for="slider"><i class="fa-solid fa-volume-high"></i></label>
+                            <input name="range1" type="range" step="10" min="0" max="100" value="0" id="slider">
+                            <output name="range1value" for="range1">0</output>
+                        </form>
+                    </section>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=14px&ph=13px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%253Cform%2520name%253D%2522price-field%2522%2520oninput%253D%2522range1value.value%2520%253D%2520range1.valueAsNumber%2522%2520class%253D%2522price-field%2520flex-row-se%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522slider%2522%253E%253Ci%2520class%253D%2522fa-solid%2520fa-volume-high%2522%253E%253C%252Fi%253E%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%2520name%253D%2522range1%2522%2520type%253D%2522range%2522%2520step%253D%252210%2522%2520min%253D%25220%2522%2520max%253D%2522100%2522%2520value%253D%25220%2522%2520id%253D%2522slider%2522%253E%250A%2520%2520%2520%2520%253Coutput%2520name%253D%2522range1value%2522%2520for%253D%2522range1%2522%253E0%253C%252Foutput%253E%250A%253C%252Fform%253E"
                         style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
                         sandbox="allow-scripts allow-same-origin">
                     </iframe>
