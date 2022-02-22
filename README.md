@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/hero-img.svg" alt="Native UI logo" width="200px" height="150px" />
+<img src="assets/hero-img.svg" alt="Native UI logo" width="300px" height="200px" />
   
 # NATIVE UI
 
@@ -11,7 +11,11 @@
 ![Forks](https://img.shields.io/github/forks/hinanshisuthar/native-ui-library)
 ![Stars](https://img.shields.io/github/stars/hinanshisuthar/native-ui-library)
 
+## Normal Theme
 <img src="assets/landing-page.png" alt="Native UI Landing Page" width="500px" height="200px" align="center"/>
+  
+## Dark Theme
+<img src="assets/landing-page-dark.png" alt="Native UI Landing Page Dark" width="500px" height="200px" align="center"/>
 
 </div>
 
