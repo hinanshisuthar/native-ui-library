@@ -1,0 +1,9 @@
+.price-field {
+    border: transparent;
+    box-shadow: none;
+}
+
+.price-field input {
+    width: 80%;
+}
+
