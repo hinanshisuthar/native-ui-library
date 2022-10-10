@@ -322,7 +322,8 @@ body.dark-mode #live-modal-con {
     }
 
     .top,
-    .hamburger {
+    .hamburger,
+    .dark-mode-sec {
         display: none;
     }
 
@@ -366,11 +367,11 @@ body.dark-mode #live-modal-con {
         cursor: pointer;
     }
 
-    aside .overlay-content div a:hover {
+    aside .overlay-content div:hover {
         font-weight: 700;
     }
 
-    aside .overlay-content div a:active {
+    aside .overlay-content div:active {
         font-weight: 700;
     }
 

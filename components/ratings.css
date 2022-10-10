@@ -1,4 +1,24 @@
 .rating {
-    color: var(--hover-color-links)
+    color: var(--hover-color-links);
 }
 
+.dynamic .ratings-cont.ratings-cont-dynamic {
+    flex-direction: row-reverse;
+}
+
+.ratings-cont input {
+  display: none;
+}
+
+.ratings-cont label {
+  color: var(--font-color-grey);
+  cursor: pointer;
+}
+
+.ratings-cont :checked ~ label {
+  color: var(--hover-color-links);
+}
+
+.ratings-cont label:hover {
+  color: var(--hover-color-links-light)
+}
