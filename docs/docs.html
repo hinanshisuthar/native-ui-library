@@ -14,12 +14,12 @@
 
 </head>
 
-<body>
+<body class="body">
     <nav class="navigation">
         <div class="flex-row-se nav">
             <div class="logo-container">
-                <a href="/index.html"><img src="/assets/logo.svg" alt="logo" class="logo" width="200" height="100"></a>
-                <a href="/index.html"><img src="/assets/logo-dark.png" alt="logo" class="logo-dark" width="190"
+                <a href="/index.html"><img loading="lazy" src="/assets/logo.svg" alt="logo" class="logo" width="200" height="100"></a>
+                <a href="/index.html"><img loading="lazy" src="/assets/logo-dark.png" alt="logo" class="logo-dark" width="190"
                         height="50"></a>
             </div>
             <div class="center nav-center">
@@ -34,12 +34,16 @@
                         class="fab fa-twitter m-sm"></i></a>
                 <a href="https://www.linkedin.com/in/hinanshi-suthar-7128201b0/" target="_blank"
                     rel="noopener noreferrer"><i class="fab fa-linkedin m-sm"></i></a>
-                <button class="dark-mode-button dmb"><i class="dark-mode-btn fa fa-moon m-sm"></i></button>
+                <button class="dark-mode-button dmb"><i class="dark-mode-btn m-sm fa fa-moon"></i></button>
                 <button class="dark-mode-button dmb-2"><i class="fa-solid fa-sun"></i></button>
 
             </div>
             <div class="hamburger center">
                 <i class="fa fa-bars" onclick="openNav()"></i>
+            </div>
+            <div class="dark-mode-sec">
+                <button class="dark-mode-button dmb"><i class="dark-mode-btn m-sm fa fa-moon"></i></button>
+                <button class="dark-mode-button dmb-2"><i class="fa-solid fa-sun"></i></button>
             </div>
         </div>
 
@@ -124,14 +128,6 @@
 
                 <iframe
                     src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=11px&ph=11px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%250A%253C%21--%2520copy%2520and%2520paste%2520it%2520in%2520your%2520head%2520section%2520--%253E%250A%250A%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522native-ui.css%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
-                    style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
-                    sandbox="allow-scripts allow-same-origin">
-                </iframe>
-
-                <p>You can also import the stylesheet in your css file above all the declarations.</p>
-
-                <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=5px&dsblur=68px&wc=true&wa=true&pv=16px&ph=13px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%250A%253C%21--%2520copy%2520and%2520paste%2520it%2520in%2520your%2520css%2520file%2520above%2520all%2520the%2520declarations%2520--%253E%250A%250A%2540import%2520url%28%252Fnative-ui.css%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
                     style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
                     sandbox="allow-scripts allow-same-origin">
                 </iframe>
@@ -246,22 +242,21 @@
                     </p>
                     <section class="eg-container flex-row-se p-md avatar-con">
                         <div class="avatar avatar-xs flex-items">
-                            <img src="/assets/avatar.jpg" alt="avatar-img" class="img-responsive img-circular">
+                            <img loading="lazy" src="/assets/avatar.jpg" alt="avatar-img" class="img-responsive img-circular">
                         </div>
                         <div class="avatar avatar-sm flex-items">
-                            <img src="/assets/avatar.jpg" alt="avatar-img" class="img-responsive img-circular">
+                            <img loading="lazy" src="/assets/avatar.jpg" alt="avatar-img" class="img-responsive img-circular">
                         </div>
                         <div class="avatar avatar-rg flex-items">
-                            <img src="/assets/avatar.jpg" alt="avatar-img" class="img-responsive img-circular">
+                            <img loading="lazy" src="/assets/avatar.jpg" alt="avatar-img" class="img-responsive img-circular">
                         </div>
                         <div class="avatar avatar-md flex-items">
-                            <img src="/assets/avatar.jpg" alt="avatar-img" class="img-responsive img-circular">
+                            <img loading="lazy" src="/assets/avatar.jpg" alt="avatar-img" class="img-responsive img-circular">
                         </div>
                         <div class="avatar avatar-lg flex-items">
-                            <img src="/assets/avatar.jpg" alt="avatar-img" class="img-responsive img-circular">
+                            <img loading="lazy" src="/assets/avatar.jpg" alt="avatar-img" class="img-responsive img-circular">
                         </div>
                     </section>
-
 
                     <iframe
                         src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=11px&ph=11px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-xs%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fassets%252Favatar.jpg%2522%2520alt%253D%2522avatar-img%2522%2520class%253D%2522img-responsive%2520img-circular%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fassets%252Favatar.jpg%2522%2520alt%253D%2522avatar-img%2522%2520class%253D%2522img-responsive%2520img-circular%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-rg%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fassets%252Favatar.jpg%2522%2520alt%253D%2522avatar-img%2522%2520class%253D%2522img-responsive%2520img-circular%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-md%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fassets%252Favatar.jpg%2522%2520alt%253D%2522avatar-img%2522%2520class%253D%2522img-responsive%2520img-circular%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-lg%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fassets%252Favatar.jpg%2522%2520alt%253D%2522avatar-img%2522%2520class%253D%2522img-responsive%2520img-circular%2522%253E%250A%253C%252Fdiv%253E%250A"
@@ -269,8 +264,6 @@
                         sandbox="allow-scripts allow-same-origin">
                     </iframe>
                 </section>
-
-
 
                 <section class="example">
                     <h3>Examples of Avatar with text.</h3>
@@ -322,32 +315,32 @@
                     <section class="eg-container flex-row-se p-md avatar-con">
                         <div class="badge-container">
                             <div class="avatar avatar-xs">
-                                <img src="/assets/avatar.jpg" alt="avatar-img" class="img-responsive img-circular">
+                                <img loading="lazy" src="/assets/avatar.jpg" alt="avatar-img" class="img-responsive img-circular">
                             </div>
                             <i class="fas fa-circle"></i>
                         </div>
                         <div class="badge-container">
                             <div class="avatar avatar-sm">
-                                <img src="/assets/avatar.jpg" alt="avatar-img" class="img-responsive img-circular">
+                                <img loading="lazy" src="/assets/avatar.jpg" alt="avatar-img" class="img-responsive img-circular">
                             </div>
                             <i class="fas fa-do-not-enter"></i>
                         </div>
                         <div class="badge-container">
                             <div class="avatar avatar-rg">
-                                <img src="/assets/avatar.jpg" alt="avatar-img" class="img-responsive img-circular">
+                                <img loading="lazy" src="/assets/avatar.jpg" alt="avatar-img" class="img-responsive img-circular">
                             </div>
                             <i class="fas fa-moon fa-moon-badge"></i>
                         </div>
                         <div class="badge-container">
                             <div class="avatar avatar-md">
-                                <img src="/assets/avatar.jpg" alt="avatar-img" class="img-responsive img-circular">
+                                <img loading="lazy" src="/assets/avatar.jpg" alt="avatar-img" class="img-responsive img-circular">
                             </div>
                             <i class="fas fa-mobile"></i>
                         </div>
                         <div>
                             <div class="badge-container">
                                 <div class="avatar avatar-lg">
-                                    <img src="/assets/avatar.jpg" alt="avatar-img" class="img-responsive img-circular">
+                                    <img loading="lazy" src="/assets/avatar.jpg" alt="avatar-img" class="img-responsive img-circular">
                                 </div>
                                 <i class="fas fa-circle fa-circle-lg"></i>
                             </div>
@@ -545,7 +538,7 @@
                         <div class="card-badge">
                             <div class="product">
                                 <div class="prod-container">
-                                    <img src="/assets/cards.png" alt="product">
+                                    <img loading="lazy" src="/assets/cards.png" alt="product">
                                     <span class="btn-badge blue">NEW</span>
                                 </div>
 
@@ -579,7 +572,7 @@
                         <div class="card-badge">
                             <div class="product">
                                 <div class="prod-container">
-                                    <img src="/assets/cards1.png" alt="product">
+                                    <img loading="lazy" src="/assets/cards1.png" alt="product">
                                     <span class="btn-badge green">BEST SELLER</span>
                                 </div>
 
@@ -630,7 +623,7 @@
                         <div class="card-badge" id="card-dismiss">
                             <div class="product">
                                 <div class="prod-container">
-                                    <img src="/assets/cards1.png" alt="product">
+                                    <img loading="lazy" src="/assets/cards1.png" alt="product">
                                     <span class="btn-badge-dismiss blue"><i class="fa fa-times"
                                             id="close-card"></i></span>
                                 </div>
@@ -692,7 +685,7 @@
                             <div class="overlay-bg">
                                 <div class="product">
                                     <div class="prod-container">
-                                        <img src="/assets/cards1.png" alt="product">
+                                        <img loading="lazy" src="/assets/cards1.png" alt="product">
                                     </div>
 
                                     <div class="prod-content">
@@ -780,7 +773,7 @@
                         <div class="card-badge">
                             <div class="product">
                                 <div class="prod-container">
-                                    <img src="/assets/cards1.png" alt="product">
+                                    <img loading="lazy" src="/assets/cards1.png" alt="product">
                                 </div>
 
                                 <div class="prod-content">
@@ -830,7 +823,7 @@
                         <div class="card-horizontal">
                             <div class="product">
                                 <div class="prod-container">
-                                    <img src="/assets/cards1.png" alt="product" class="img-responsive"
+                                    <img loading="lazy" src="/assets/cards1.png" alt="product" class="img-responsive"
                                         id="horizontal-img">
                                 </div>
                             </div>
@@ -890,7 +883,7 @@
                             auto</span></p>
                     <section class="eg-container flex-row-se p-md">
                         <div class="responsive-img-container">
-                            <img src="/assets/petflix.jpg" alt="" class="img-responsive">
+                            <img loading="lazy" src="/assets/petflix.jpg" alt="" class="img-responsive">
                         </div>
                     </section>
 
@@ -910,10 +903,10 @@
                     </p>
                     <section class="eg-container flex-row-se p-md">
                         <div class="responsive-img-container">
-                            <img src="https://picsum.photos/200" alt="" class="img-responsive avatar-md img-circular">
+                            <img loading="lazy" src="https://picsum.photos/200" alt="" class="img-responsive avatar-md img-circular">
                         </div>
                         <div class="responsive-img-container">
-                            <img src="https://picsum.photos/400" alt="" class="img-responsive img-circular">
+                            <img loading="lazy" src="https://picsum.photos/400" alt="" class="img-responsive img-circular">
                         </div>
                     </section>
 
@@ -998,6 +991,495 @@
                 </section>
 
 
+            </article>
+
+            <div class="my-2">
+                <hr>
+            </div>
+
+            <article id="grid" class="flex-col-sb-start">
+                <h1 class="text-extra-lg">Grids</h1>
+                <p>Grids are very useful in arranging the content over the website hasle free.
+                </p>
+                <p>Add class: <p>Add class: <span class="highlight-class">grid</span> to the paren div. And add the
+                        following as per requiremene.</p><span class="highlight-class">grid-20-80</span> , <span
+                        class="highlight-class">grid-3-col</span> , <span class="highlight-class">grid-50-50</span> ,
+                    <span class="highlight-class">grid-4-col</span></p>
+                <section class="example">
+                    <h3>Example of 20-80 grid systm,</h3>
+                    <section class="eg-container grid grid-20-80 p-md" id="grid-con">
+                        <div class="p-sm text-justify"> 20%
+                        </div>
+                        <div class="p-sm text-justify"> 80%
+                        </div>
+                    </section>
+
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=11px&ph=11px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%250A%253Csection%2520class%253D%2522eg-container%2520grid%2520grid-20-80%2520p-md%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522p-sm%2520text-justify%2522%253E%252020%2525%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522p-sm%2520text-justify%2522%253E%252080%2525%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fsection%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+                        style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </section>
+
+                <section class="example">
+                    <h3>Example of three column grid system</h3>
+                    <p>Add class: <span class="highlight-class">grid-3-col</span> to the paren div.</p>
+
+                    <section class="eg-container grid grid-3-col p-md">
+                        <div class="p-sm"> 1fr
+                        </div>
+                        <div class="p-sm"> 1fr
+                        </div>
+                        <div class="p-sm"> 1fr
+                        </div>
+                    </section>
+
+
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=11px&ph=11px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%250A%253Csection%2520class%253D%2522eg-container%2520grid%2520grid-3-col%2520p-md%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522p-sm%2522%253E%25201fr%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522p-sm%2522%253E%25201fr%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522p-sm%2522%253E%25201fr%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fsection%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+                        style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </section>
+
+                <section class="example">
+                    <h3>Example of 50-50 grid system</h3>
+
+                    <section class="eg-container grid grid-50-50 p-md">
+                        <div class="p-sm"> 50%
+                        </div>
+                        <div class="p-sm"> 50%
+                        </div>
+                    </section>
+
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=11px&ph=11px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%250A%253Csection%2520class%253D%2522eg-container%2520grid%2520grid-50-50%2520p-md%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522p-sm%2522%253E%252050%2525%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522p-sm%2522%253E%252050%2525%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fsection%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+                        style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </section>
+
+                <section class="example">
+                    <h3>Example of four column grid system</h3>
+
+                    <section class="eg-container grid grid-4-col p-md">
+                        <div class="p-sm"> 1fr
+                        </div>
+                        <div class="p-sm"> 1fr
+                        </div>
+                        <div class="p-sm"> 1fr
+                        </div>
+                        <div class="p-sm"> 1fr
+                        </div>
+                    </section>
+
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=11px&ph=11px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%250A%253Csection%2520class%253D%2522eg-container%2520grid%2520grid-4-col%2520p-md%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522p-sm%2522%253E%25201fr%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522p-sm%2522%253E%25201fr%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522p-sm%2522%253E%25201fr%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522p-sm%2522%253E%25201fr%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fsection%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+                        style="width: 100%; height: 400px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </section>
+            </article>
+
+            <div class="my-2">
+                <hr>
+            </div>
+
+            <article id="list" class="flex-col-sb-start">
+                <h1 class="text-extra-lg">Lists</h1>
+                <p>Lists can be used at so many places, navigation bar, stacked notifications, article pages, etc. They
+                    can be <span class="highlight-class">nested</span> or <span class="highlight-class">simple</span>
+                </p>
+                <p>Add class: <span class="highlight-class">list</span> to the parent div. And add the
+                    following as per requirement.</p>
+                <p>
+                    <span class="highlight-class">list</span>,
+                    <span class="highlight-class">list-disc</span>,
+                    <span class="highlight-class">list-circle</span>,
+                    <span class="highlight-class">list-decimal</span>,
+                    <span class="highlight-class">list-triangle</span>,
+                    <span class="highlight-class">list-roman</span>,
+                    <span class="highlight-class">list-alpha</span>
+                </p>
+                <section class="example">
+                    <h3>Example of Normal Lists</h3>
+                    <section class="eg-container grid grid-4-col p-md">
+                        <ul class="list">
+                            <li>Item 1</li>
+                            <li>Item 2</li>
+                            <li>Item 3</li>
+                            <li>Item 4</li>
+                            <li>Item 5</li>
+                        </ul>
+                        <ul class="list list-disc">
+                            <li>Item 1</li>
+                            <li>Item 2</li>
+                            <li>Item 3</li>
+                            <li>Item 4</li>
+                            <li>Item 5</li>
+                        </ul>
+                        <ul class="list list-alpha-lower">
+                            <li>Item 1</li>
+                            <li>Item 2</li>
+                            <li>Item 3</li>
+                            <li>Item 4</li>
+                            <li>Item 5</li>
+                        </ul>
+                        <ul class="list list-alpha-upper">
+                            <li>Item 1</li>
+                            <li>Item 2</li>
+                            <li>Item 3</li>
+                            <li>Item 4</li>
+                            <li>Item 5</li>
+                        </ul>
+                        <ul class="list list-circle">
+                            <li>Item 1</li>
+                            <li>Item 2</li>
+                            <li>Item 3</li>
+                            <li>Item 4</li>
+                            <li>Item 5</li>
+                        </ul>
+                        <ul class="list list-decimal">
+                            <li>Item 1</li>
+                            <li>Item 2</li>
+                            <li>Item 3</li>
+                            <li>Item 4</li>
+                            <li>Item 5</li>
+                        </ul>
+                        <ul class="list list-roman-lower">
+                            <li>Item 1</li>
+                            <li>Item 2</li>
+                            <li>Item 3</li>
+                            <li>Item 4</li>
+                            <li>Item 5</li>
+                        </ul>
+                        <ul class="list list-roman-upper">
+                            <li>Item 1</li>
+                            <li>Item 2</li>
+                            <li>Item 3</li>
+                            <li>Item 4</li>
+                            <li>Item 5</li>
+                        </ul>
+                        <ul class="list list-triangle">
+                            <li>Item 1</li>
+                            <li>Item 2</li>
+                            <li>Item 3</li>
+                            <li>Item 4</li>
+                            <li>Item 5</li>
+                        </ul>
+                    </section>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=11px&ph=13px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%250A%253Cul%2520class%253D%2522list%2522%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25201%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25202%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25203%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25204%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25205%253C%252Fli%253E%250A%253C%252Ful%253E%250A%253Cul%2520class%253D%2522list%2520list-disc%2522%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25201%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25202%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25203%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25204%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25205%253C%252Fli%253E%250A%253C%252Ful%253E%250A%253Cul%2520class%253D%2522list%2520list-alpha-lower%2522%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25201%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25202%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25203%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25204%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25205%253C%252Fli%253E%250A%253C%252Ful%253E%250A%253Cul%2520class%253D%2522list%2520list-alpha-upper%2522%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25201%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25202%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25203%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25204%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25205%253C%252Fli%253E%250A%253C%252Ful%253E%250A%253Cul%2520class%253D%2522list%2520list-circle%2522%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25201%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25202%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25203%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25204%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25205%253C%252Fli%253E%250A%253C%252Ful%253E%250A%253Cul%2520class%253D%2522list%2520list-decimal%2522%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25201%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25202%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25203%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25204%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25205%253C%252Fli%253E%250A%253C%252Ful%253E%250A%253Cul%2520class%253D%2522list%2520list-roman-lower%2522%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25201%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25202%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25203%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25204%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25205%253C%252Fli%253E%250A%253C%252Ful%253E%250A%253Cul%2520class%253D%2522list%2520list-roman-upper%2522%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25201%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25202%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25203%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25204%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25205%253C%252Fli%253E%250A%253C%252Ful%253E%250A%253Cul%2520class%253D%2522list%2520list-triangle%2522%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25201%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25202%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25203%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25204%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25205%253C%252Fli%253E%250A%253C%252Ful%253E"
+                        style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </section>
+
+                <section class="example">
+                    <h3>Example of Stacked Lists</h3>
+                    <section class="eg-container p-md">
+                        <div class="stacked-list flex-col-sb p-md">
+                            <h4 class="p-sm">Notifications</h4>
+                            <hr />
+                            <div class="sl-body flex-col-sb-start">
+                                <div class="sl-item flex-row-se">
+                                    <i class="fa  fa-user"></i>
+                                    <p>Liked Your Photo</p>
+                                </div>
+                                <div class="sl-item flex-row-se">
+                                    <i class="fa  fa-user"></i>
+                                    <p>Started Following You</p>
+                                </div>
+                                <div class="sl-item flex-row-se">
+                                    <i class="fa  fa-user"></i>
+                                    <p>Mentioned You</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=11px&ph=13px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%250A%253Cdiv%2520class%253D%2522stacked-list%2520flex-col-sb%2520p-md%2522%253E%250A%2520%2520%2520%2520%253Ch4%2520class%253D%2522p-sm%2522%253ENotifications%253C%252Fh4%253E%250A%2520%2520%2520%2520%253Chr%2520%252F%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522sl-body%2520flex-col-sb-start%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522sl-item%2520flex-row-se%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520%2520fa-user%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253ELiked%2520Your%2520Photo%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522sl-item%2520flex-row-se%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520%2520fa-user%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EStarted%2520Following%2520You%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522sl-item%2520flex-row-se%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520%2520fa-user%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EMentioned%2520You%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                        style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </section>
+            </article>
+
+            <div class="my-2">
+                <hr>
+            </div>
+
+            <article id="modal" class="flex-col-sb-start">
+                <h1 class="text-extra-lg">Modal</h1>
+                <p>Modals are built with HTML, CSS, and JavaScript. They’re positioned over everything else in the
+                    document and remove scroll from the so that modal content scrolls instead.
+                </p>
+                <section class="example">
+                    <h3>Example of Modal</h3>
+                    <section class="eg-container p-md ">
+                        <div class="modal grid grid-90-10 p-1">
+                            <div class="modal-con">
+                                <div class="modal-content">
+                                    <h1>Modal Title</h1>
+                                </div>
+                                <div>
+                                    <p>Sunt ad dolore quis aute consequat. Magna exercitation reprehenderit magna aute
+                                        tempor cupidatat consequat elit dolor adipisicing. Mollit dolor eiusmod sunt ex
+                                        incididunt cillum quis. Velit duis sit officia eiusmod Lorem aliqua enim laboris
+                                        do dolor eiusmod. Et mollit incididunt nisi consectetur esse laborum eiusmod
+                                        pariatur proident Lorem eiusmod et. Culpa deserunt nostrud ad veniam.</p>
+                                </div>
+                                <div>
+                                    <button class="btn btn-primary">Close</button>
+                                    <button class="btn btn-secondary">Secondary Action</button>
+                                </div>
+                            </div>
+                            <div class="modal-dismiss">
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </div>
+                    </section>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=14px&ph=13px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%253Cdiv%2520class%253D%2522modal%2520grid%2520grid-90-10%2520p-1%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-con%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch1%253EModal%2520Title%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253ESunt%2520ad%2520dolore%2520quis%2520aute%2520consequat.%2520Magna%2520exercitation%2520reprehenderit%2520magna%2520aute%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520tempor%2520cupidatat%2520consequat%2520elit%2520dolor%2520adipisicing.%2520Mollit%2520dolor%2520eiusmod%2520sunt%2520ex%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520incididunt%2520cillum%2520quis.%2520Velit%2520duis%2520sit%2520officia%2520eiusmod%2520Lorem%2520aliqua%2520enim%2520laboris%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520do%2520dolor%2520eiusmod.%2520Et%2520mollit%2520incididunt%2520nisi%2520consectetur%2520esse%2520laborum%2520eiusmod%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520pariatur%2520proident%2520Lorem%2520eiusmod%2520et.%2520Culpa%2520deserunt%2520nostrud%2520ad%2520veniam.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EClose%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2522%253ESecondary%2520Action%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-dismiss%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-times%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                        style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </section>
+                <section class="example">
+                    <h3>Live Demo</h3>
+                    <section class="eg-container p-md ">
+                        <button class="btn btn-primary" id="live-modal-btn">Live Demo</button>
+                    </section>
+                    <p>For including a live modal, just add <span class="highlight-class">id = "live-modal-con"</span>
+                    </p>
+                    <div class="modal grid grid-90-10 p-1" id="live-modal-con">
+                        <div class="modal-con">
+                            <div class="modal-content">
+                                <h1>Modal Title</h1>
+                            </div>
+                            <div>
+                                <p class="text">Sunt ad dolore quis aute consequat. Magna exercitation reprehenderit
+                                    magna aute
+                                    tempor cupidatat consequat elit dolor adipisicing. Mollit dolor eiusmod sunt ex
+                                    incididunt cillum quis. Velit duis sit officia eiusmod Lorem aliqua enim laboris
+                                    do dolor eiusmod. Et mollit incididunt nisi consectetur esse laborum eiusmod
+                                    pariatur proident Lorem eiusmod et. Culpa deserunt nostrud ad veniam.</p>
+                            </div>
+                            <div>
+                                <button class="btn btn-primary">Close</button>
+                                <button class="btn btn-secondary">Secondary Action</button>
+                            </div>
+                        </div>
+                        <div class="modal-dismiss">
+                            <i class="fa fa-times modal-dismiss-btn"></i>
+                        </div>
+                    </div>
+                    <h2 class="p-md">JavaScript</h2>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=14px&ph=13px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250Aconst%2520modalBtn%2520%253D%2520document.querySelector%28%2522%2523live-modal-btn%2522%29%253B%250Aconst%2520modalCon%2520%253D%2520document.querySelector%28%2522%2523live-modal-con%2522%29%253B%250Aconst%2520modalDismissBtn%2520%253D%2520document.querySelector%28%2522.modal-dismiss-btn%2522%29%253B%250A%250Aconst%2520showModal%2520%253D%2520%28e%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520modalCon.style.display%2520%253D%2520%2522grid%2522%253B%250A%257D%250A%250Aconst%2520closeModal%2520%253D%2520%28e%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520modalCon.style.display%2520%253D%2520%2522none%2522%250A%257D%250A%250AmodalBtn.addEventListener%28%2522click%2522%252C%2520showModal%29%253B%250AmodalDismissBtn.addEventListener%28%2522click%2522%252C%2520closeModal%29%253B"
+                        style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </section>
+            </article>
+
+            <div class="my-2">
+                <hr>
+            </div>
+
+            <article id="navigation" class="flex-col-sb-start">
+                <h1 class="text-extra-lg">Navigation</h1>
+                <p>A Navigation bar helps in accessing information. It is the UI element on a webpage that includes
+                    links for the other sections of the website. The navbar provided by native is also responsive. It
+                    will turn into a <span class="highlight-class">hamburger</span> menu when the width decreases.
+                    <p>It has the following fields</p>
+                    <p>
+                        <span class="highlight-class">Logo</span>,
+                        <span class="highlight-class">Search box</span>,
+                        <span class="highlight-class">social links section</span>,
+                        <span class="highlight-class">Button Links</span>,
+                        <span class="highlight-class">Icon Links</span>,
+                        <span class="highlight-class">Hamburger</span>,
+                    </p>
+                    <section class="example">
+                        <h3>Example of Navigation Bar</h3>
+                        <section class="eg-container eg-container-nav p-md ">
+                            <header class="page-header flex-col-sb">
+                                <div class="header-content flex-row-sb p-1">
+                                    <a href="/index.html" class="logo">
+                                        <img loading="lazy" src="/assets/logo.svg" alt="logo" class="min-img img-responsive">
+                                    </a>
+                                    <div class="search-con flex-row-sb img-responsive">
+                                        <form action="#" class="form-search flex-row-sb">
+                                            <input type="text" class="text-rg pl-1" id="search-field"
+                                                placeholder="search the entire store...">
+                                            <button type="submit" class="btn-icon pr-sm"><i
+                                                    class="fa-solid fa-magnifying-glass search-icon thin"></i></button>
+                                        </form>
+                                    </div>
+                                    <div class="flex-row-sb right-nav px-sm">
+                                        <div class="shop-con flex-row-sb">
+                                            <a class="link" href="/screens/product-page.html">
+                                                <h5>Shop</h5>
+                                            </a>
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </div>
+                                        <div class="experience-con flex-row-sb">
+                                            <a class="link" href="#">
+                                                <h5>experience</h5>
+                                            </a>
+                                        </div>
+                                        <div class="location-con">
+                                            <div class="location flex-row-sb">
+                                                <a class="link" href="#">
+                                                    <h5>location</h5>
+                                                </a>
+                                                <i class="fa-solid fa-angle-down"></i>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown account-con">
+                                            <i class="fa-regular fa-user text-md dropbtn"></i>
+                                            <div id="myDropdown" class="dropdown-content">
+                                                <a href="/screens/sign-up.html" class="p-1">Sign Up</a>
+                                                <a href="/screens/log-in.html" class="p-1">Log In</a>
+                                            </div>
+                                        </div>
+                                        <div class="wish-con">
+                                            <a href="/screens/wishlist-page.html">
+                                                <span class="badge-icon badge-container"><i
+                                                        class="fas fa-heart badge-icon-base text-md"></i>
+                                                    <span class="count-badge heart-badge-number">4</span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="cart-con">
+                                            <a href="/screens/cart-page.html">
+                                                <span class="badge-icon badge-container"><i
+                                                        class="fa-solid fa-cart-shopping text-md"></i>
+                                                    <span class="count-badge cart-badge-number">3</span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="bars-con">
+                                        <div class="user">
+                                            <i class="fas fa-bars"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="search-btm p-1">
+                                    <form action="#" class="form-search flex-row-sb">
+                                        <input type="text" class="text-rg pl-1" id="search-fiel"
+                                            placeholder="search the entire store...">
+                                        <button type="submit" class="btn-icon pr-sm"><i
+                                                class="fa-solid fa-magnifying-glass search-icon thin"></i></button>
+                                    </form>
+                                </div>
+                                <div class="menu p-sm">
+                                    <h5><a href="/screens/product-page.html">Shop All Products</h5></a>
+                                    <h5><a href="/screens/wishlist-page.html">My Wishlist</h5></a>
+                                    <h5><a href="/screens/cart-page.html">My Shopping Cart</h5></a>
+                                    <h5><a href="">Location</h5></a>
+                                    <h5><a href="/screens/sign-up.html">Sign Up</h5></a>
+                                    <h5><a href="/screens/log-in.html">Log In</h5></a>
+                                </div>
+                            </header>
+                        </section>
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=14px&ph=13px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%253Cheader%2520class%253D%2522page-header%2520flex-col-sb%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522header-content%2520flex-row-sb%2520p-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%252Findex.html%2522%2520class%253D%2522logo%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fassets%252Flogo.svg%2522%2520alt%253D%2522logo%2522%2520class%253D%2522min-img%2520img-responsive%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522search-con%2520flex-row-sb%2520img-responsive%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cform%2520action%253D%2522%2523%2522%2520class%253D%2522form-search%2520flex-row-sb%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520class%253D%2522text-rg%2520pl-1%2522%2520id%253D%2522search-field%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520placeholder%253D%2522search%2520the%2520entire%2520store...%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522submit%2522%2520class%253D%2522btn-icon%2520pr-sm%2522%253E%253Ci%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522fa-solid%2520fa-magnifying-glass%2520search-icon%2520thin%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fform%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-row-sb%2520right-nav%2520px-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522shop-con%2520flex-row-sb%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522link%2522%2520href%253D%2522%252Fscreens%252Fproduct-page.html%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%253EShop%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-angle-down%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522experience-con%2520flex-row-sb%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522link%2522%2520href%253D%2522%2523%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%253Eexperience%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522location-con%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522location%2520flex-row-sb%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522link%2522%2520href%253D%2522%2523%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%253Elocation%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-angle-down%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dropdown%2520account-con%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-regular%2520fa-user%2520text-md%2520dropbtn%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520id%253D%2522myDropdown%2522%2520class%253D%2522dropdown-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%252Fscreens%252Fsign-up.html%2522%2520class%253D%2522p-1%2522%253ESign%2520Up%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%252Fscreens%252Flog-in.html%2522%2520class%253D%2522p-1%2522%253ELog%2520In%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522wish-con%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520hr"
+                            style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </section>
+            </article>
+
+            <div class="my-2">
+                <hr>
+            </div>
+
+            <article id="rating" class="flex-col-sb-start">
+                <h1 class="text-extra-lg">Ratings</h1>
+                <p>Native's 5-star ratings component can be used to allow the users to share their opinion about the
+                    product, documentation page, photo and more.</p>
+                <section class="example">
+                    <h3>Example of read-only ratings</h3>
+                    <section class="eg-container p-md ">
+                        <div class="ratings-cont flex-row-se">
+                            <span class="rating"><i class="fa-solid fa-star"></i></span>
+                            <span class="rating"><i class="fa-solid fa-star"></i></span>
+                            <span class="rating"><i class="fa-solid fa-star"></i></span>
+                            <span class="rating"><i class="fa-solid fa-star"></i></span>
+                            <span class="rating rating-half"><i class="fa-regular fa-star"></i></span>
+                        </div>
+                    </section>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=14px&ph=13px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%253Cdiv%2520class%253D%2522ratings-cont%2520flex-row-se%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522rating%2522%253E%253Ci%2520class%253D%2522fa-solid%2520fa-star%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522rating%2522%253E%253Ci%2520class%253D%2522fa-solid%2520fa-star%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522rating%2522%253E%253Ci%2520class%253D%2522fa-solid%2520fa-star%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522rating%2522%253E%253Ci%2520class%253D%2522fa-solid%2520fa-star%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522rating%2520rating-half%2522%253E%253Ci%2520class%253D%2522fa-regular%2520fa-star%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+                        style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </section>
+                <section class="example">
+                    <h3>Example of dynamic ratings</h3>
+                    <section class="eg-container p-md dynamic">
+                        <div class="ratings-cont ratings-cont-dynamic flex-row-se pl-2">
+                            <input type="radio" id="5-rating" name="rating" value="5" />
+                            <label for="5-rating" class="star"><i class="fa-solid fa-star"></i></label>
+                            <input type="radio" id="4-rating" name="rating" value="4" />
+                            <label for="4-rating" class="star"><i class="fa-solid fa-star"></i></label>
+                            <input type="radio" id="3-rating" name="rating" value="3" />
+                            <label for="3-rating" class="star"><i class="fa-solid fa-star"></i></label>
+                            <input type="radio" id="2-rating" name="rating" value="2" />
+                            <label for="2-rating" class="star"><i class="fa-solid fa-star"></i></label>
+                            <input type="radio" id="1-star" name="rating" value="1" />
+                            <label for="1-star" class="star"><i class="fa-solid fa-star"></i></label>
+                        </div>
+                    </section>
+                    <iframe
+                      src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=base16-light&wt=sharp&l=javascript&width=900&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=16px&ph=24px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522ratings-cont%2520ratings-cont-dynamic%2520flex-row-se%2520pl-2%2522%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520id%253D%25225-rating%2522%2520name%253D%2522rating%2522%2520value%253D%25225%2522%2520%252F%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%25225-rating%2522%2520class%253D%2522star%2522%253E%253Ci%2520class%253D%2522fa-solid%2520fa-star%2522%253E%253C%252Fi%253E%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520id%253D%25224-rating%2522%2520name%253D%2522rating%2522%2520value%253D%25224%2522%2520%252F%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%25224-rating%2522%2520class%253D%2522star%2522%253E%253Ci%2520class%253D%2522fa-solid%2520fa-star%2522%253E%253C%252Fi%253E%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520id%253D%25223-rating%2522%2520name%253D%2522rating%2522%2520value%253D%25223%2522%2520%252F%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%25223-rating%2522%2520class%253D%2522star%2522%253E%253Ci%2520class%253D%2522fa-solid%2520fa-star%2522%253E%253C%252Fi%253E%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520id%253D%25222-rating%2522%2520name%253D%2522rating%2522%2520value%253D%25222%2522%2520%252F%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%25222-rating%2522%2520class%253D%2522star%2522%253E%253Ci%2520class%253D%2522fa-solid%2520fa-star%2522%253E%253C%252Fi%253E%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520id%253D%25221-star%2522%2520name%253D%2522rating%2522%2520value%253D%25221%2522%2520%252F%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%25221-star%2522%2520class%253D%2522star%2522%253E%253Ci%2520class%253D%2522fa-solid%2520fa-star%2522%253E%253C%252Fi%253E%253C%252Flabel%253E%250A%253C%252Fdiv%253E"
+                      style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
+                      sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </section>
+            </article>
+
+            <div class="my-2">
+                <hr>
+            </div>
+
+            <article id="slider" class="flex-col-sb-start">
+                <h1 class="text-extra-lg">Slider</h1>
+                <p>Sliders are used to decide range for something like sound in videos, price in shopping sites, etc..
+                </p>
+                <section class="example">
+                    <h3>Example of Slider with Value</h3>
+                    <section class="eg-container p-md ">
+                        <form name="price-field" oninput="range1value.value = range1.valueAsNumber" class="price-field">
+                            <input name="range1" type="range" step="1" min="1" max="5" value="1">
+                            <div><output name="range1value" for="range1">1</output><span>⭐ and above</span></div>
+                        </form>
+                    </section>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=14px&ph=13px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%253Cform%2520name%253D%2522price-field%2522%2520oninput%253D%2522range1value.value%2520%253D%2520range1.valueAsNumber%2522%2520class%253D%2522price-field%2522%253E%250A%2520%2520%2520%2520%253Cinput%2520name%253D%2522range1%2522%2520type%253D%2522range%2522%2520step%253D%25221%2522%2520min%253D%25221%2522%2520max%253D%25225%2522%2520value%253D%25221%2522%253E%250A%2520%2520%2520%2520%253Cdiv%253E%253Coutput%2520name%253D%2522range1value%2522%2520for%253D%2522range1%2522%253E1%253C%252Foutput%253E%253Cspan%253E%25E2%25AD%2590%2520and%2520above%253C%252Fspan%253E%253C%252Fdiv%253E%250A%253C%252Fform%253E"
+                        style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </section>
+                <section class="example">
+                    <h3>Example of Slider with Icon</h3>
+                    <section class="eg-container p-md ">
+                        <form name="price-field" oninput="range1value.value = range1.valueAsNumber"
+                            class="price-field flex-row-se">
+                            <label for="slider"><i class="fa-solid fa-volume-high"></i></label>
+                            <input name="range1" type="range" step="10" min="0" max="100" value="0" id="slider">
+                            <output name="range1value" for="range1">0</output>
+                        </form>
+                    </section>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=14px&ph=13px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%253Cform%2520name%253D%2522price-field%2522%2520oninput%253D%2522range1value.value%2520%253D%2520range1.valueAsNumber%2522%2520class%253D%2522price-field%2520flex-row-se%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522slider%2522%253E%253Ci%2520class%253D%2522fa-solid%2520fa-volume-high%2522%253E%253C%252Fi%253E%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%2520name%253D%2522range1%2522%2520type%253D%2522range%2522%2520step%253D%252210%2522%2520min%253D%25220%2522%2520max%253D%2522100%2522%2520value%253D%25220%2522%2520id%253D%2522slider%2522%253E%250A%2520%2520%2520%2520%253Coutput%2520name%253D%2522range1value%2522%2520for%253D%2522range1%2522%253E0%253C%252Foutput%253E%250A%253C%252Fform%253E"
+                        style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </section>
             </article>
 
             <div class="my-2">
@@ -1220,475 +1702,8 @@
 
 
 
-            </article>
-
-            <div class="my-2">
-                <hr>
-            </div>
-
-            <article id="grid" class="flex-col-sb-start">
-                <h1 class="text-extra-lg">Grids</h1>
-                <p>Grids are very useful in arranging the content over the website hasle free.
-                </p>
-                <p>Add class: <p>Add class: <span class="highlight-class">grid</span> to the paren div. And add the
-                        following as per requiremene.</p><span class="highlight-class">grid-20-80</span> , <span
-                        class="highlight-class">grid-3-col</span> , <span class="highlight-class">grid-50-50</span> ,
-                    <span class="highlight-class">grid-4-col</span></p>
-                <section class="example">
-                    <h3>Example of 20-80 grid systm,</h3>
-                    <section class="eg-container grid grid-20-80 p-md" id="grid-con">
-                        <div class="p-sm text-justify"> 20%
-                        </div>
-                        <div class="p-sm text-justify"> 80%
-                        </div>
-                    </section>
-
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=11px&ph=11px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%250A%253Csection%2520class%253D%2522eg-container%2520grid%2520grid-20-80%2520p-md%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522p-sm%2520text-justify%2522%253E%252020%2525%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522p-sm%2520text-justify%2522%253E%252080%2525%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fsection%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
-                        style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
-                </section>
-
-                <section class="example">
-                    <h3>Example of three column grid system</h3>
-                    <p>Add class: <span class="highlight-class">grid-3-col</span> to the paren div.</p>
-
-                    <section class="eg-container grid grid-3-col p-md">
-                        <div class="p-sm"> 1fr
-                        </div>
-                        <div class="p-sm"> 1fr
-                        </div>
-                        <div class="p-sm"> 1fr
-                        </div>
-                    </section>
-
-
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=11px&ph=11px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%250A%253Csection%2520class%253D%2522eg-container%2520grid%2520grid-3-col%2520p-md%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522p-sm%2522%253E%25201fr%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522p-sm%2522%253E%25201fr%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522p-sm%2522%253E%25201fr%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fsection%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
-                        style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
-                </section>
-
-                <section class="example">
-                    <h3>Example of 50-50 grid system</h3>
-
-                    <section class="eg-container grid grid-50-50 p-md">
-                        <div class="p-sm"> 50%
-                        </div>
-                        <div class="p-sm"> 50%
-                        </div>
-                    </section>
-
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=11px&ph=11px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%250A%253Csection%2520class%253D%2522eg-container%2520grid%2520grid-50-50%2520p-md%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522p-sm%2522%253E%252050%2525%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522p-sm%2522%253E%252050%2525%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fsection%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
-                        style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
-                </section>
-
-                <section class="example">
-                    <h3>Example of four column grid system</h3>
-
-                    <section class="eg-container grid grid-4-col p-md">
-                        <div class="p-sm"> 1fr
-                        </div>
-                        <div class="p-sm"> 1fr
-                        </div>
-                        <div class="p-sm"> 1fr
-                        </div>
-                        <div class="p-sm"> 1fr
-                        </div>
-                    </section>
-
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=11px&ph=11px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%250A%253Csection%2520class%253D%2522eg-container%2520grid%2520grid-4-col%2520p-md%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522p-sm%2522%253E%25201fr%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522p-sm%2522%253E%25201fr%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522p-sm%2522%253E%25201fr%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522p-sm%2522%253E%25201fr%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fsection%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
-                        style="width: 100%; height: 400px; border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
-                </section>
-            </article>
-
-            <div class="my-2">
-                <hr>
-            </div>
-
-            <article id="list" class="flex-col-sb-start">
-                <h1 class="text-extra-lg">Lists</h1>
-                <p>Lists can be used at so many places, navigation bar, stacked notifications, article pages, etc. They
-                    can be <span class="highlight-class">nested</span> or <span class="highlight-class">simple</span>
-                </p>
-                <p>Add class: <span class="highlight-class">list</span> to the parent div. And add the
-                    following as per requirement.</p>
-                <p>
-                    <span class="highlight-class">list</span>,
-                    <span class="highlight-class">list-disc</span>,
-                    <span class="highlight-class">list-circle</span>,
-                    <span class="highlight-class">list-decimal</span>,
-                    <span class="highlight-class">list-triangle</span>,
-                    <span class="highlight-class">list-roman</span>,
-                    <span class="highlight-class">list-alpha</span>
-                </p>
-                <section class="example">
-                    <h3>Example of Normal Lists</h3>
-                    <section class="eg-container grid grid-4-col p-md">
-                        <ul class="list">
-                            <li>Item 1</li>
-                            <li>Item 2</li>
-                            <li>Item 3</li>
-                            <li>Item 4</li>
-                            <li>Item 5</li>
-                        </ul>
-                        <ul class="list list-disc">
-                            <li>Item 1</li>
-                            <li>Item 2</li>
-                            <li>Item 3</li>
-                            <li>Item 4</li>
-                            <li>Item 5</li>
-                        </ul>
-                        <ul class="list list-alpha-lower">
-                            <li>Item 1</li>
-                            <li>Item 2</li>
-                            <li>Item 3</li>
-                            <li>Item 4</li>
-                            <li>Item 5</li>
-                        </ul>
-                        <ul class="list list-alpha-upper">
-                            <li>Item 1</li>
-                            <li>Item 2</li>
-                            <li>Item 3</li>
-                            <li>Item 4</li>
-                            <li>Item 5</li>
-                        </ul>
-                        <ul class="list list-circle">
-                            <li>Item 1</li>
-                            <li>Item 2</li>
-                            <li>Item 3</li>
-                            <li>Item 4</li>
-                            <li>Item 5</li>
-                        </ul>
-                        <ul class="list list-decimal">
-                            <li>Item 1</li>
-                            <li>Item 2</li>
-                            <li>Item 3</li>
-                            <li>Item 4</li>
-                            <li>Item 5</li>
-                        </ul>
-                        <ul class="list list-roman-lower">
-                            <li>Item 1</li>
-                            <li>Item 2</li>
-                            <li>Item 3</li>
-                            <li>Item 4</li>
-                            <li>Item 5</li>
-                        </ul>
-                        <ul class="list list-roman-upper">
-                            <li>Item 1</li>
-                            <li>Item 2</li>
-                            <li>Item 3</li>
-                            <li>Item 4</li>
-                            <li>Item 5</li>
-                        </ul>
-                        <ul class="list list-triangle">
-                            <li>Item 1</li>
-                            <li>Item 2</li>
-                            <li>Item 3</li>
-                            <li>Item 4</li>
-                            <li>Item 5</li>
-                        </ul>
-                    </section>
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=11px&ph=13px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%250A%253Cul%2520class%253D%2522list%2522%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25201%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25202%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25203%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25204%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25205%253C%252Fli%253E%250A%253C%252Ful%253E%250A%253Cul%2520class%253D%2522list%2520list-disc%2522%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25201%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25202%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25203%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25204%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25205%253C%252Fli%253E%250A%253C%252Ful%253E%250A%253Cul%2520class%253D%2522list%2520list-alpha-lower%2522%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25201%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25202%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25203%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25204%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25205%253C%252Fli%253E%250A%253C%252Ful%253E%250A%253Cul%2520class%253D%2522list%2520list-alpha-upper%2522%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25201%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25202%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25203%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25204%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25205%253C%252Fli%253E%250A%253C%252Ful%253E%250A%253Cul%2520class%253D%2522list%2520list-circle%2522%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25201%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25202%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25203%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25204%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25205%253C%252Fli%253E%250A%253C%252Ful%253E%250A%253Cul%2520class%253D%2522list%2520list-decimal%2522%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25201%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25202%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25203%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25204%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25205%253C%252Fli%253E%250A%253C%252Ful%253E%250A%253Cul%2520class%253D%2522list%2520list-roman-lower%2522%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25201%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25202%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25203%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25204%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25205%253C%252Fli%253E%250A%253C%252Ful%253E%250A%253Cul%2520class%253D%2522list%2520list-roman-upper%2522%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25201%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25202%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25203%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25204%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25205%253C%252Fli%253E%250A%253C%252Ful%253E%250A%253Cul%2520class%253D%2522list%2520list-triangle%2522%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25201%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25202%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25203%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25204%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25205%253C%252Fli%253E%250A%253C%252Ful%253E"
-                        style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
-                </section>
-
-                <section class="example">
-                    <h3>Example of Stacked Lists</h3>
-                    <section class="eg-container p-md">
-                        <div class="stacked-list flex-col-sb p-md">
-                            <h4 class="p-sm">Notifications</h4>
-                            <hr />
-                            <div class="sl-body flex-col-sb-start">
-                                <div class="sl-item flex-row-se">
-                                    <i class="fa  fa-user"></i>
-                                    <p>Liked Your Photo</p>
-                                </div>
-                                <div class="sl-item flex-row-se">
-                                    <i class="fa  fa-user"></i>
-                                    <p>Started Following You</p>
-                                </div>
-                                <div class="sl-item flex-row-se">
-                                    <i class="fa  fa-user"></i>
-                                    <p>Mentioned You</p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=11px&ph=13px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%250A%253Cdiv%2520class%253D%2522stacked-list%2520flex-col-sb%2520p-md%2522%253E%250A%2520%2520%2520%2520%253Ch4%2520class%253D%2522p-sm%2522%253ENotifications%253C%252Fh4%253E%250A%2520%2520%2520%2520%253Chr%2520%252F%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522sl-body%2520flex-col-sb-start%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522sl-item%2520flex-row-se%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520%2520fa-user%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253ELiked%2520Your%2520Photo%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522sl-item%2520flex-row-se%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520%2520fa-user%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EStarted%2520Following%2520You%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522sl-item%2520flex-row-se%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520%2520fa-user%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EMentioned%2520You%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
-                        style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
-                </section>
-            </article>
-
-            <div class="my-2">
-                <hr>
-            </div>
-
-            <article id="navigation" class="flex-col-sb-start">
-                <h1 class="text-extra-lg">Navigation</h1>
-                <p>A Navigation bar helps in accessing information. It is the UI element on a webpage that includes
-                    links for the other sections of the website. The navbar provided by native is also responsive. It
-                    will turn into a <span class="highlight-class">hamburger</span> menu when the width decreases.
-                    <p>It has the following fields</p>
-                    <p>
-                        <span class="highlight-class">Logo</span>,
-                        <span class="highlight-class">Search box</span>,
-                        <span class="highlight-class">social links section</span>,
-                        <span class="highlight-class">Button Links</span>,
-                        <span class="highlight-class">Icon Links</span>,
-                        <span class="highlight-class">Hamburger</span>,
-                    </p>
-                    <section class="example">
-                        <h3>Example of Navigation Bar</h3>
-                        <section class="eg-container eg-container-nav p-md ">
-                            <header class="page-header flex-col-sb">
-                                <div class="header-content flex-row-sb p-1">
-                                    <a href="/index.html" class="logo">
-                                        <img src="/assets/logo.svg" alt="logo" class="min-img img-responsive">
-                                    </a>
-                                    <div class="search-con flex-row-sb img-responsive">
-                                        <form action="#" class="form-search flex-row-sb">
-                                            <input type="text" class="text-rg pl-1" id="search-field"
-                                                placeholder="search the entire store...">
-                                            <button type="submit" class="btn-icon pr-sm"><i
-                                                    class="fa-solid fa-magnifying-glass search-icon thin"></i></button>
-                                        </form>
-                                    </div>
-                                    <div class="flex-row-sb right-nav px-sm">
-                                        <div class="shop-con flex-row-sb">
-                                            <a class="link" href="/screens/product-page.html">
-                                                <h5>Shop</h5>
-                                            </a>
-                                            <i class="fa-solid fa-angle-down"></i>
-                                        </div>
-                                        <div class="experience-con flex-row-sb">
-                                            <a class="link" href="#">
-                                                <h5>experience</h5>
-                                            </a>
-                                        </div>
-                                        <div class="location-con">
-                                            <div class="location flex-row-sb">
-                                                <a class="link" href="#">
-                                                    <h5>location</h5>
-                                                </a>
-                                                <i class="fa-solid fa-angle-down"></i>
-                                            </div>
-                                        </div>
-                                        <div class="dropdown account-con">
-                                            <i class="fa-regular fa-user text-md dropbtn"></i>
-                                            <div id="myDropdown" class="dropdown-content">
-                                                <a href="/screens/sign-up.html" class="p-1">Sign Up</a>
-                                                <a href="/screens/log-in.html" class="p-1">Log In</a>
-                                            </div>
-                                        </div>
-                                        <div class="wish-con">
-                                            <a href="/screens/wishlist-page.html">
-                                                <span class="badge-icon badge-container"><i
-                                                        class="fas fa-heart badge-icon-base text-md"></i>
-                                                    <span class="count-badge heart-badge-number">4</span>
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <div class="cart-con">
-                                            <a href="/screens/cart-page.html">
-                                                <span class="badge-icon badge-container"><i
-                                                        class="fa-solid fa-cart-shopping text-md"></i>
-                                                    <span class="count-badge cart-badge-number">3</span>
-                                                </span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="bars-con">
-                                        <div class="user">
-                                            <i class="fas fa-bars"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="search-btm p-1">
-                                    <form action="#" class="form-search flex-row-sb">
-                                        <input type="text" class="text-rg pl-1" id="search-fiel"
-                                            placeholder="search the entire store...">
-                                        <button type="submit" class="btn-icon pr-sm"><i
-                                                class="fa-solid fa-magnifying-glass search-icon thin"></i></button>
-                                    </form>
-                                </div>
-                                <div class="menu p-sm">
-                                    <h5><a href="/screens/product-page.html">Shop All Products</h5></a>
-                                    <h5><a href="/screens/wishlist-page.html">My Wishlist</h5></a>
-                                    <h5><a href="/screens/cart-page.html">My Shopping Cart</h5></a>
-                                    <h5><a href="">Location</h5></a>
-                                    <h5><a href="/screens/sign-up.html">Sign Up</h5></a>
-                                    <h5><a href="/screens/log-in.html">Log In</h5></a>
-                                </div>
-                            </header>
-                        </section>
-                        <iframe
-                            src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=14px&ph=13px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%253Cheader%2520class%253D%2522page-header%2520flex-col-sb%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522header-content%2520flex-row-sb%2520p-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%252Findex.html%2522%2520class%253D%2522logo%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fassets%252Flogo.svg%2522%2520alt%253D%2522logo%2522%2520class%253D%2522min-img%2520img-responsive%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522search-con%2520flex-row-sb%2520img-responsive%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cform%2520action%253D%2522%2523%2522%2520class%253D%2522form-search%2520flex-row-sb%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520class%253D%2522text-rg%2520pl-1%2522%2520id%253D%2522search-field%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520placeholder%253D%2522search%2520the%2520entire%2520store...%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522submit%2522%2520class%253D%2522btn-icon%2520pr-sm%2522%253E%253Ci%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522fa-solid%2520fa-magnifying-glass%2520search-icon%2520thin%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fform%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-row-sb%2520right-nav%2520px-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522shop-con%2520flex-row-sb%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522link%2522%2520href%253D%2522%252Fscreens%252Fproduct-page.html%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%253EShop%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-angle-down%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522experience-con%2520flex-row-sb%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522link%2522%2520href%253D%2522%2523%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%253Eexperience%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522location-con%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522location%2520flex-row-sb%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522link%2522%2520href%253D%2522%2523%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%253Elocation%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-angle-down%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dropdown%2520account-con%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-regular%2520fa-user%2520text-md%2520dropbtn%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520id%253D%2522myDropdown%2522%2520class%253D%2522dropdown-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%252Fscreens%252Fsign-up.html%2522%2520class%253D%2522p-1%2522%253ESign%2520Up%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%252Fscreens%252Flog-in.html%2522%2520class%253D%2522p-1%2522%253ELog%2520In%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522wish-con%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520hr"
-                            style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
-                            sandbox="allow-scripts allow-same-origin">
-                        </iframe>
-                    </section>
-            </article>
-
-            <div class="my-2">
-                <hr>
-            </div>
-
-            <article id="modal" class="flex-col-sb-start">
-                <h1 class="text-extra-lg">Modal</h1>
-                <p>Modals are built with HTML, CSS, and JavaScript. They’re positioned over everything else in the
-                    document and remove scroll from the so that modal content scrolls instead.
-                </p>
-                <section class="example">
-                    <h3>Example of Modal</h3>
-                    <section class="eg-container p-md ">
-                        <div class="modal grid grid-90-10 p-1">
-                            <div class="modal-con">
-                                <div class="modal-content">
-                                    <h1>Modal Title</h1>
-                                </div>
-                                <div>
-                                    <p>Sunt ad dolore quis aute consequat. Magna exercitation reprehenderit magna aute
-                                        tempor cupidatat consequat elit dolor adipisicing. Mollit dolor eiusmod sunt ex
-                                        incididunt cillum quis. Velit duis sit officia eiusmod Lorem aliqua enim laboris
-                                        do dolor eiusmod. Et mollit incididunt nisi consectetur esse laborum eiusmod
-                                        pariatur proident Lorem eiusmod et. Culpa deserunt nostrud ad veniam.</p>
-                                </div>
-                                <div>
-                                    <button class="btn btn-primary">Close</button>
-                                    <button class="btn btn-secondary">Secondary Action</button>
-                                </div>
-                            </div>
-                            <div class="modal-dismiss">
-                                <i class="fa fa-times"></i>
-                            </div>
-                        </div>
-                    </section>
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=14px&ph=13px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%253Cdiv%2520class%253D%2522modal%2520grid%2520grid-90-10%2520p-1%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-con%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch1%253EModal%2520Title%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253ESunt%2520ad%2520dolore%2520quis%2520aute%2520consequat.%2520Magna%2520exercitation%2520reprehenderit%2520magna%2520aute%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520tempor%2520cupidatat%2520consequat%2520elit%2520dolor%2520adipisicing.%2520Mollit%2520dolor%2520eiusmod%2520sunt%2520ex%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520incididunt%2520cillum%2520quis.%2520Velit%2520duis%2520sit%2520officia%2520eiusmod%2520Lorem%2520aliqua%2520enim%2520laboris%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520do%2520dolor%2520eiusmod.%2520Et%2520mollit%2520incididunt%2520nisi%2520consectetur%2520esse%2520laborum%2520eiusmod%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520pariatur%2520proident%2520Lorem%2520eiusmod%2520et.%2520Culpa%2520deserunt%2520nostrud%2520ad%2520veniam.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EClose%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2522%253ESecondary%2520Action%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-dismiss%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-times%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
-                        style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
-                </section>
-                <section class="example">
-                    <h3>Live Demo</h3>
-                    <section class="eg-container p-md ">
-                        <button class="btn btn-primary" id="live-modal-btn">Live Demo</button>
-                    </section>
-                    <p>For including a live modal, just add <span class="highlight-class">id = "live-modal-con"</span>
-                    </p>
-                    <div class="modal grid grid-90-10 p-1" id="live-modal-con">
-                        <div class="modal-con">
-                            <div class="modal-content">
-                                <h1>Modal Title</h1>
-                            </div>
-                            <div>
-                                <p class="text">Sunt ad dolore quis aute consequat. Magna exercitation reprehenderit
-                                    magna aute
-                                    tempor cupidatat consequat elit dolor adipisicing. Mollit dolor eiusmod sunt ex
-                                    incididunt cillum quis. Velit duis sit officia eiusmod Lorem aliqua enim laboris
-                                    do dolor eiusmod. Et mollit incididunt nisi consectetur esse laborum eiusmod
-                                    pariatur proident Lorem eiusmod et. Culpa deserunt nostrud ad veniam.</p>
-                            </div>
-                            <div>
-                                <button class="btn btn-primary">Close</button>
-                                <button class="btn btn-secondary">Secondary Action</button>
-                            </div>
-                        </div>
-                        <div class="modal-dismiss">
-                            <i class="fa fa-times modal-dismiss-btn"></i>
-                        </div>
-                    </div>
-                    <h2 class="p-md">JavaScript</h2>
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=14px&ph=13px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250Aconst%2520modalBtn%2520%253D%2520document.querySelector%28%2522%2523live-modal-btn%2522%29%253B%250Aconst%2520modalCon%2520%253D%2520document.querySelector%28%2522%2523live-modal-con%2522%29%253B%250Aconst%2520modalDismissBtn%2520%253D%2520document.querySelector%28%2522.modal-dismiss-btn%2522%29%253B%250A%250Aconst%2520showModal%2520%253D%2520%28e%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520modalCon.style.display%2520%253D%2520%2522grid%2522%253B%250A%257D%250A%250Aconst%2520closeModal%2520%253D%2520%28e%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520modalCon.style.display%2520%253D%2520%2522none%2522%250A%257D%250A%250AmodalBtn.addEventListener%28%2522click%2522%252C%2520showModal%29%253B%250AmodalDismissBtn.addEventListener%28%2522click%2522%252C%2520closeModal%29%253B"
-                        style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
-                </section>
-            </article>
-
-            <div class="my-2">
-                <hr>
-            </div>
-
-            <article id="rating" class="flex-col-sb-start">
-                <h1 class="text-extra-lg">Ratings</h1>
-                <p>Native's 5-star ratings component can be used to allow the users to share their opinion about the
-                    product, documentation page, photo and more.</p>
-                <section class="example">
-                    <h3>Example of Ratings</h3>
-                    <section class="eg-container p-md ">
-                        <div class="ratings-cont flex-row-se">
-                            <span class="rating"><i class="fa-solid fa-star"></i></span>
-                            <span class="rating"><i class="fa-solid fa-star"></i></span>
-                            <span class="rating"><i class="fa-solid fa-star"></i></span>
-                            <span class="rating"><i class="fa-solid fa-star"></i></span>
-                            <span class="rating rating-half"><i class="fa-regular fa-star"></i></span>
-                        </div>
-                    </section>
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=14px&ph=13px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%253Cdiv%2520class%253D%2522ratings-cont%2520flex-row-se%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522rating%2522%253E%253Ci%2520class%253D%2522fa-solid%2520fa-star%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522rating%2522%253E%253Ci%2520class%253D%2522fa-solid%2520fa-star%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522rating%2522%253E%253Ci%2520class%253D%2522fa-solid%2520fa-star%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522rating%2522%253E%253Ci%2520class%253D%2522fa-solid%2520fa-star%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522rating%2520rating-half%2522%253E%253Ci%2520class%253D%2522fa-regular%2520fa-star%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
-                        style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
-                </section>
-            </article>
-
-            <div class="my-2">
-                <hr>
-            </div>
-
-            <article id="slider" class="flex-col-sb-start">
-                <h1 class="text-extra-lg">Slider</h1>
-                <p>Sliders are used to decide range for something like sound in videos, price in shopping sites, etc..
-                </p>
-                <section class="example">
-                    <h3>Example of Slider with Value</h3>
-                    <section class="eg-container p-md ">
-                        <form name="price-field" oninput="range1value.value = range1.valueAsNumber" class="price-field">
-                            <input name="range1" type="range" step="1" min="1" max="5" value="1">
-                            <div><output name="range1value" for="range1">1</output><span>⭐ and above</span></div>
-                        </form>
-                    </section>
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=14px&ph=13px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%253Cform%2520name%253D%2522price-field%2522%2520oninput%253D%2522range1value.value%2520%253D%2520range1.valueAsNumber%2522%2520class%253D%2522price-field%2522%253E%250A%2520%2520%2520%2520%253Cinput%2520name%253D%2522range1%2522%2520type%253D%2522range%2522%2520step%253D%25221%2522%2520min%253D%25221%2522%2520max%253D%25225%2522%2520value%253D%25221%2522%253E%250A%2520%2520%2520%2520%253Cdiv%253E%253Coutput%2520name%253D%2522range1value%2522%2520for%253D%2522range1%2522%253E1%253C%252Foutput%253E%253Cspan%253E%25E2%25AD%2590%2520and%2520above%253C%252Fspan%253E%253C%252Fdiv%253E%250A%253C%252Fform%253E"
-                        style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
-                </section>
-                <section class="example">
-                    <h3>Example of Slider with Icon</h3>
-                    <section class="eg-container p-md ">
-                        <form name="price-field" oninput="range1value.value = range1.valueAsNumber"
-                            class="price-field flex-row-se">
-                            <label for="slider"><i class="fa-solid fa-volume-high"></i></label>
-                            <input name="range1" type="range" step="10" min="0" max="100" value="0" id="slider">
-                            <output name="range1value" for="range1">0</output>
-                        </form>
-                    </section>
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28139%2C130%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=14px&ph=13px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520copy%2520and%2520paste%2520the%2520following%2520code%2520in%2520your%2520html%2520file.%2520Give%2520appropriate%2520class%2520namings%2520as%2520shown%2520in%2520the%2520snippet%2520below%2520--%253E%250A%250A%253Cform%2520name%253D%2522price-field%2522%2520oninput%253D%2522range1value.value%2520%253D%2520range1.valueAsNumber%2522%2520class%253D%2522price-field%2520flex-row-se%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522slider%2522%253E%253Ci%2520class%253D%2522fa-solid%2520fa-volume-high%2522%253E%253C%252Fi%253E%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%2520name%253D%2522range1%2522%2520type%253D%2522range%2522%2520step%253D%252210%2522%2520min%253D%25220%2522%2520max%253D%2522100%2522%2520value%253D%25220%2522%2520id%253D%2522slider%2522%253E%250A%2520%2520%2520%2520%253Coutput%2520name%253D%2522range1value%2522%2520for%253D%2522range1%2522%253E0%253C%252Foutput%253E%250A%253C%252Fform%253E"
-                        style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
-                </section>
-            </article>
-
+            </article>  
+          
             <div>
                 <button class="btn btn-primary btn-float" id="go-top">
                     <i class="fa-solid fa-circle-arrow-up"></i>
